@@ -101,7 +101,7 @@ hr {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	background: url(../img/noise.png), radial-gradient(at center top, #f7931e, #f15a24 850px);
+	background: url(../img/noise.png), radial-gradient(at center top, #aaa, #777 850px);
 	height: 293px;
 	margin: 0px auto;
 	z-index: 2;
@@ -131,10 +131,12 @@ hr {
 			border: 1px solid rgba(255,255,255,0.19);
 			border-radius: 7px;
 			height: 239px;
-			width: 480px;
-			padding: 7px 17px;
+			width: 450px;
+			margin-left: 23px;
+			padding: 11px 23px;
 			color: #fff;
-			text-shadow: 0px 1px 2px #628;
+			text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
+			font-size: 15px;
 			font-weight: 500;
 
 			h1 {
@@ -142,12 +144,12 @@ hr {
 				top: 7px;
 				left: -17px;
 				text-indent: -9999px;
-				width: 217px;
+				width: 271px;
 				height: 65px;
 				background: url(../img/logo.png);
 			}
 			p {
-				margin-bottom: 11px;
+				margin-bottom: 7px;
 			}
 			a.btn-download {
 				display: inline-block;
@@ -179,7 +181,7 @@ hr {
 				line-height: 31px;
 				font-size: 27px;
 				text-transform: capitalize;
-				color: rgba(98,36,0,0.6);
+				color: rgba(30,30,30,0.6);
 				text-shadow: 0px 1px 1px rgba(255,255,255,0.25);
 			}
 			.button {
@@ -239,16 +241,23 @@ hr {
 		line-height: 23px;
 		color: #fff;
 		text-align: center;
-		background: url(../img/hb.png) 50% 100% no-repeat;
+		background: url(../img/hb.png) 50% 90% no-repeat;
 		text-shadow: 0px 1px 2px rgba(0,0,0,0.35);
 	}
 	a {
 		font-weight: 600;
 	}
+	.graham {
+		position: absolute;
+		bottom: -10px;
+		left: 0px;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .wrapper {
-	background: url(../img/noise.png), radial-gradient(at center top , #e5aa74, #f17a44 750px);
+	background: #999 url(../img/noise.png);
 	position: relative;
 	margin-top: 293px;
 	box-shadow: 0px 7px 19px rgba(0,0,0,0.35);
@@ -262,7 +271,7 @@ hr {
 		top: 0px;
 		left: 0px;
 		right: 0px;
-		background: rgba(255,100,26,1) url(../img/noise.png);
+		background: rgba(200,200,200,1) url(../img/noise.png);
 		//background: rgba(235,90,0,0.85) url(../img/noise.png);
 		//background: rgba(80,170,70,0.85) url(../img/noise.png);
 		box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
@@ -271,7 +280,7 @@ hr {
 		z-index: 3;
 
 		&.docked {
-			background: rgba(255,100,26,0.85) url(../img/noise.png);
+			background: rgba(200,200,200,0.85) url(../img/noise.png);
 			position: fixed;
 		}
 
@@ -279,10 +288,10 @@ hr {
 			display: inline-block;
 			font-size: 15px;
 			line-height: 38px;
-			text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
+			text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
 			padding: 2px 13px 5px 13px;
 			text-decoration: none;
-			color: #fff;
+			color: #000;
 			white-space: nowrap;
 		}
 
@@ -301,7 +310,7 @@ hr {
 
 		.sub_menu {
 			display: none;
-			background: rgba(255,100,26,0.9) url(../img/noise.png);
+			background: rgba(80,80,80,0.9) url(../img/noise.png);
 			//background: rgba(80,170,70,0.95) url(../img/noise.png);
 			position: absolute;
 			top: 45px;
@@ -328,7 +337,7 @@ hr {
 				height: 0;
 				border-left: 13px solid transparent;
 				border-right: 13px solid transparent;
-				border-bottom: 11px solid rgba(255,100,26,0.9);
+				border-bottom: 11px solid rgba(90,90,90,0.8);
 			}
 
 			a {
@@ -339,7 +348,8 @@ hr {
 				padding-bottom: 3px;
 				padding-right: 23px;
 				white-space: nowrap;
-				text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+				color: #fff;
+				text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
 
 				&:hover {
 					background: rgba(0,0,0,0.25);
