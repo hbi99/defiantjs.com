@@ -6,13 +6,13 @@
 
 
 // variables
-@body_bg:   #fff;
-@body_fg:   #222;
-@nav_bg:    #294063;
-@nav_fg:    #c2d9ff;
-@nav_hover: #fff;
-@link:      #e80;
-@school_bg: #eee;
+@body_bg:      #fff;
+@body_fg:      #222;
+@nav_bg:       #294063;
+@nav_fg:       #c2d9ff;
+@nav_hover:    #fff;
+@link:         #e80;
+@evaluator_bg: #eee;
 
 // defaults
 * {
@@ -64,18 +64,18 @@ h1 {
 }
 h2 {
 	font-weight: 500;
-	font-size: 31px;
+	font-size: 37px;
 	line-height: normal;
 	text-transform: uppercase;
-	margin: 11px 0px 0px;
+	margin: 13px 0px 0px;
 }
 h3 {
 	font-weight: 500;
-	font-size: 21px;
+	font-size: 27px;
 	line-height: normal;
 	//text-shadow: 0px 1px 5px #666;
 	text-transform: uppercase;
-	margin: 7px 0px 0px;
+	margin: 11px 0px 0px;
 }
 p {
 	margin: 0px 0px 23px;
@@ -114,7 +114,7 @@ nav {
 	left: 0px;
 	width: 250px;
 
-	&:hover {
+	&.hover {
 		+ .layout {
 			margin-left: 230px;
 
@@ -123,6 +123,9 @@ nav {
 			}
 			&:after {
 				left: 6px;
+			}
+			.cover {
+				display: block;
 			}
 		}
 	}
@@ -141,12 +144,6 @@ nav {
 			}
 			&:last-child {
 				border-bottom: 0px;
-			}
-
-			&:hover {
-				.submenu {
-					height: auto;
-				}
 			}
 		}
 	}
@@ -205,6 +202,7 @@ section.layout {
 	position: relative;
 	height: 100%;
 	margin-left: 48px;
+	//margin-left: 230px;
 	padding: 35px 0px 30px 50px;
 	z-index: 2;
 	box-shadow: -5px 0px 11px rgba(0,0,0,0.35);
@@ -221,6 +219,16 @@ section.layout {
 		box-shadow: -1px 0px 1px rgba(0,0,0,0.3);
 	}
 
+	.cover {
+	//	background: rgba(0,0,0,0.1);
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+	}
 	.content {
 	//	background: rgba(0,0,0,0.1);
 		width: 720px;
@@ -367,11 +375,11 @@ section.layout {
 	}
 
 
-	.xpath-school {
+	.xpath-evaluator {
 		position: relative;
 		z-index: 2;
 		background: #fff;
-		border: 1px solid darken(@school_bg, 21%);
+		border: 1px solid darken(@evaluator_bg, 21%);
 		border-radius: 5px 5px 0px 0px;
 		font-size: 14px;
 		line-height: 17px;
@@ -411,10 +419,10 @@ section.layout {
 			}
 
 			.gutter {
-				background: lighten(@school_bg, 5%);
-				color: darken(@school_bg, 17%);
+				background: lighten(@evaluator_bg, 5%);
+				color: darken(@evaluator_bg, 17%);
 				text-align: right;
-				border-right: 1px solid darken(@school_bg, 11%);
+				border-right: 1px solid darken(@evaluator_bg, 11%);
 				min-width: 18px;
 				padding: 5px 7px;
 
@@ -469,18 +477,25 @@ section.layout {
 			}
 		}
 		.examples {
-			background: lighten(@school_bg, 5%);
+			background: lighten(@evaluator_bg, 5%);
 			position: absolute;
 			top: 0px;
-			right: 0px;
+			right: -270px;
 			height: 100%;
 			width: 270px;
+			opacity: 0;
 			overflow: hidden;
-			border-left: 1px solid darken(@school_bg, 11%);
+			border-left: 1px solid darken(@evaluator_bg, 11%);
 			font-size: 13px;
 			line-height: 19px;
 			padding: 3px 1px;
+			.transition(350ms);
 			//box-shadow: inset 3px 3px 7px #ddd;
+
+			&.show {
+				opacity: 1;
+				right: 0px;
+			}
 
 			h2 {
 				margin: 0px 0px 5px;
@@ -502,8 +517,8 @@ section.layout {
 				letter-spacing: -0.5px;
 				white-space: nowrap;
 				overflow: hidden;
-				color: darken(@school_bg, 31%);
-				box-shadow: 0px 0px 2px darken(@school_bg, 23%);
+				color: darken(@evaluator_bg, 31%);
+				box-shadow: 0px 0px 2px darken(@evaluator_bg, 23%);
 				font-family: 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
 				border: #fff 1px solid;
 
@@ -521,12 +536,12 @@ section.layout {
 		position: relative;
 		top: 0px;
 		z-index: 1;
-		background: @school_bg;
+		background: @evaluator_bg;
 		height: 48px;
 		margin: 0px 0px 17px;
 		padding: 10px 11px;
 		border-radius: 0px 0px 5px 5px;
-		border: 1px solid darken(@school_bg, 21%);
+		border: 1px solid darken(@evaluator_bg, 21%);
 		border-top: 0px;
 		line-height: 21px;
 
@@ -558,7 +573,7 @@ section.layout {
 			height: 27px;
 			min-width: 401px;
 			margin: 0px 11px 0px 2px;
-			border: 1px solid darken(@school_bg, 21%);
+			border: 1px solid darken(@evaluator_bg, 21%);
 			border-radius: 3px 0px 0px 3px;
 
 			input {
@@ -593,9 +608,9 @@ section.layout {
 			float: left;
 			margin: 0px 5px 0px 0px;
 			padding: 2px 11px 2px;
-			border: 1px solid darken(@school_bg, 21%);
+			border: 1px solid darken(@evaluator_bg, 21%);
 			border-radius: 3px;
-			background: @school_bg;
+			background: @evaluator_bg;
 			display: inline-block;
 			white-space: nowrap;
 			text-decoration: none;
@@ -724,6 +739,7 @@ section.layout {
 footer {
 	color: #888;
 	text-align: center;
+	padding-bottom: 51px;
 
 	.hb-logo {
 		margin-top: 10px;
