@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>DefiantJS</title>
+<meta http-equiv="X-UA-Compatible" content="IE=10">
+<title>Defiant.js</title>
 
 <meta property='og:locale' content='sv_SE'/>
 <meta property='og:type' content='website'/>
@@ -13,483 +14,487 @@
 <meta property='fb:admins' content='661407089'/>
 <meta property='og:image' content='http://www.defiantjs.com/res/img/fb-icon.png'/>
 
-<meta http-equiv="X-UA-Compatible" content="IE=10">
-
 <link type="text/css" href="res/css/style.css" media="all" rel="stylesheet"/>
-<script type="text/javascript" src="/res/js/jquery.js"></script>
-<script type="text/javascript" src="/defiant.js/src/defiant.js"></script>
-<script type="text/javascript" src="/defiant.js/src/ie.polyfill.js"></script>
-<script type="text/javascript" src="/defiant.js/src/string.js"></script>
-<script type="text/javascript" src="/defiant.js/src/json.js"></script>
-<script type="text/javascript" src="/defiant.js/src/json.search.js"></script>
-<script type="text/javascript" src="/defiant.js/src/json.mtrace.js"></script>
-<script type="text/javascript" src="/defiant.js/src/json.toXML.js"></script>
-<script type="text/javascript" src="/defiant.js/src/node.toJSON.js"></script>
-<script type="text/javascript" src="/defiant.js/src/node.select.js"></script>
-<script type="text/javascript" src="/defiant.js/src/node.serialize.js"></script>
-<script type="text/javascript" src="/defiant.js/src/jquery-plugin.js"></script>
-<script type="text/javascript" src="/res/js/site.js"></script>
+<script src="res/js/deps/plugins/CSSPlugin.js"></script>
+<script src="res/js/deps/easing/EasePack.js"></script>
+<script src="res/js/deps/TweenLite.js"></script>
+<script src="res/js/deps/jquery.js"></script>
+<script src="defiant.js/dist/defiant-latest.min.js"></script>
+<script src="res/js/site.js"></script>
 </head>
 <body>
 
-<section class="header">
-	<a class="fork_me" href="https://github.com/hbi99/defiant.js" target="_new" alt="Fork me">Fork Me</a>
+<nav>
+	<ul>
+		<li>
+			<a class="nolink" href="/goto/overview/">
+				<figure class="icon-defiantjs"></figure>
+				<span>Overview</span>
+			</a>
+			<ul class="submenu">
+				<li><a class="nolink" href="/goto/spanshot-search/">Snapshot search</a></li>
+				<li><a class="nolink" href="/goto/templating/">Templating</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="nolink" href="/goto/usage/">
+				<figure class="icon-usage"></figure>
+				<span>Usage</span>
+			</a>
+			<ul class="submenu">
+				<li><a class="nolink" href="/goto/simple-example/">Simple example</a></li>
+				<li><a class="nolink" href="/goto/advanced-example/">Advanced example</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="nolink" href="/goto/xpath/">
+				<figure class="icon-magic"></figure>
+				<span>XPath</span>
+			</a>
+			<ul class="submenu">
+				<li><a class="nolink" href="/goto/expressions-table/">Expressions table</a></li>
+				<li><a class="nolink" href="/goto/xpath-evaluator/">XPath Evaluator</a></li>
+				<li><a class="nolink" href="/goto/caveats/">Caveats</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="nolink" href="/goto/reference/">
+				<figure class="icon-code"></figure>
+				<span>Reference</span>
+			</a>
+			<ul class="submenu">
+				<li><a class="nolink" href="/goto/Defiant.render/">Defiant.render</a></li>
+				<li><a class="nolink" href="/goto/Defiant.xmlFromString/">Defiant.xmlFromString</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.toJSON/">Defiant.node.toJSON</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.selectNodes/">Defiant.node.selectNodes</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.selectSingleNode/">Defiant.node.selectSingleNode</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.prettyPrint/">Defiant.node.prettyPrint</a></li>
+				<li><a class="nolink" href="/goto/JSON.toXML/">JSON.toXML</a></li>
+				<li><a class="nolink" href="/goto/JSON.search/">JSON.search</a></li>
+			</ul>
+		</li>
+		<li>
+			<a target="_new" href="https://github.com/hbi99/defiant.js">
+				<figure class="icon-github"></figure>
+				<span>Source</span>
+			</a>
+			<ul class="submenu">
+				<li><a target="_new" href="https://raw.github.com/hbi99/defiant.js/master/dist/defiant-latest.min.js">Download</a></li>
+				<li><a target="_new" href="https://github.com/hbi99/defiant.js">Fork me on GitHub</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="nolink" href="/goto/about/">
+				<figure class="icon-hb"></figure>
+				<span>About</span>
+			</a>
+		</li>
+	</ul>
+</nav>
 
-	<div class="content">
-		<section class="intro">
+<section class="layout">
+	<div class="cover"></div>
+	<div class="content" data-section="overview">
+
+		<!-- Intro -->
+		<div class="intro">
 			<h1>DefiantJS</h1>
 			<p>
 				<strong>DefiantJS</strong> enables you to perform lightning-fast searches on <strong>JSON</strong>
 				using <strong>XPath</strong> expressions, and transform <strong>JSON</strong> using <strong>XSL</strong>.
 			</p>
-			<a class="btn-download" href="https://raw.github.com/hbi99/defiant.js/master/dist/defiant-latest.min.js" target="_new">Download DefiantJS</a>
-			<span class="libv">&#160;</span>
-		</section>
-		<section class="github-repo">
-			<h2>
-				Suggestions,<br/>
-				problems,<br/>
-				feedback?
-			</h2>
-			<a class="button" href="https://github.com/hbi99/defiant.js/issues" target="_new">Check out the issues list
-				<img class="github" src="/res/img/github.png" alt="Github"/>
+		</div>
+		
+		<!-- sticky -->
+		<div class="sticky">
+			<a class="fright" target="_new" href="https://raw.github.com/hbi99/defiant.js/master/dist/defiant-latest.min.js">
+				Download DefiantJS
+				<figure class="icon-download"></figure>
 			</a>
-		</section>
-	</div>
-</section>
+			<a class="fright" target="_new" href="https://github.com/hbi99/defiant.js">
+				View Source on GitHub
+				<figure class="icon-github"></figure>
+			</a>
+		</div>
+		<hr/>
 
-<!-- Defiant templates -->
-<script type="defiant/xsl-template">
-
-	<xsl:template name="menu">
-		<xsl:for-each select="//menu_item">
-			<span class="menu_item">
-				<a class="nolink">
-					<xsl:attribute name="href"><xsl:value-of select="target"/></xsl:attribute>
-					<xsl:if test="is_link = 'true'"><xsl:attribute name="target">_new</xsl:attribute></xsl:if>
-					<xsl:value-of select="name"/>
-				</a>
-				<xsl:if test="submenu">
-					<xsl:call-template name="submenu"/>
-				</xsl:if>
-			</span>
-		</xsl:for-each>
-	</xsl:template>
-
-	<xsl:template name="submenu">
-		<span class="sub_menu">
-			<xsl:for-each select="./submenu">
-				<a class="nolink">
-					<xsl:attribute name="href"><xsl:value-of select="target"/></xsl:attribute>
-					<xsl:if test="is_link = 'true'"><xsl:attribute name="target">_new</xsl:attribute></xsl:if>
-					<xsl:value-of select="name"/>
-				</a>
-			</xsl:for-each>
-		</span>
-	</xsl:template>
-
-</script>
-
-<div class="wrapper">
-	<nav id="menu"></nav>
-	<div class="content">
-
-		<section>
-			<h2 data-section="overview">Overview</h2>
-			<p>
-				Do you need to query large <abbr title="JavaScript Object Notation">JSON</abbr> structures? Do you end up coding loops to parse the 
-				<abbr title="JavaScript Object Notation">JSON</abbr> and identify the data that matches your query? <strong>DefiantJS</strong> offers a better way. 
-				<strong>DefiantJS</strong> extends the global <abbr title="JavaScript Object Notation">JSON</abbr> object with a "<strong>search</strong>" method that enables 
-				lightning-fast searches using <abbr title="XML Path Language">XPath</abbr> expressions.
-				Try out the <a class="nolink" href="#show-xpath_evaluator">XPath Evaluator</a> below to get the idea.
-			</p>
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8104182.js"></script></div>
-			
-			<h3>Snapshot search</h3>
-			<p>
-				<strong>DefiantJS</strong> 1.2.0 introduced a snapshot feature that improves search performance more 
-				than 100 times compared to a regular search. <strong>DefiantJS</strong> prepares the 
-				<abbr title="JavaScript Object Notation">JSON</abbr> structure before the search; this preparation 
-				is the time-consuming part.
-
-				Using snapshot of the <abbr title="JavaScript Object Notation">JSON</abbr> structure, <strong>DefiantJS</strong>
-				can find and return matches as fast as <strong>4ms</strong> on <strong>1.6MB</strong> large data
-				(<a href="https://github.com/hbi99/defiant.js/blob/master/demo/json-search-4.htm" target="new">see the example</a>).
-			</p>
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/48dce9b9e55f9e466f9f.js"></script></div>
-
-			<h3>Templating</h3>
-			<p>
-				Contemporary JavaScript templating libraries enable you to write simplistic templates. Problems arise 
-				when complex real-world requirements exceed the limits of the templating model, so you have to supplement 
-				the templates with helper functions, fragmenting the templating logic, which is bad practice.
-			</p>
-			<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/8141480.js"></script></div>
-			<p>
-				With <strong>DefiantJS</strong>, you can write logical templates with powerful technologies such as
-				<a href="http://en.wikipedia.org/wiki/Xslt" target="_new">XSLT</a> &amp; <a href="http://en.wikipedia.org/wiki/XPath" target="_new">XPath</a>,
-				and apply them to <abbr title="JavaScript Object Notation">JSON</abbr> objects. Besides the fact that
-				<abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> is a proven
-				<a href="http://en.wikipedia.org/wiki/Turing-complete" target="_new">Turing-complete</a> language,
-				it is also standardized and supported by all <a href="http://www.w3schools.com/xsl/xsl_browsers.asp" target="_new">major browsers</a>.
-			</p>
-			<p class="center">
-				<i>
-					You could say that <strong>DefiantJS</strong> joins <abbr title="Extended Markup Language">XML</abbr> and
-					related technologies with <abbr title="JavaScript Object Notation">JSON</abbr>.<br/>
-					Most likely, <a href="http://www.crockford.com/" target="_new">Douglas Crockford</a> will hate this unholy matrimony.
-				</i>
-			</p>
-		</section>
-
-		<section>
-			<h2 data-section="usage">Usage</h2>
-			<p>
-				Using <strong>DefiantJS</strong> is pretty easy. Check out the examples below to get a hint of how it can
-				be used; the first one is rather simple and the latter is more advanced and demonstrates calling templates from
-				another template. It contains recursive template calling and renders a fictitious filesystem structure. When the "tree-walker"
-				template calls itself, indentation is passed as an argument, thus indenting child elements of a folder.
-				<br/><br/>
-				To see the code below in action, here are the demo files;
-				<a href="/defiant.js/demo/simple.htm" target="_new">simple example</a> and
-				<a href="/defiant.js/demo/advanced.htm" target="_new">advanced example</a>
-			</p>
-
-			<!-- Simple example -->
-			<h3 class="hideMe" data-subsection="simple_example">Simple example</h3>
-			<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/8114216.js"></script></div>
-
-			<!-- Advanced example -->
-			<h3 class="hideMe" data-subsection="advanced_example">Advanced example</h3>
-			<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/8140824.js"></script></div>
-		</section>
-
-		<section>
-			<h2 data-section="xpath">XPath</h2>
-			<p>
-				A powerful tool when dealing with <abbr title="Extended Markup Language">XML</abbr> is the advantage of
-				using <abbr title="XML Path Language">XPath</abbr>.
-				XPath is a <a href="http://www.w3.org/TR/xpath/" target="_new">standardized</a>
-				language for addressing parts of an <abbr title="Extended Markup Language">XML</abbr> document and
-				enables features such as analysis, transformation &amp; refined data selection out of an
-				<abbr title="Extended Markup Language">XML</abbr> structure.
-
-				The lack of a similar feature for working with <abbr title="JavaScript Object Notation">JSON</abbr>
-				has prompted <a href="http://code.google.com/p/json-path/" target="_new">initiatives</a> such 
-				as <a href="https://developer.mozilla.org/en-US/docs/JSON/JSONPath" target="_new">JSONPath</a>,
-				which has not been standardized or widely accepted by the community.
-			</p>
-			<p>
-				With <strong>DefiantJS</strong>, you can unleash the power of <abbr title="XML Path Language">XPath</abbr>
-				on <abbr title="JavaScript Object Notation">JSON</abbr> objects, with no retooling or reschooling!
-			</p>
-
-			<h3 data-subsection="expression_table">Expressions table</h3>
-			<p>
-				The syntax table below offers a glimpse of the power that <abbr title="XML Path Language">XPath</abbr> brings.
-				<abbr title="XML Path Language">XPath</abbr> has a lot
-				<a href="http://msdn.microsoft.com/en-us/library/ms256122(v=vs.110).aspx" target="_new">more</a> to
-				<a href="http://www.w3schools.com/xpath/xpath_syntax.asp" target="_new">offer</a>.
-				An important advantage of implementing <abbr title="XML Path Language">XPath</abbr>, as contrasted with
-				<strong>JSONPath</strong>, is that this language has been documented a great deal on the web and 
-				information &amp; how-to's can easily be found &amp; digested.
-			</p>
-
-			<table class="xpath-expressions">
-			<tr>
-				<th>Expression</th>
-				<th>Description</th>
-			</tr>
-			<tr><td>/</td>   <td>Child operator; selects immediate children of the left-side collection. When this path operator appears at the start of the pattern, it indicates that children should be selected from the root node.</td></tr>
-			<tr><td>//</td>  <td>Recursive descent; searches for the specified element at any depth. When this path operator appears at the start of the pattern, it indicates recursive descent from the root node.</td></tr>
-			<tr><td>.</td>   <td>Indicates the current context.</td></tr>
-			<tr><td>..</td>  <td>The parent of the current context.</td></tr>
-			<tr><td>*</td>   <td>Wildcard; selects all elements regardless of the element name.</td></tr>
-			<tr><td>@</td>   <td>Attribute; prefix for an attribute name.</td></tr>
-			<tr><td>@*</td>  <td>Attribute wildcard; selects all attributes regardless of name.</td></tr>
-			<tr><td>[]</td>  <td>Subscript operator; applies a filter pattern <strong>OR</strong> used for indexing within a collection.</td></tr>
-			<tr><td>|</td>   <td>Union operator; results in a combination of element sets</td></tr>
-			<tr><td>()</td>  <td>Groups operations to explicitly establish precedence</td></tr>
-			</table>
-			<p>
-				In order to access <abbr title="XML Path Language">XPath</abbr> functionality easily, some global objects has been
-				extended with useful methods, for instance; <code class="nolink" data-target="#JSON.search"><span class="obj">JSON</span>.<span class="fn">search</span></code>.
-				Detailed information about these extension can be found in the <a class="nolink" href="#function_reference">Function reference</a> section.
-			</p>
-
-			<h3 data-subsection="xpath_evaluator">XPath Evaluator</h3>
-			<p>
-				Not familiar with <abbr title="XML Path Language">XPath</abbr>? Don't worry, use the
-				<abbr title="XML Path Language">XPath</abbr> evaluator below and you will become an expert
-				in no time.
-			</p>
-
-			<div class="xpath-school">
-				<div class="structure"></div>
-				<textarea class="paste_data" spellcheck="false"></textarea>
-				<div class="examples">
-					<h2>Sample XPath</h2>
-					<a class="nolink" href="#swap-xpath">//*</a>
-					<a class="nolink" href="#swap-xpath">//book</a>
-					<a class="nolink" href="#swap-xpath">//category</a>
-					<a class="nolink" href="#swap-xpath">//@price</a>
-					<a class="nolink" href="#swap-xpath">//title</a>
-					<a class="nolink" href="#swap-xpath">//title/text()</a>
-					<a class="nolink" href="#swap-xpath">//bicycle</a>
-					<a class="nolink" href="#swap-xpath">//book[3]</a>
-					<a class="nolink" href="#swap-xpath">//book[position() &lt;= 2]</a>
-					<a class="nolink" href="#swap-xpath">//book[last()]</a>
-					<a class="nolink" href="#swap-xpath">//*[@price &gt; 10]</a>
-					<a class="nolink" href="#swap-xpath">//*[category="reference"]/author</a>
-					<a class="nolink" href="#swap-xpath">//*[contains(title, "the")]</a>
-					<a class="nolink" href="#swap-xpath">//book[isbn]</a>
-				</div>
-			</div>
-
-			<div class="btn-row school-buttons">
-				<span class="btn-group">
-					<a class="nolink button active" href="#switch-to-json">JSON</a>
-					<a class="nolink button" href="#switch-to-xml">XML</a>
-				</span>
-				<a class="nolink button btn-toggle" href="#toggle-edit">Edit</a>
-				<span class="input-btn">
-					<input type="text"/>
-					<a class="nolink button" href="#evaluate-xpath">Go</a>
-				</span>
-				<a class="nolink button btn-toggle right" href="#xpath-samples">Examples</a>
-			</div>
-
-			<h3>A couple of suggestions:</h3>
-			<ul>
-				<li>
-					Switch views from <abbr title="Extended Markup Language">XML</abbr> to <abbr title="JavaScript Object Notation">JSON</abbr>
-					to get a better overview of the data structure and how the selections are made.
-				</li>
-				<li>
-					Also, check out the browser console for hints.
-				</li>
-				<li>
-					To get going, click any of the <a class="nolink" href="#xpath-samples">pre-written examples</a>
-					of <abbr title="XML Path Language">XPath</abbr> queries.
-				</li>
-				<li>
-					Check out these files to see the functions individually visuablized;
-					<a href="/defiant.js/demo/json-xml.htm" target="_new">JSON to XML</a>,
-					<a href="/defiant.js/demo/xml-json.htm" target="_new">XML to JSON</a> and
-					<a href="/defiant.js/demo/json-search.htm" target="_new">JSON Search</a>.
-					Use these files to get acquainted with the functions and get the picture of the transformation rules.
-				</li>
-			</ul>
-			<hr/>
-			<!--
-			<h3 data-subsection="tranformation_standards">Transformation standards</h3>
-			<p>
-				Transformation "standards" according to DefiantJS.
-				...
-				- XML structure is not preserved on transformation from XML to JSON.
-				  It is however preserved when transforming from JSON to XML (and back).
-				- Undefined and NaN are transformed to null. This is inheritant behaviour from JSON and hot it handles "undefined" and "NaN"
-
-				To get an idea of the transformation, see the test files "demo/json-xml.htm" and "demo/xml-json.htm".
-			</p>
-			-->
-
-			<h3 data-subsection="caveats">Caveats</h3>
-			<p>
-				There are some internal procedures of <strong>DefiantJS</strong> as well as known limitations of 
-				<abbr title="JavaScript Object Notation">JSON</abbr> (compared to <abbr title="Extended Markup Language">XML</abbr>) that
-				you should be aware of. Below are some knowledge to keep in mind when working with 
-				<abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr>, <abbr title="XML Path Language">XPath</abbr>
-				and <abbr title="JavaScript Object Notation">JSON</abbr>.
-			</p>
-			<ul>
-				<li>
-					The structure of object that contains attributes keys <i>(starting with "@")</i>, will be altered
-					and attributes precedes regular regular elements in the object structure.
-				</li>
-				<li>
-					Namespace selection is not possible, since <abbr title="JavaScript Object Notation">JSON</abbr> does not support 
-					such detailed data semantics <i>(as opposed to <abbr title="Extended Markup Language">XML</abbr>)</i>.
-				</li>
-				<li>
-					Searching '//*' in <abbr title="JavaScript Object Notation">JSON</abbr> will result in one less match <i>(comparing same search 
-					with <abbr title="Extended Markup Language">XML</abbr>)</i>, since <abbr title="Extended Markup Language">XML</abbr>
-					has a root node and the handle to that match is "reachable". <abbr title="JavaScript Object Notation">JSON</abbr>'s root handle is the name of
-					the objects variable name and is out of scope for the search algorithm. Hence, a handle to the variable name can't be passed
-					back to the querist.
-				</li>
-				<li>
-					<strong>DefiantJS</strong> transforms <abbr title="JavaScript Object Notation">JSON</abbr> to
-					<abbr title="Extended Markup Language">XML</abbr>, which is done lossless. This means that everything from the source data
-					structure can be interpreted back. Transforming <abbr title="Extended Markup Language">XML</abbr>
-					to <abbr title="JavaScript Object Notation">JSON</abbr> is <strong>not</strong> lossless since
-					<abbr title="JavaScript Object Notation">JSON</abbr> isn't built to match the same level of data
-					semantics as <abbr title="Extended Markup Language">XML</abbr>.
-				</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2 data-section="function_reference">Function reference</h2>
-			<p>
-				Besides smart templating with the ability to perform transformations using
-				<abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> on
-				<abbr title="Extended Markup Language">XML</abbr>,
-				&amp; <abbr title="JavaScript Object Notation">JSON</abbr>
-				structures, <strong>DefiantJS</strong> is equiped with powerful methods for refined data selections and
-				generic tools to analyze &amp; manipulate these structures programmatically, implemented cross-browser.
-			</p>
-			<!--
-			<div data-subsection="Defiant.env">
-				<code><span class="obj">Defiant</span>.<span class="fn">env</span> = [production|development]</code>
-				<p>
-					Default value is "production".
-					When set to "development", two features will be enabled;
-					1. the property ".xml" will output defiant namespace information as well
-					2. when searching JSON object with the method "search", the JSON object will host a property named "trace".
-					   The trace property will contain details about most recent matched elements lines - which is used to visually
-					   show the matching elements.
-				</p>
-			</div>
-			<hr/>
-			<div data-subsection="Defiant.env">
-				<code><span class="obj">JSON</span>.<span class="fn">trace</span></code>
-				<p>
-					...
-				</p>
-			</div>
-			<hr/>
-			-->
-			<div data-subsection="Defiant.render">
-				<code><span class="obj">Defiant</span>.<span class="fn">render</span>(<span class="arg">template</span>, <span class="arg">object</span>)</code>
-				<br/>
-				Inline script-block(s) delivers <abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> templates to the 
-				browser and can contain multiple templates. Pass the name of the template that will be used on the
-				<abbr title="JavaScript Object Notation">JSON</abbr> object - passed in as second argument. This function
-				returns an <abbr title="Hypertext Markup Language">HTML</abbr> string of the transformation.
-
-				<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/8141480.js"></script></div>
-			</div>
-			<hr/>
-			<div data-subsection="Defiant.xmlFromString">
-				<code><span class="obj">Defiant</span>.<span class="fn">xmlFromString</span>(<span class="arg">xml_string</span>)</code>
-				<br/>
-				This function does exactly what its name indicates; it creates and returns an <abbr title="Extended Markup Language">XML</abbr>
-				document from the string passed in as argument. This function is primarily used internally by <strong>DefiantJS</strong>.
-				
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8107708.js"></script></div>
-			</div>
-
-			<hr/>
-			<div data-subsection="Defiant.node.toJSON">
-				<code><span class="obj">Defiant</span>.node.<span class="fn">toJSON</span>()</code>
-				<br/>
-				This function does exactly what its name indicates; transforms a node and its descending structure into 
-				<abbr title="JavaScript Object Notation">JSON</abbr> equivalent.
-				
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091760.js"></script></div>
-			</div>
-			<hr/>
-			<div data-subsection="Defiant.node.selectNodes">
-				<code><span class="obj">Defiant</span>.node.<span class="fn">selectNodes</span>(<span class="arg">xpath</span>)</code>
-				<br/>
-				There are different ways of dealing with <abbr title="XML Path Language">XPath</abbr> in Internet Explorer &amp; other
-				browsers. This function is not supported by all browsers by default but the syntax is much clearner &amp; simpler than
-				<code>xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);</code> and therefore implemented cross browser
-				with <strong>DefiantJS</strong>.
-				
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091717.js"></script></div>
-			</div>
-			<hr/>
-			<div data-subsection="Defiant.node.selectSingleNode">
-				<code><span class="obj">Defiant</span>.node.<span class="fn">selectSingleNode</span>(<span class="arg">xpath</span>)</code>
-				<br/>
-				This function behaves almost the same way as <code>selectNodes</code> with the difference that it returns the first
-				match of the <abbr title="XML Path Language">XPath</abbr> expression and exits the search algorithm as soon as the 
-				first match is found. It is a preferable alternative if a single node is known to be desired, hence better choice 
-				performance-wise.
-
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091655.js"></script></div>
-			</div>
-			<hr/>
-			<div data-subsection="Defiant.node.prettyPrint">
-				<code><span class="obj">Defiant</span>.node.<span class="fn">prettyPrint</span></code>
-				<br/>
-				This property is a good helper when writing &amp; debugging <abbr title="Extended Markup Language">XML</abbr> centric
-				code. It's a shorthand way to get the serialized representation of a node, as opposed to creating a new 
-				<code>XMLSerializer</code> and call its function <code>serializeToString</code>. This property outputs a
-				human-readable version of the serialized <abbr title="Extended Markup Language">XML</abbr> string, i.e. with
-				line breaks and tabbed rows.
-				Lastly, this property is accessible from all element nodes, regardless of depth in the
-				<abbr title="Extended Markup Language">XML</abbr> structure <i>(the document node included)</i>.
-				
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091472.js"></script></div>
-			</div>
-
-			<hr/>
-
-			<div data-subsection="JSON.toXML">
-				<code><span class="obj">JSON</span>.<span class="fn">toXML</span>(<span class="arg">object</span>)</code>
-				<br/>
-				With <strong>DefiantJS</strong>, it is trivial to convert your <abbr title="JavaScript Object Notation">JSON</abbr>
-				object into <abbr title="Extended Markup Language">XML</abbr> structure. Just call this extended function of the global object
-				<abbr title="JavaScript Object Notation">JSON</abbr> and pass in your object as argument &amp; the function will return
-				an <abbr title="Extended Markup Language">XML</abbr> document.
-				
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8107267.js"></script></div>
-			</div>
-			<hr/>
-			<div data-subsection="JSON.search">
-				<code><span class="obj">JSON</span>.<span class="fn">search</span>(<span class="arg">object</span>, <span class="arg">xpath</span>, <span class="arg">first</span>)</code>
-				<br/>
-				This function is the jewel of <strong>DefiantJS</strong>. Call this function whenever you want a collection of elements
-				in a <abbr title="JavaScript Object Notation">JSON</abbr> object, matching the <abbr title="XML Path Language">XPath</abbr>
-				query, given as second argument. The third argument is optional and is of <code>boolean</code> type; if set to <code>true</code>,
-				the function exits the  search algorithm, as soon as a matching element is found,
-				based upon given <abbr title="XML Path Language">XPath</abbr>.
-				
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8104182.js"></script></div>
-
-				The function <code><span class="obj">JSON</span>.<span class="fn">search</span></code> returns an array with aggregate functions,
-				populated with matching elements. Besides the ability find elements with
-				<abbr title="XML Path Language">XPath</abbr>, this
-				function returns <u>references</u> to the matching elements in the <abbr title="JavaScript Object Notation">JSON</abbr>
-				structure. Put differently; the matched elements can be altered with a loop, thus altering the original
-				<abbr title="JavaScript Object Notation">JSON</abbr> object. See the code below as example.
-				
-				<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8104561.js"></script></div>
-			</div>
-		</section>
-	</div>
-
-	<section class="hideMe"><h2 data-section="https://github.com/hbi99/defiant.js">Source</h2></section>
-	<section class="hideMe"><h2 data-section="about">About</h2></section>
-
-	<p class="center powered">Powered by DefiantJS</p>
-</div>
-
-<section class="footer">
-	<div class="content">
-		<h2>About</h2>
+		<!-- Overview -->
+		<h2>Overview</h2>
 		<p>
-			<strong>DefiantJS</strong> was developed by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> <strong>&copy; 2013-2015</strong><br/>
+			Do you need to query large <abbr title="JavaScript Object Notation">JSON</abbr> structures? Do you end up coding loops to parse the 
+			<abbr title="JavaScript Object Notation">JSON</abbr> and identify the data that matches your query? <strong>DefiantJS</strong> offers a better way. 
+			<strong>DefiantJS</strong> extends the global <abbr title="JavaScript Object Notation">JSON</abbr> object with a "<strong>search</strong>" method that enables 
+			lightning-fast searches using <abbr title="XML Path Language">XPath</abbr> expressions.
+			Try out the <a class="nolink" href="/goto/xpath-evaluator/">XPath Evaluator</a> below to get the idea.
 		</p>
+		<div class="gist-code type-javascript">
+			<script src="https://gist.github.com/hbi99/a035c71cf6e34f47f9f8.js"></script>
+		</div>
+		
+		<h3 data-section="spanshot-search">Snapshot search</h3>
+		<p>
+			<strong>DefiantJS</strong> 1.2.0 introduced a snapshot feature that improves search performance more 
+			than 100 times compared to a regular search. <strong>DefiantJS</strong> prepares the 
+			<abbr title="JavaScript Object Notation">JSON</abbr> structure before the search; this preparation 
+			is the time-consuming part.
+
+			Using snapshot of the <abbr title="JavaScript Object Notation">JSON</abbr> structure, <strong>DefiantJS</strong>
+			can find and return matches as fast as <strong>4ms</strong> on <strong>1.6MB</strong> large data
+			(<a href="https://github.com/hbi99/defiant.js/blob/master/demo/json-search-4.htm" target="new">see the example</a>).
+		</p>
+		<div class="gist-code type-javascript">
+			<script src="https://gist.github.com/hbi99/48dce9b9e55f9e466f9f.js"></script>
+		</div>
+
+		<!-- Templating -->
+		<h3 data-section="templating">Templating</h3>
+		<p>
+			Contemporary JavaScript templating libraries enable you to write simplistic templates. Problems arise 
+			when complex real-world requirements exceed the limits of the templating model, so you have to supplement 
+			the templates with helper functions, fragmenting the templating logic, which is bad practice.
+		</p>
+		<p>
+			With <strong>DefiantJS</strong>, you can write logical templates with powerful technologies such as
+			<a href="http://en.wikipedia.org/wiki/Xslt" target="_new">XSLT</a> &amp; <a href="http://en.wikipedia.org/wiki/XPath" target="_new">XPath</a>,
+			and apply them to <abbr title="JavaScript Object Notation">JSON</abbr> objects. Besides the fact that
+			<abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> is a proven
+			<a href="http://en.wikipedia.org/wiki/Turing-complete" target="_new">Turing-complete</a> language,
+			it is also standardized and supported by all <a href="http://www.w3schools.com/xsl/xsl_browsers.asp" target="_new">major browsers</a>.
+		</p>
+		<div class="gist-code type-xslt">
+			<script src="https://gist.github.com/hbi99/e714247a0329e29fbbb5.js"></script>
+		</div>
+		<p class="center chuck-norris">
+			<i>
+				You could say that <strong>DefiantJS</strong> joins <abbr title="Extended Markup Language">XML</abbr> and
+				related technologies with <abbr title="JavaScript Object Notation">JSON</abbr>.<br/>
+				Most likely, <a href="http://www.crockford.com/" target="_new">Douglas Crockford</a> will hate this unholy matrimony.
+			</i>
+			<br/>
+		</p>
+
+		<!-- Usage -->
+		<h2 data-section="usage">Usage</h2>
+		<p>
+			Using <strong>DefiantJS</strong> is pretty easy. Check out the examples below to get a hint of how it can
+			be used; the first one is rather simple and the latter is more advanced and demonstrates calling templates from
+			another template. It contains recursive template calling and renders a fictitious filesystem structure. When the "tree-walker"
+			template calls itself, indentation is passed as an argument, thus indenting child elements of a folder.
+			<br/><br/>
+			To see the code below in action, here are the demo files;
+			<a href="/defiant.js/demo/simple.htm" target="_new">simple example</a> and
+			<a href="/defiant.js/demo/advanced.htm" target="_new">advanced example</a>
+		</p>
+
+		<!-- Simple example -->
+		<h3 class="hideMe" data-section="simple-example">Simple example</h3>
+		<div class="gist-code type-xslt">
+			<script src="https://gist.github.com/hbi99/4f9644899475a63ddad1.js"></script>
+		</div>
+
+		<!-- Advanced example -->
+		<h3 class="hideMe" data-section="advanced-example">Advanced example</h3>
+		<div class="gist-code type-xslt">
+			<script src="https://gist.github.com/hbi99/955984350ce3dce50f9a.js"></script>
+		</div>
+
+
+		<!-- XPath -->
+		<h2 data-section="xpath">XPath</h2>
+		<p>
+			A powerful tool when dealing with <abbr title="Extended Markup Language">XML</abbr> is the advantage of
+			using <abbr title="XML Path Language">XPath</abbr>.
+			<abbr title="XML Path Language">XPath</abbr> is a <a href="http://www.w3.org/TR/xpath/" target="_new">standardized</a>
+			language for addressing parts of an <abbr title="Extended Markup Language">XML</abbr> document and
+			enables features such as analysis, transformation &amp; refined data selection out of an
+			<abbr title="Extended Markup Language">XML</abbr> structure.
+
+			The lack of a similar feature for working with <abbr title="JavaScript Object Notation">JSON</abbr>
+			has prompted <a href="http://code.google.com/p/json-path/" target="_new">initiatives</a> such 
+			as <a href="https://developer.mozilla.org/en-US/docs/JSON/JSONPath" target="_new">JSONPath</a>,
+			which has not been standardized or widely accepted by the community.
+			With <strong>DefiantJS</strong>, you can unleash the power of <abbr title="XML Path Language">XPath</abbr>
+			on <abbr title="JavaScript Object Notation">JSON</abbr> objects, with no retooling or reschooling!
+		</p>
+		<p>&#160;</p>
+
+		<h3 data-section="expressions-table">Expressions table</h3>
+		<p>
+			The syntax table below offers a glimpse of the power that <abbr title="XML Path Language">XPath</abbr> brings.
+			<abbr title="XML Path Language">XPath</abbr> has a lot
+			<a href="http://msdn.microsoft.com/en-us/library/ms256122(v=vs.110).aspx" target="_new">more</a> to
+			<a href="http://www.w3schools.com/xpath/xpath_syntax.asp" target="_new">offer</a>.
+			An important advantage of implementing <abbr title="XML Path Language">XPath</abbr>, as contrasted with
+			<strong>JSONPath</strong>, is that this language has been documented a great deal on the web and 
+			information and how-to's can easily be found and digested.
+		</p>
+
+		<table class="xpath-expressions">
+		<tr>
+			<th>Expression</th>
+			<th>Description</th>
+		</tr>
+		<tr><td>/</td>   <td>Child operator; selects immediate children of the left-side collection. When this path operator appears at the start of the pattern, it indicates that children should be selected from the root node.</td></tr>
+		<tr><td>//</td>  <td>Recursive descent; searches for the specified element at any depth. When this path operator appears at the start of the pattern, it indicates recursive descent from the root node.</td></tr>
+		<tr><td>.</td>   <td>Indicates the current context.</td></tr>
+		<tr><td>..</td>  <td>The parent of the current context.</td></tr>
+		<tr><td>*</td>   <td>Wildcard; selects all elements regardless of the element name.</td></tr>
+		<tr><td>@</td>   <td>Attribute; prefix for an attribute name.</td></tr>
+		<tr><td>@*</td>  <td>Attribute wildcard; selects all attributes regardless of name.</td></tr>
+		<tr><td>[]</td>  <td>Subscript operator; applies a filter pattern <strong>OR</strong> used for indexing within a collection.</td></tr>
+		<tr><td>|</td>   <td>Union operator; results in a combination of element sets</td></tr>
+		<tr><td>()</td>  <td>Groups operations to explicitly establish precedence</td></tr>
+		</table>
+		<p>
+			In order to access <abbr title="XML Path Language">XPath</abbr> functionality easily, some global objects has been
+			extended with useful methods, for instance; <code class="nolink" data-target="#JSON.search"><span class="obj">JSON</span>.<span class="fn">search</span></code>.
+			Detailed information about these extensions can be found in the <a class="nolink" href="/goto/reference/">Function reference</a> section.
+		</p>
+		<p>&#160;</p>
+
+		<h3 data-section="xpath-evaluator">XPath Evaluator</h3>
+		<p>
+			Not familiar with <abbr title="XML Path Language">XPath</abbr>? Don't worry, use the
+			<abbr title="XML Path Language">XPath</abbr> <b>Evaluator</b> below and you will become an expert
+			in no time.
+		</p>
+
+		<div class="xpath-evaluator">
+			<div class="structure"><!-- Dynamically Rendered --></div>
+			<textarea class="textor" spellcheck="false"></textarea>
+			<div class="error-json">
+				<figure class="icon-warning"></figure>
+				Invalid JSON data
+			</div>
+			<div class="examples">
+				<h2>Sample XPath</h2>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//category</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//@price</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//title</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//title/text()</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//bicycle</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[3]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[position() &lt;= 2]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[last()]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*[@price &gt; 10]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*[category="reference"]/author</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*[contains(title, "the")]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[isbn]</a>
+			</div>
+		</div>
+
+		<div class="btn-row">
+			<span class="btn-group">
+				<a class="nolink button active" href="/evaluator/switch-to-json/">JSON</a>
+				<a class="nolink button" href="/evaluator/switch-to-xml/">XML</a>
+			</span>
+			<a class="nolink button" href="/evaluator/toggle-edit/">Edit</a>
+			<span class="input-btn">
+				<input type="text"/>
+				<a class="nolink button" href="/evaluator/eval-xpath/">Go</a>
+			</span>
+			<a class="nolink button right" href="/evaluator/xpath-samples/">Examples</a>
+		</div>
+		<p>&#160;</p>
+
+		<h3>A couple of suggestions:</h3>
+		<ul>
+			<li>
+				Switch views from <abbr title="Extended Markup Language">XML</abbr> to <abbr title="JavaScript Object Notation">JSON</abbr>
+				to get a better overview of the data structure and how the selections are made.
+			</li>
+			<li>
+				Also, check out the browser console for hints.
+			</li>
+			<li>
+				To get going, click any of the <a class="nolink" href="/evaluator/xpath-samples/">pre-written examples</a>
+				of <abbr title="XML Path Language">XPath</abbr> queries.
+			</li>
+			<li>
+				Don't forget to click the "<strong>Edit</strong>" button. You can alter or paste in your own
+				<abbr title="JavaScript Object Notation">JSON</abbr> data and try out different <abbr title="XML Path Language">XPath</abbr> expressions on
+				your custom data. This way, you can validate your expressions visually and get instant feedback.
+			</li>
+		</ul>
+		<p>&#160;</p>
+
+		<h3 data-section="caveats">Caveats</h3>
+		<p>
+			There are some internal procedures of <strong>DefiantJS</strong> as well as known limitations of 
+			<abbr title="JavaScript Object Notation">JSON</abbr> (compared to <abbr title="Extended Markup Language">XML</abbr>) that
+			you should be aware of. Below are some knowledge to keep in mind when working with 
+			<abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr>, <abbr title="XML Path Language">XPath</abbr>
+			and <abbr title="JavaScript Object Notation">JSON</abbr>.
+		</p>
+		<ul>
+			<li>
+				The structure of object that contains attributes keys <i>(starting with "@")</i>, will be altered
+				and attributes precedes regular regular elements in the object structure.
+			</li>
+			<li>
+				Namespace selection is not possible, since <abbr title="JavaScript Object Notation">JSON</abbr> does not support 
+				such detailed data semantics <i>(as opposed to <abbr title="Extended Markup Language">XML</abbr>)</i>.
+			</li>
+			<li>
+				Searching '//*' in <abbr title="JavaScript Object Notation">JSON</abbr> will result in one less match <i>(comparing same search 
+				with <abbr title="Extended Markup Language">XML</abbr>)</i>, since <abbr title="Extended Markup Language">XML</abbr>
+				has a root node and the handle to that match is "reachable". <abbr title="JavaScript Object Notation">JSON</abbr>'s root handle is the name of
+				the objects variable name and is out of scope for the search algorithm. Hence, a handle to the variable name can't be passed
+				back to the querist.
+			</li>
+			<li>
+				<strong>DefiantJS</strong> transforms <abbr title="JavaScript Object Notation">JSON</abbr> to
+				<abbr title="Extended Markup Language">XML</abbr>, which is done lossless. This means that everything from the source data
+				structure can be interpreted back. Transforming <abbr title="Extended Markup Language">XML</abbr>
+				to <abbr title="JavaScript Object Notation">JSON</abbr> is <strong>not</strong> lossless since
+				<abbr title="JavaScript Object Notation">JSON</abbr> isn't built to match the same level of data
+				semantics as <abbr title="Extended Markup Language">XML</abbr>.
+			</li>
+		</ul>
+		<p>&#160;</p>
+
+
+		<!-- Function reference -->
+		<h2 data-section="reference">Function reference</h2>
+		<p>
+			Besides smart templating with the ability to perform transformations using
+			<abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> on
+			<abbr title="Extended Markup Language">XML</abbr>,
+			&amp; <abbr title="JavaScript Object Notation">JSON</abbr>
+			structures, <strong>DefiantJS</strong> is equiped with powerful methods for refined data selections and
+			generic tools to analyze &amp; manipulate these structures programmatically, implemented cross-browser.
+		</p>
+		<div data-section="Defiant.render">
+			<code><span class="obj">Defiant</span>.<span class="fn">render</span>(<span class="arg">template</span>, <span class="arg">object</span>)</code>
+			<br/>
+			Inline script-block(s) delivers <abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> templates to the 
+			browser and can contain multiple templates. Pass the name of the template that will be used on the
+			<abbr title="JavaScript Object Notation">JSON</abbr> object - passed in as second argument. This function
+			returns an <abbr title="Hypertext Markup Language">HTML</abbr> string of the transformation.
+
+			<div class="gist-code type-xslt">
+				<script src="https://gist.github.com/hbi99/8141480.js"></script>
+			</div>
+		</div>
+		<hr/>
+		<div data-section="Defiant.xmlFromString">
+			<code><span class="obj">Defiant</span>.<span class="fn">xmlFromString</span>(<span class="arg">xml_string</span>)</code>
+			<br/>
+			This function does exactly what its name indicates; it creates and returns an <abbr title="Extended Markup Language">XML</abbr>
+			document from the string passed in as argument. This function is primarily used internally by <strong>DefiantJS</strong>.
 			
-		<p class="graham">
-			A special thanks to Mr. Graham Hannington for pointing out corrections (and suggestions).
-		</p>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8107708.js"></script>
+			</div>
+		</div>
+
+		<hr/>
+		<div data-section="Defiant.node.toJSON">
+			<code><span class="obj">Defiant</span>.node.<span class="fn">toJSON</span>()</code>
+			<br/>
+			This function does exactly what its name indicates; transforms a node and its descending structure into 
+			<abbr title="JavaScript Object Notation">JSON</abbr> equivalent.
+			
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091760.js"></script>
+			</div>
+		</div>
+		<hr/>
+		<div data-section="Defiant.node.selectNodes">
+			<code><span class="obj">Defiant</span>.node.<span class="fn">selectNodes</span>(<span class="arg">xpath</span>)</code>
+			<br/>
+			There are different ways of dealing with <abbr title="XML Path Language">XPath</abbr> in Internet Explorer &amp; other
+			browsers. This function is not supported by all browsers by default but the syntax is much clearner &amp; simpler than
+			<code>xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);</code> and therefore implemented cross browser
+			with <strong>DefiantJS</strong>.
+			
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091717.js"></script>
+			</div>
+		</div>
+		<hr/>
+		<div data-section="Defiant.node.selectSingleNode">
+			<code><span class="obj">Defiant</span>.node.<span class="fn">selectSingleNode</span>(<span class="arg">xpath</span>)</code>
+			<br/>
+			This function behaves almost the same way as <code>selectNodes</code> with the difference that it returns the first
+			match of the <abbr title="XML Path Language">XPath</abbr> expression and exits the search algorithm as soon as the 
+			first match is found. It is a preferable alternative if a single node is known to be desired, hence better choice 
+			performance-wise.
+
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091655.js"></script>
+			</div>
+		</div>
+		<hr/>
+		<div data-section="Defiant.node.prettyPrint">
+			<code><span class="obj">Defiant</span>.node.<span class="fn">prettyPrint</span></code>
+			<br/>
+			This property is a good helper when writing &amp; debugging <abbr title="Extended Markup Language">XML</abbr> centric
+			code. It's a shorthand way to get the serialized representation of a node, as opposed to creating a new 
+			<code>XMLSerializer</code> and call its function <code>serializeToString</code>. This property outputs a
+			human-readable version of the serialized <abbr title="Extended Markup Language">XML</abbr> string, i.e. with
+			line breaks and tabbed rows.
+			Lastly, this property is accessible from all element nodes, regardless of depth in the
+			<abbr title="Extended Markup Language">XML</abbr> structure <i>(the document node included)</i>.
+			
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091472.js"></script>
+			</div>
+		</div>
+
+		<hr/>
+
+		<div data-section="JSON.toXML">
+			<code><span class="obj">JSON</span>.<span class="fn">toXML</span>(<span class="arg">object</span>)</code>
+			<br/>
+			With <strong>DefiantJS</strong>, it is trivial to convert your <abbr title="JavaScript Object Notation">JSON</abbr>
+			object into <abbr title="Extended Markup Language">XML</abbr> structure. Just call this extended function of the global object
+			<abbr title="JavaScript Object Notation">JSON</abbr> and pass in your object as argument &amp; the function will return
+			an <abbr title="Extended Markup Language">XML</abbr> document.
+			
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8107267.js"></script>
+			</div>
+		</div>
+		<hr/>
+		<div data-section="JSON.search">
+			<code><span class="obj">JSON</span>.<span class="fn">search</span>(<span class="arg">object</span>, <span class="arg">xpath</span>, <span class="arg">first</span>)</code>
+			<br/>
+			This function is the jewel of <strong>DefiantJS</strong>. Call this function whenever you want a collection of elements
+			in a <abbr title="JavaScript Object Notation">JSON</abbr> object, matching the <abbr title="XML Path Language">XPath</abbr>
+			query, given as second argument. The third argument is optional and is of <code>boolean</code> type; if set to <code>true</code>,
+			the function exits the  search algorithm, as soon as a matching element is found,
+			based upon given <abbr title="XML Path Language">XPath</abbr>.
+			
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8104182.js"></script>
+			</div>
+
+			The function <code><span class="obj">JSON</span>.<span class="fn">search</span></code> returns an array with aggregate functions,
+			populated with matching elements. Besides the ability to find elements with
+			<abbr title="XML Path Language">XPath</abbr>, this
+			function returns <u>references</u> to the matching elements in the <abbr title="JavaScript Object Notation">JSON</abbr>
+			structure. Put differently; the matched elements can be altered with a loop, thus altering the original
+			<abbr title="JavaScript Object Notation">JSON</abbr> object. See the code below as example.
+			
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8104561.js"></script>
+			</div>
+		</div>
+
+		<hr/>
+
+		<footer data-section="about">
+			<p>
+				<strong>DefiantJS</strong> was developed by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> <strong>&copy; 2013-2015</strong><br/>
+				<img class="hb-logo" src="res/img/hb.png" alt="Hakan Bilgin">
+			</p>
+		</footer>
+
 	</div>
 </section>
-
-<!-- Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-46810624-1', 'defiantjs.com');
-  ga('send', 'pageview');
-</script>
 
 </body>
 </html>
