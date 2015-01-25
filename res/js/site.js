@@ -340,7 +340,7 @@ $(function() {
 						
 						this.render_json(json_data, jss);
 						// Developer hint
-						console.log('DEV HINT! Try XPath from the console directly by pasting this into edit field:\n',
+						console.log('DEV HINT! Try XPath from the console directly by pasting this in to edit field:\n',
 									'JSON.search(json_data, "'+ xpath +'")', '->', jss);
 						break;
 					case 'xml':

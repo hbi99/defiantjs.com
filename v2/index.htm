@@ -4,11 +4,22 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=10">
 <title>Defiant.js</title>
+
+<meta property='og:locale' content='sv_SE'/>
+<meta property='og:type' content='website'/>
+<meta property='og:title' content='DefiantJS'/>
+<meta property='og:description' content=''/>
+<meta property='og:url' content='http://www.defiantjs.com/'/>
+<meta property='og:site_name' content='DefiantJS'/>
+<meta property='fb:admins' content='661407089'/>
+<meta property='og:image' content='http://www.defiantjs.com/res/img/fb-icon.png'/>
+
 <link type="text/css" href="res/css/style.css" media="all" rel="stylesheet"/>
 <script src="res/js/deps/plugins/CSSPlugin.js"></script>
 <script src="res/js/deps/easing/EasePack.js"></script>
 <script src="res/js/deps/TweenLite.js"></script>
 <script src="res/js/deps/jquery.js"></script>
+<script src="defiant.js/dist/defiant-latest.min.js"></script>
 <script src="res/js/site.js"></script>
 </head>
 <body>
@@ -16,38 +27,38 @@
 <nav>
 	<ul>
 		<li>
-			<a href="/goto/overview/">
+			<a class="nolink" href="/goto/overview/">
 				<figure class="icon-defiantjs"></figure>
 				<span>Overview</span>
 			</a>
 			<ul class="submenu">
-				<li><a href="/goto/spanshot-search/">Snapshot search</a></li>
-				<li><a href="/goto/templating/">Templating</a></li>
+				<li><a class="nolink" href="/goto/spanshot-search/">Snapshot search</a></li>
+				<li><a class="nolink" href="/goto/templating/">Templating</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="/goto/usage/">
+			<a class="nolink" href="/goto/usage/">
 				<figure class="icon-usage"></figure>
 				<span>Usage</span>
 			</a>
 			<ul class="submenu">
-				<li><a href="/goto/simple-example/">Simple example</a></li>
-				<li><a href="/goto/advanced-example/">Advanced example</a></li>
+				<li><a class="nolink" href="/goto/simple-example/">Simple example</a></li>
+				<li><a class="nolink" href="/goto/advanced-example/">Advanced example</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="/goto/xpath/">
+			<a class="nolink" href="/goto/xpath/">
 				<figure class="icon-magic"></figure>
 				<span>XPath</span>
 			</a>
 			<ul class="submenu">
-				<li><a href="/goto/expressions-table/">Expressions table</a></li>
-				<li><a href="/goto/xpath-evaluator/">XPath Evaluator</a></li>
-				<li><a href="/goto/caveats/">Caveats</a></li>
+				<li><a class="nolink" href="/goto/expressions-table/">Expressions table</a></li>
+				<li><a class="nolink" href="/goto/xpath-evaluator/">XPath Evaluator</a></li>
+				<li><a class="nolink" href="/goto/caveats/">Caveats</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="/goto/reference/">
+			<a class="nolink" href="/goto/reference/">
 				<figure class="icon-code"></figure>
 				<span>Reference</span>
 			</a>
@@ -63,17 +74,17 @@
 			</ul>
 		</li>
 		<li>
-			<a href="/goto/source/">
+			<a target="_new" href="https://github.com/hbi99/defiant.js">
 				<figure class="icon-github"></figure>
 				<span>Source</span>
 			</a>
 			<ul class="submenu">
-				<li><a href="/goto/">Download</a></li>
-				<li><a href="/goto/">Fork me on GitHub</a></li>
+				<li><a target="_new" href="https://raw.github.com/hbi99/defiant.js/master/dist/defiant-latest.min.js">Download</a></li>
+				<li><a target="_new" href="https://github.com/hbi99/defiant.js">Fork me on GitHub</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="/goto/about/">
+			<a class="nolink" href="/goto/about/">
 				<figure class="icon-hb"></figure>
 				<span>About</span>
 			</a>
@@ -82,7 +93,8 @@
 </nav>
 
 <section class="layout">
-	<div class="content">
+	<div class="cover"></div>
+	<div class="content" data-section="overview">
 
 		<!-- Intro -->
 		<div class="intro">
@@ -107,7 +119,7 @@
 		<hr/>
 
 		<!-- Overview -->
-		<h2 data-section="overview">Overview</h2>
+		<h2>Overview</h2>
 		<p>
 			Do you need to query large <abbr title="JavaScript Object Notation">JSON</abbr> structures? Do you end up coding loops to parse the 
 			<abbr title="JavaScript Object Notation">JSON</abbr> and identify the data that matches your query? <strong>DefiantJS</strong> offers a better way. 
@@ -119,7 +131,7 @@
 			<script src="https://gist.github.com/hbi99/a035c71cf6e34f47f9f8.js"></script>
 		</div>
 		
-		<h3>Snapshot search</h3>
+		<h3 data-section="spanshot-search">Snapshot search</h3>
 		<p>
 			<strong>DefiantJS</strong> 1.2.0 introduced a snapshot feature that improves search performance more 
 			than 100 times compared to a regular search. <strong>DefiantJS</strong> prepares the 
@@ -135,7 +147,7 @@
 		</div>
 
 		<!-- Templating -->
-		<h3>Templating</h3>
+		<h3 data-section="templating">Templating</h3>
 		<p>
 			Contemporary JavaScript templating libraries enable you to write simplistic templates. Problems arise 
 			when complex real-world requirements exceed the limits of the templating model, so you have to supplement 
@@ -175,13 +187,13 @@
 		</p>
 
 		<!-- Simple example -->
-		<h3 class="hideMe" data-subsection="simple_example">Simple example</h3>
+		<h3 class="hideMe" data-section="simple-example">Simple example</h3>
 		<div class="gist-code type-xslt">
 			<script src="https://gist.github.com/hbi99/4f9644899475a63ddad1.js"></script>
 		</div>
 
 		<!-- Advanced example -->
-		<h3 class="hideMe" data-subsection="advanced_example">Advanced example</h3>
+		<h3 class="hideMe" data-section="advanced-example">Advanced example</h3>
 		<div class="gist-code type-xslt">
 			<script src="https://gist.github.com/hbi99/955984350ce3dce50f9a.js"></script>
 		</div>
@@ -206,7 +218,7 @@
 		</p>
 		<p>&#160;</p>
 
-		<h3 data-subsection="expression_table">Expressions table</h3>
+		<h3 data-section="expressions-table">Expressions table</h3>
 		<p>
 			The syntax table below offers a glimpse of the power that <abbr title="XML Path Language">XPath</abbr> brings.
 			<abbr title="XML Path Language">XPath</abbr> has a lot
@@ -240,15 +252,15 @@
 		</p>
 		<p>&#160;</p>
 
-		<h3 data-subsection="xpath_evaluator">XPath Evaluator</h3>
+		<h3 data-section="xpath-evaluator">XPath Evaluator</h3>
 		<p>
 			Not familiar with <abbr title="XML Path Language">XPath</abbr>? Don't worry, use the
 			<abbr title="XML Path Language">XPath</abbr> <b>Evaluator</b> below and you will become an expert
 			in no time.
 		</p>
 
-		<div class="xpath-school">
-			<div class="structure"><table><tbody><tr><td class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span>32</span><span>33</span><span>34</span><span>35</span><span>36</span><span>37</span></td><td class="line-data"><pre><div class="line ">{</div><div class="line ">   <span class="s1">"store"</span>: {</div><div class="line ">      <span class="s1">"book"</span>: [</div><div class="line ">         {</div><div class="line ">            <span class="s1">"title"</span>: <span class="s2">"Sword of Honour"</span>,</div><div class="line ">            <span class="s1">"category"</span>: <span class="s2">"fiction"</span>,</div><div class="line ">            <span class="s1">"author"</span>: <span class="s2">"Evelyn Waugh"</span>,</div><div class="line ">            <span class="s1">"@price"</span>: <span class="s2">12.99</span></div><div class="line ">         },</div><div class="line ">         {</div><div class="line ">            <span class="s1">"title"</span>: <span class="s2">"Moby Dick"</span>,</div><div class="line ">            <span class="s1">"category"</span>: <span class="s2">"fiction"</span>,</div><div class="line ">            <span class="s1">"author"</span>: <span class="s2">"Herman Melville"</span>,</div><div class="line ">            <span class="s1">"isbn"</span>: <span class="s2">"0-553-21311-3"</span>,</div><div class="line ">            <span class="s1">"@price"</span>: <span class="s2">8.99</span></div><div class="line ">         },</div><div class="line ml"><span class="ml">         {</span></div><div class="line ml"><span class="ml">            <span class="s1">"title"</span>: <span class="s2">"Sayings of the Century"</span>,</span></div><div class="line ml"><span class="ml">            <span class="s1">"category"</span>: <span class="s2">"reference"</span>,</span></div><div class="line ml"><span class="ml">            <span class="s1">"author"</span>: <span class="s2">"Nigel Rees"</span>,</span></div><div class="line ml"><span class="ml">            <span class="s1">"@price"</span>: <span class="s2">8.95</span></span></div><div class="line ml"><span class="ml">         },</span></div><div class="line ">         {</div><div class="line ">            <span class="s1">"title"</span>: <span class="s2">"The Lord of the Rings"</span>,</div><div class="line ">            <span class="s1">"category"</span>: <span class="s2">"fiction"</span>,</div><div class="line ">            <span class="s1">"author"</span>: <span class="s2">"J. R. R. Tolkien"</span>,</div><div class="line ">            <span class="s1">"isbn"</span>: <span class="s2">"0-395-19395-8"</span>,</div><div class="line ">            <span class="s1">"@price"</span>: <span class="s2">22.99</span></div><div class="line ">         }</div><div class="line ">      ],</div><div class="line ">      <span class="s1">"bicycle"</span>: {</div><div class="line ">         <span class="s1">"brand"</span>: <span class="s2">"Cannondale"</span>,</div><div class="line ">         <span class="s1">"color"</span>: <span class="s2">"red"</span>,</div><div class="line ">         <span class="s1">"@price"</span>: <span class="s2">19.95</span></div><div class="line ">      }</div><div class="line ">   }</div><div class="line ">}</div></pre></td></tr></tbody></table></div>
+		<div class="xpath-evaluator">
+			<div class="structure"><!-- Dynamically Rendered --></div>
 			<textarea class="paste_data" spellcheck="false"></textarea>
 			<div class="examples">
 				<h2>Sample XPath</h2>
@@ -269,17 +281,17 @@
 			</div>
 		</div>
 
-		<div class="btn-row school-buttons">
+		<div class="btn-row">
 			<span class="btn-group">
 				<a class="nolink button active" href="/evaluator/switch-to-json/">JSON</a>
 				<a class="nolink button" href="/evaluator/switch-to-xml/">XML</a>
 			</span>
-			<a class="nolink button btn-toggle" href="/evaluator/toggle-edit/">Edit</a>
+			<a class="nolink button" href="/evaluator/toggle-edit/">Edit</a>
 			<span class="input-btn">
 				<input type="text"/>
 				<a class="nolink button" href="/evaluator/eval-xpath/">Go</a>
 			</span>
-			<a class="nolink button btn-toggle right" href="/evaluator/xpath-samples/">Examples</a>
+			<a class="nolink button right" href="/evaluator/xpath-samples/">Examples</a>
 		</div>
 		<p>&#160;</p>
 
@@ -306,7 +318,7 @@
 		</ul>
 		<p>&#160;</p>
 
-		<h3 data-subsection="caveats">Caveats</h3>
+		<h3 data-section="caveats">Caveats</h3>
 		<p>
 			There are some internal procedures of <strong>DefiantJS</strong> as well as known limitations of 
 			<abbr title="JavaScript Object Notation">JSON</abbr> (compared to <abbr title="Extended Markup Language">XML</abbr>) that
@@ -343,7 +355,7 @@
 
 
 		<!-- Function reference -->
-		<h2 data-section="function_reference">Function reference</h2>
+		<h2 data-section="reference">Function reference</h2>
 		<p>
 			Besides smart templating with the ability to perform transformations using
 			<abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> on
@@ -352,7 +364,7 @@
 			structures, <strong>DefiantJS</strong> is equiped with powerful methods for refined data selections and
 			generic tools to analyze &amp; manipulate these structures programmatically, implemented cross-browser.
 		</p>
-		<div data-subsection="Defiant.render">
+		<div data-section="Defiant.render">
 			<code><span class="obj">Defiant</span>.<span class="fn">render</span>(<span class="arg">template</span>, <span class="arg">object</span>)</code>
 			<br/>
 			Inline script-block(s) delivers <abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr> templates to the 
@@ -365,7 +377,7 @@
 			</div>
 		</div>
 		<hr/>
-		<div data-subsection="Defiant.xmlFromString">
+		<div data-section="Defiant.xmlFromString">
 			<code><span class="obj">Defiant</span>.<span class="fn">xmlFromString</span>(<span class="arg">xml_string</span>)</code>
 			<br/>
 			This function does exactly what its name indicates; it creates and returns an <abbr title="Extended Markup Language">XML</abbr>
@@ -377,7 +389,7 @@
 		</div>
 
 		<hr/>
-		<div data-subsection="Defiant.node.toJSON">
+		<div data-section="Defiant.node.toJSON">
 			<code><span class="obj">Defiant</span>.node.<span class="fn">toJSON</span>()</code>
 			<br/>
 			This function does exactly what its name indicates; transforms a node and its descending structure into 
@@ -388,7 +400,7 @@
 			</div>
 		</div>
 		<hr/>
-		<div data-subsection="Defiant.node.selectNodes">
+		<div data-section="Defiant.node.selectNodes">
 			<code><span class="obj">Defiant</span>.node.<span class="fn">selectNodes</span>(<span class="arg">xpath</span>)</code>
 			<br/>
 			There are different ways of dealing with <abbr title="XML Path Language">XPath</abbr> in Internet Explorer &amp; other
@@ -401,7 +413,7 @@
 			</div>
 		</div>
 		<hr/>
-		<div data-subsection="Defiant.node.selectSingleNode">
+		<div data-section="Defiant.node.selectSingleNode">
 			<code><span class="obj">Defiant</span>.node.<span class="fn">selectSingleNode</span>(<span class="arg">xpath</span>)</code>
 			<br/>
 			This function behaves almost the same way as <code>selectNodes</code> with the difference that it returns the first
@@ -414,7 +426,7 @@
 			</div>
 		</div>
 		<hr/>
-		<div data-subsection="Defiant.node.prettyPrint">
+		<div data-section="Defiant.node.prettyPrint">
 			<code><span class="obj">Defiant</span>.node.<span class="fn">prettyPrint</span></code>
 			<br/>
 			This property is a good helper when writing &amp; debugging <abbr title="Extended Markup Language">XML</abbr> centric
@@ -432,7 +444,7 @@
 
 		<hr/>
 
-		<div data-subsection="JSON.toXML">
+		<div data-section="JSON.toXML">
 			<code><span class="obj">JSON</span>.<span class="fn">toXML</span>(<span class="arg">object</span>)</code>
 			<br/>
 			With <strong>DefiantJS</strong>, it is trivial to convert your <abbr title="JavaScript Object Notation">JSON</abbr>
@@ -445,7 +457,7 @@
 			</div>
 		</div>
 		<hr/>
-		<div data-subsection="JSON.search">
+		<div data-section="JSON.search">
 			<code><span class="obj">JSON</span>.<span class="fn">search</span>(<span class="arg">object</span>, <span class="arg">xpath</span>, <span class="arg">first</span>)</code>
 			<br/>
 			This function is the jewel of <strong>DefiantJS</strong>. Call this function whenever you want a collection of elements
@@ -470,7 +482,9 @@
 			</div>
 		</div>
 
-		<footer>
+		<hr/>
+
+		<footer data-section="about">
 			<p>
 				<strong>DefiantJS</strong> was developed by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> <strong>&copy; 2013-2015</strong><br/>
 				<img class="hb-logo" src="res/img/hb.png" alt="Hakan Bilgin">
