@@ -5,63 +5,76 @@
 <meta http-equiv="X-UA-Compatible" content="IE=10">
 <title>Defiant.js</title>
 <link type="text/css" href="res/css/style.css" media="all" rel="stylesheet"/>
+<script src="res/js/deps/plugins/CSSPlugin.js"></script>
+<script src="res/js/deps/easing/EasePack.js"></script>
+<script src="res/js/deps/TweenLite.js"></script>
+<script src="res/js/deps/jquery.js"></script>
+<script src="res/js/site.js"></script>
 </head>
 <body>
 
 <nav>
 	<ul>
 		<li>
-			<a href="/overview/">
-				<figure class="icon-menu"></figure>
+			<a href="/goto/overview/">
+				<figure class="icon-defiantjs"></figure>
 				<span>Overview</span>
 			</a>
-		</li>
-		<li>
-			<a href="/usage/">
-				<figure class="icon-light-bulb"></figure>
-				<span>Usage</span>
-			</a>
 			<ul class="submenu">
-				<li><a href="#">Snapshot search</a></li>
-				<li><a href="#">Templating</a></li>
+				<li><a href="/goto/spanshot-search/">Snapshot search</a></li>
+				<li><a href="/goto/templating/">Templating</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="/xpath/">
+			<a href="/goto/usage/">
+				<figure class="icon-usage"></figure>
+				<span>Usage</span>
+			</a>
+			<ul class="submenu">
+				<li><a href="/goto/simple-example/">Simple example</a></li>
+				<li><a href="/goto/advanced-example/">Advanced example</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/goto/xpath/">
 				<figure class="icon-magic"></figure>
 				<span>XPath</span>
 			</a>
 			<ul class="submenu">
-				<li><a href="#">Expressions table</a></li>
-				<li><a href="#">XPath Evaluator</a></li>
-				<li><a href="#">Caveats</a></li>
+				<li><a href="/goto/expressions-table/">Expressions table</a></li>
+				<li><a href="/goto/xpath-evaluator/">XPath Evaluator</a></li>
+				<li><a href="/goto/caveats/">Caveats</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="/reference/">
-				<figure class="icon-embed"></figure>
+			<a href="/goto/reference/">
+				<figure class="icon-code"></figure>
 				<span>Reference</span>
 			</a>
 			<ul class="submenu">
-				<li><a class="nolink" href="#Defiant.render">Defiant.render</a></li>
-				<li><a class="nolink" href="#Defiant.xmlFromString">Defiant.xmlFromString</a></li>
-				<li><a class="nolink" href="#Defiant.node.toJSON">Defiant.node.toJSON</a></li>
-				<li><a class="nolink" href="#Defiant.node.selectNodes">Defiant.node.selectNodes</a></li>
-				<li><a class="nolink" href="#Defiant.node.selectSingleNode">Defiant.node.selectSingleNode</a></li>
-				<li><a class="nolink" href="#Defiant.node.prettyPrint">Defiant.node.prettyPrint</a></li>
-				<li><a class="nolink" href="#JSON.toXML">JSON.toXML</a></li>
-				<li><a class="nolink" href="#JSON.search">JSON.search</a></li>
+				<li><a class="nolink" href="/goto/Defiant.render/">Defiant.render</a></li>
+				<li><a class="nolink" href="/goto/Defiant.xmlFromString/">Defiant.xmlFromString</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.toJSON/">Defiant.node.toJSON</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.selectNodes/">Defiant.node.selectNodes</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.selectSingleNode/">Defiant.node.selectSingleNode</a></li>
+				<li><a class="nolink" href="/goto/Defiant.node.prettyPrint/">Defiant.node.prettyPrint</a></li>
+				<li><a class="nolink" href="/goto/JSON.toXML/">JSON.toXML</a></li>
+				<li><a class="nolink" href="/goto/JSON.search/">JSON.search</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="/source/">
+			<a href="/goto/source/">
 				<figure class="icon-github"></figure>
 				<span>Source</span>
 			</a>
+			<ul class="submenu">
+				<li><a href="/goto/">Download</a></li>
+				<li><a href="/goto/">Fork me on GitHub</a></li>
+			</ul>
 		</li>
 		<li>
-			<a href="/about/">
-				<figure class="icon-menu"></figure>
+			<a href="/goto/about/">
+				<figure class="icon-hb"></figure>
 				<span>About</span>
 			</a>
 		</li>
@@ -70,7 +83,7 @@
 
 <section class="layout">
 	<div class="content">
-		
+
 		<!-- Intro -->
 		<div class="intro">
 			<h1>DefiantJS</h1>
@@ -78,8 +91,20 @@
 				<strong>DefiantJS</strong> enables you to perform lightning-fast searches on <strong>JSON</strong>
 				using <strong>XPath</strong> expressions, and transform <strong>JSON</strong> using <strong>XSL</strong>.
 			</p>
-			<hr/>
 		</div>
+		
+		<!-- sticky -->
+		<div class="sticky">
+			<a class="fright" target="_new" href="https://raw.github.com/hbi99/defiant.js/master/dist/defiant-latest.min.js">
+				Download DefiantJS
+				<figure class="icon-download"></figure>
+			</a>
+			<a class="fright" target="_new" href="https://github.com/hbi99/defiant.js">
+				View Source on GitHub
+				<figure class="icon-github"></figure>
+			</a>
+		</div>
+		<hr/>
 
 		<!-- Overview -->
 		<h2 data-section="overview">Overview</h2>
@@ -88,9 +113,11 @@
 			<abbr title="JavaScript Object Notation">JSON</abbr> and identify the data that matches your query? <strong>DefiantJS</strong> offers a better way. 
 			<strong>DefiantJS</strong> extends the global <abbr title="JavaScript Object Notation">JSON</abbr> object with a "<strong>search</strong>" method that enables 
 			lightning-fast searches using <abbr title="XML Path Language">XPath</abbr> expressions.
-			Try out the <a class="nolink" href="#show-xpath_evaluator">XPath Evaluator</a> below to get the idea.
+			Try out the <a class="nolink" href="/evaluator/show/">XPath Evaluator</a> below to get the idea.
 		</p>
-		<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/a035c71cf6e34f47f9f8.js"></script></div>
+		<div class="gist-code type-javascript">
+			<script src="https://gist.github.com/hbi99/a035c71cf6e34f47f9f8.js"></script>
+		</div>
 		
 		<h3>Snapshot search</h3>
 		<p>
@@ -103,7 +130,9 @@
 			can find and return matches as fast as <strong>4ms</strong> on <strong>1.6MB</strong> large data
 			(<a href="https://github.com/hbi99/defiant.js/blob/master/demo/json-search-4.htm" target="new">see the example</a>).
 		</p>
-		<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/48dce9b9e55f9e466f9f.js"></script></div>
+		<div class="gist-code type-javascript">
+			<script src="https://gist.github.com/hbi99/48dce9b9e55f9e466f9f.js"></script>
+		</div>
 
 		<!-- Templating -->
 		<h3>Templating</h3>
@@ -120,7 +149,9 @@
 			<a href="http://en.wikipedia.org/wiki/Turing-complete" target="_new">Turing-complete</a> language,
 			it is also standardized and supported by all <a href="http://www.w3schools.com/xsl/xsl_browsers.asp" target="_new">major browsers</a>.
 		</p>
-		<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/e714247a0329e29fbbb5.js"></script></div>
+		<div class="gist-code type-xslt">
+			<script src="https://gist.github.com/hbi99/e714247a0329e29fbbb5.js"></script>
+		</div>
 		<p class="center chuck-norris">
 			<i>
 				You could say that <strong>DefiantJS</strong> joins <abbr title="Extended Markup Language">XML</abbr> and
@@ -145,11 +176,15 @@
 
 		<!-- Simple example -->
 		<h3 class="hideMe" data-subsection="simple_example">Simple example</h3>
-		<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/4f9644899475a63ddad1.js"></script></div>
+		<div class="gist-code type-xslt">
+			<script src="https://gist.github.com/hbi99/4f9644899475a63ddad1.js"></script>
+		</div>
 
 		<!-- Advanced example -->
 		<h3 class="hideMe" data-subsection="advanced_example">Advanced example</h3>
-		<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/955984350ce3dce50f9a.js"></script></div>
+		<div class="gist-code type-xslt">
+			<script src="https://gist.github.com/hbi99/955984350ce3dce50f9a.js"></script>
+		</div>
 
 
 		<!-- XPath -->
@@ -166,11 +201,10 @@
 			has prompted <a href="http://code.google.com/p/json-path/" target="_new">initiatives</a> such 
 			as <a href="https://developer.mozilla.org/en-US/docs/JSON/JSONPath" target="_new">JSONPath</a>,
 			which has not been standardized or widely accepted by the community.
-		</p>
-		<p>
 			With <strong>DefiantJS</strong>, you can unleash the power of <abbr title="XML Path Language">XPath</abbr>
 			on <abbr title="JavaScript Object Notation">JSON</abbr> objects, with no retooling or reschooling!
 		</p>
+		<p>&#160;</p>
 
 		<h3 data-subsection="expression_table">Expressions table</h3>
 		<p>
@@ -180,7 +214,7 @@
 			<a href="http://www.w3schools.com/xpath/xpath_syntax.asp" target="_new">offer</a>.
 			An important advantage of implementing <abbr title="XML Path Language">XPath</abbr>, as contrasted with
 			<strong>JSONPath</strong>, is that this language has been documented a great deal on the web and 
-			information &amp; how-to's can easily be found &amp; digested.
+			information and how-to's can easily be found and digested.
 		</p>
 
 		<table class="xpath-expressions">
@@ -202,50 +236,52 @@
 		<p>
 			In order to access <abbr title="XML Path Language">XPath</abbr> functionality easily, some global objects has been
 			extended with useful methods, for instance; <code class="nolink" data-target="#JSON.search"><span class="obj">JSON</span>.<span class="fn">search</span></code>.
-			Detailed information about these extension can be found in the <a class="nolink" href="#function_reference">Function reference</a> section.
+			Detailed information about these extension can be found in the <a class="nolink" href="/goto/function_reference/">Function reference</a> section.
 		</p>
+		<p>&#160;</p>
 
 		<h3 data-subsection="xpath_evaluator">XPath Evaluator</h3>
 		<p>
 			Not familiar with <abbr title="XML Path Language">XPath</abbr>? Don't worry, use the
-			<abbr title="XML Path Language">XPath</abbr> evaluator below and you will become an expert
+			<abbr title="XML Path Language">XPath</abbr> <b>Evaluator</b> below and you will become an expert
 			in no time.
 		</p>
 
 		<div class="xpath-school">
-			<div class="structure"></div>
+			<div class="structure"><table><tbody><tr><td class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span>32</span><span>33</span><span>34</span><span>35</span><span>36</span><span>37</span></td><td class="line-data"><pre><div class="line ">{</div><div class="line ">   <span class="s1">"store"</span>: {</div><div class="line ">      <span class="s1">"book"</span>: [</div><div class="line ">         {</div><div class="line ">            <span class="s1">"title"</span>: <span class="s2">"Sword of Honour"</span>,</div><div class="line ">            <span class="s1">"category"</span>: <span class="s2">"fiction"</span>,</div><div class="line ">            <span class="s1">"author"</span>: <span class="s2">"Evelyn Waugh"</span>,</div><div class="line ">            <span class="s1">"@price"</span>: <span class="s2">12.99</span></div><div class="line ">         },</div><div class="line ">         {</div><div class="line ">            <span class="s1">"title"</span>: <span class="s2">"Moby Dick"</span>,</div><div class="line ">            <span class="s1">"category"</span>: <span class="s2">"fiction"</span>,</div><div class="line ">            <span class="s1">"author"</span>: <span class="s2">"Herman Melville"</span>,</div><div class="line ">            <span class="s1">"isbn"</span>: <span class="s2">"0-553-21311-3"</span>,</div><div class="line ">            <span class="s1">"@price"</span>: <span class="s2">8.99</span></div><div class="line ">         },</div><div class="line ml"><span class="ml">         {</span></div><div class="line ml"><span class="ml">            <span class="s1">"title"</span>: <span class="s2">"Sayings of the Century"</span>,</span></div><div class="line ml"><span class="ml">            <span class="s1">"category"</span>: <span class="s2">"reference"</span>,</span></div><div class="line ml"><span class="ml">            <span class="s1">"author"</span>: <span class="s2">"Nigel Rees"</span>,</span></div><div class="line ml"><span class="ml">            <span class="s1">"@price"</span>: <span class="s2">8.95</span></span></div><div class="line ml"><span class="ml">         },</span></div><div class="line ">         {</div><div class="line ">            <span class="s1">"title"</span>: <span class="s2">"The Lord of the Rings"</span>,</div><div class="line ">            <span class="s1">"category"</span>: <span class="s2">"fiction"</span>,</div><div class="line ">            <span class="s1">"author"</span>: <span class="s2">"J. R. R. Tolkien"</span>,</div><div class="line ">            <span class="s1">"isbn"</span>: <span class="s2">"0-395-19395-8"</span>,</div><div class="line ">            <span class="s1">"@price"</span>: <span class="s2">22.99</span></div><div class="line ">         }</div><div class="line ">      ],</div><div class="line ">      <span class="s1">"bicycle"</span>: {</div><div class="line ">         <span class="s1">"brand"</span>: <span class="s2">"Cannondale"</span>,</div><div class="line ">         <span class="s1">"color"</span>: <span class="s2">"red"</span>,</div><div class="line ">         <span class="s1">"@price"</span>: <span class="s2">19.95</span></div><div class="line ">      }</div><div class="line ">   }</div><div class="line ">}</div></pre></td></tr></tbody></table></div>
 			<textarea class="paste_data" spellcheck="false"></textarea>
 			<div class="examples">
 				<h2>Sample XPath</h2>
-				<a class="nolink" href="#swap-xpath">//*</a>
-				<a class="nolink" href="#swap-xpath">//book</a>
-				<a class="nolink" href="#swap-xpath">//category</a>
-				<a class="nolink" href="#swap-xpath">//@price</a>
-				<a class="nolink" href="#swap-xpath">//title</a>
-				<a class="nolink" href="#swap-xpath">//title/text()</a>
-				<a class="nolink" href="#swap-xpath">//bicycle</a>
-				<a class="nolink" href="#swap-xpath">//book[3]</a>
-				<a class="nolink" href="#swap-xpath">//book[position() &lt;= 2]</a>
-				<a class="nolink" href="#swap-xpath">//book[last()]</a>
-				<a class="nolink" href="#swap-xpath">//*[@price &gt; 10]</a>
-				<a class="nolink" href="#swap-xpath">//*[category="reference"]/author</a>
-				<a class="nolink" href="#swap-xpath">//*[contains(title, "the")]</a>
-				<a class="nolink" href="#swap-xpath">//book[isbn]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//category</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//@price</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//title</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//title/text()</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//bicycle</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[3]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[position() &lt;= 2]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[last()]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*[@price &gt; 10]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*[category="reference"]/author</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//*[contains(title, "the")]</a>
+				<a class="nolink" href="/evaluator/eval-xpath/">//book[isbn]</a>
 			</div>
 		</div>
 
 		<div class="btn-row school-buttons">
 			<span class="btn-group">
-				<a class="nolink button active" href="#switch-to-json">JSON</a>
-				<a class="nolink button" href="#switch-to-xml">XML</a>
+				<a class="nolink button active" href="/evaluator/switch-to-json/">JSON</a>
+				<a class="nolink button" href="/evaluator/switch-to-xml/">XML</a>
 			</span>
-			<a class="nolink button btn-toggle" href="#toggle-edit">Edit</a>
+			<a class="nolink button btn-toggle" href="/evaluator/toggle-edit/">Edit</a>
 			<span class="input-btn">
 				<input type="text"/>
-				<a class="nolink button" href="#evaluate-xpath">Go</a>
+				<a class="nolink button" href="/evaluator/eval-xpath/">Go</a>
 			</span>
-			<a class="nolink button btn-toggle right" href="#xpath-samples">Examples</a>
+			<a class="nolink button btn-toggle right" href="/evaluator/xpath-samples/">Examples</a>
 		</div>
+		<p>&#160;</p>
 
 		<h3>A couple of suggestions:</h3>
 		<ul>
@@ -257,7 +293,7 @@
 				Also, check out the browser console for hints.
 			</li>
 			<li>
-				To get going, click any of the <a class="nolink" href="#xpath-samples">pre-written examples</a>
+				To get going, click any of the <a class="nolink" href="/evaluator/xpath-samples/">pre-written examples</a>
 				of <abbr title="XML Path Language">XPath</abbr> queries.
 			</li>
 			<li>
@@ -268,6 +304,7 @@
 				Use these files to get acquainted with the functions and get the picture of the transformation rules.
 			</li>
 		</ul>
+		<p>&#160;</p>
 
 		<h3 data-subsection="caveats">Caveats</h3>
 		<p>
@@ -302,6 +339,7 @@
 				semantics as <abbr title="Extended Markup Language">XML</abbr>.
 			</li>
 		</ul>
+		<p>&#160;</p>
 
 
 		<!-- Function reference -->
@@ -322,7 +360,9 @@
 			<abbr title="JavaScript Object Notation">JSON</abbr> object - passed in as second argument. This function
 			returns an <abbr title="Hypertext Markup Language">HTML</abbr> string of the transformation.
 
-			<div class="gist-code type-xslt"><script src="https://gist.github.com/hbi99/8141480.js"></script></div>
+			<div class="gist-code type-xslt">
+				<script src="https://gist.github.com/hbi99/8141480.js"></script>
+			</div>
 		</div>
 		<hr/>
 		<div data-subsection="Defiant.xmlFromString">
@@ -331,7 +371,9 @@
 			This function does exactly what its name indicates; it creates and returns an <abbr title="Extended Markup Language">XML</abbr>
 			document from the string passed in as argument. This function is primarily used internally by <strong>DefiantJS</strong>.
 			
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8107708.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8107708.js"></script>
+			</div>
 		</div>
 
 		<hr/>
@@ -341,7 +383,9 @@
 			This function does exactly what its name indicates; transforms a node and its descending structure into 
 			<abbr title="JavaScript Object Notation">JSON</abbr> equivalent.
 			
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091760.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091760.js"></script>
+			</div>
 		</div>
 		<hr/>
 		<div data-subsection="Defiant.node.selectNodes">
@@ -352,7 +396,9 @@
 			<code>xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);</code> and therefore implemented cross browser
 			with <strong>DefiantJS</strong>.
 			
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091717.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091717.js"></script>
+			</div>
 		</div>
 		<hr/>
 		<div data-subsection="Defiant.node.selectSingleNode">
@@ -363,7 +409,9 @@
 			first match is found. It is a preferable alternative if a single node is known to be desired, hence better choice 
 			performance-wise.
 
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091655.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091655.js"></script>
+			</div>
 		</div>
 		<hr/>
 		<div data-subsection="Defiant.node.prettyPrint">
@@ -377,7 +425,9 @@
 			Lastly, this property is accessible from all element nodes, regardless of depth in the
 			<abbr title="Extended Markup Language">XML</abbr> structure <i>(the document node included)</i>.
 			
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8091472.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8091472.js"></script>
+			</div>
 		</div>
 
 		<hr/>
@@ -390,7 +440,9 @@
 			<abbr title="JavaScript Object Notation">JSON</abbr> and pass in your object as argument &amp; the function will return
 			an <abbr title="Extended Markup Language">XML</abbr> document.
 			
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8107267.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8107267.js"></script>
+			</div>
 		</div>
 		<hr/>
 		<div data-subsection="JSON.search">
@@ -402,7 +454,9 @@
 			the function exits the  search algorithm, as soon as a matching element is found,
 			based upon given <abbr title="XML Path Language">XPath</abbr>.
 			
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8104182.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8104182.js"></script>
+			</div>
 
 			The function <code><span class="obj">JSON</span>.<span class="fn">search</span></code> returns an array with aggregate functions,
 			populated with matching elements. Besides the ability to find elements with
@@ -411,8 +465,17 @@
 			structure. Put differently; the matched elements can be altered with a loop, thus altering the original
 			<abbr title="JavaScript Object Notation">JSON</abbr> object. See the code below as example.
 			
-			<div class="gist-code type-javascript"><script src="https://gist.github.com/hbi99/8104561.js"></script></div>
+			<div class="gist-code type-javascript">
+				<script src="https://gist.github.com/hbi99/8104561.js"></script>
+			</div>
 		</div>
+
+		<footer>
+			<p>
+				<strong>DefiantJS</strong> was developed by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> <strong>&copy; 2013-2015</strong><br/>
+				<img class="hb-logo" src="res/img/hb.png" alt="Hakan Bilgin">
+			</p>
+		</footer>
 
 	</div>
 </section>

@@ -23,24 +23,35 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-light-bulb:before {
-	content: "\e601";
+.icon-download:before {
+	content: "\e607";
 }
 
-.icon-magic:before {
+.icon-check:before {
+	content: "\e606";
+}
+
+.icon-usage:before {
+	content: "\e605";
+}
+
+.icon-code:before {
 	content: "\e600";
 }
 
-.icon-menu:before {
-	content: "\e9bd";
-}
-
-.icon-embed:before {
-	content: "\ea7f";
+.icon-defiantjs:before {
+	content: "\e601";
 }
 
 .icon-github:before {
-	content: "\eab1";
+	content: "\e602";
 }
 
+.icon-hb:before {
+	content: "\e603";
+}
+
+.icon-magic:before {
+	content: "\e604";
+}
 
