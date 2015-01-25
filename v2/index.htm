@@ -125,7 +125,7 @@
 			<abbr title="JavaScript Object Notation">JSON</abbr> and identify the data that matches your query? <strong>DefiantJS</strong> offers a better way. 
 			<strong>DefiantJS</strong> extends the global <abbr title="JavaScript Object Notation">JSON</abbr> object with a "<strong>search</strong>" method that enables 
 			lightning-fast searches using <abbr title="XML Path Language">XPath</abbr> expressions.
-			Try out the <a class="nolink" href="/evaluator/show/">XPath Evaluator</a> below to get the idea.
+			Try out the <a class="nolink" href="/goto/xpath-evaluator/">XPath Evaluator</a> below to get the idea.
 		</p>
 		<div class="gist-code type-javascript">
 			<script src="https://gist.github.com/hbi99/a035c71cf6e34f47f9f8.js"></script>
@@ -204,7 +204,7 @@
 		<p>
 			A powerful tool when dealing with <abbr title="Extended Markup Language">XML</abbr> is the advantage of
 			using <abbr title="XML Path Language">XPath</abbr>.
-			XPath is a <a href="http://www.w3.org/TR/xpath/" target="_new">standardized</a>
+			<abbr title="XML Path Language">XPath</abbr> is a <a href="http://www.w3.org/TR/xpath/" target="_new">standardized</a>
 			language for addressing parts of an <abbr title="Extended Markup Language">XML</abbr> document and
 			enables features such as analysis, transformation &amp; refined data selection out of an
 			<abbr title="Extended Markup Language">XML</abbr> structure.
@@ -248,7 +248,7 @@
 		<p>
 			In order to access <abbr title="XML Path Language">XPath</abbr> functionality easily, some global objects has been
 			extended with useful methods, for instance; <code class="nolink" data-target="#JSON.search"><span class="obj">JSON</span>.<span class="fn">search</span></code>.
-			Detailed information about these extension can be found in the <a class="nolink" href="/goto/function_reference/">Function reference</a> section.
+			Detailed information about these extensions can be found in the <a class="nolink" href="/goto/reference/">Function reference</a> section.
 		</p>
 		<p>&#160;</p>
 
@@ -261,7 +261,11 @@
 
 		<div class="xpath-evaluator">
 			<div class="structure"><!-- Dynamically Rendered --></div>
-			<textarea class="paste_data" spellcheck="false"></textarea>
+			<textarea class="textor" spellcheck="false"></textarea>
+			<div class="error-json">
+				<figure class="icon-warning"></figure>
+				Invalid JSON data
+			</div>
 			<div class="examples">
 				<h2>Sample XPath</h2>
 				<a class="nolink" href="/evaluator/eval-xpath/">//*</a>
@@ -309,11 +313,9 @@
 				of <abbr title="XML Path Language">XPath</abbr> queries.
 			</li>
 			<li>
-				Check out these files to see the functions individually visuablized;
-				<a href="/defiant.js/demo/json-xml.htm" target="_new">JSON to XML</a>,
-				<a href="/defiant.js/demo/xml-json.htm" target="_new">XML to JSON</a> and
-				<a href="/defiant.js/demo/json-search.htm" target="_new">JSON Search</a>.
-				Use these files to get acquainted with the functions and get the picture of the transformation rules.
+				Don't forget to click the "<strong>Edit</strong>" button. You can alter or paste in your own
+				<abbr title="JavaScript Object Notation">JSON</abbr> data and try out different <abbr title="XML Path Language">XPath</abbr> expressions on
+				your custom data. This way, you can validate your expressions visually and get instant feedback.
 			</li>
 		</ul>
 		<p>&#160;</p>

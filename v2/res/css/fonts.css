@@ -23,6 +23,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-warning:before {
+	content: "\e608";
+}
+
 .icon-download:before {
 	content: "\e607";
 }

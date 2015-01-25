@@ -13,6 +13,8 @@
 @nav_hover:    #fff;
 @link:         #e80;
 @evaluator_bg: #eee;
+@evaluator_hl: #ff9;
+@error_fg:     #b33;
 
 // defaults
 * {
@@ -250,7 +252,7 @@ section.layout {
 					position: absolute;
 					top: 0px;
 					left: -23px;
-					color: lighten(@nav_bg, 31%);
+					color: #3a3;
 				}
 			}
 		}
@@ -374,7 +376,6 @@ section.layout {
 		}
 	}
 
-
 	.xpath-evaluator {
 		position: relative;
 		z-index: 2;
@@ -383,11 +384,18 @@ section.layout {
 		border-radius: 5px 5px 0px 0px;
 		font-size: 14px;
 		line-height: 17px;
-		font-family: Tahoma, 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
 		height: 643px;
 		overflow: hidden;
 
-		.paste_data {
+		.textor,
+		.gutter,
+		.examples a,
+		+ .btn-row input,
+		pre {
+			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+			font-size: 14px;
+		}
+		.textor {
 			position: absolute;
 			top: 2px;
 			left: 0px;
@@ -395,15 +403,44 @@ section.layout {
 			height: 100%;
 			resize: none;
 			border: 0px;
-			//background: #eee;
-			//opacity: 0.5;
-			display: none;
-			font-size: 14px;
 			line-height: 17px;
-			font-family: 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
-			letter-spacing: 0.75px;
-			padding: 2px 0px 0px 3px;
+			opacity: 0;
+			visibility: hidden;
+			//display: none;
+			padding: 4px 0px 0px 38px;
 			margin: 0px;
+			.transitionWhat(opacity, 300ms);
+
+			&.active {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		.error-json {
+			background: lighten(@evaluator_hl, 7%);
+			color: darken(@error_fg, 7%);
+			position: absolute;
+			top: 21px;
+			left: 50%;
+			width: 250px;
+			margin-left: -125px;
+			padding: 11px 13px 13px 0px;
+			font-size: 18px;
+			box-shadow: 0px 5px 13px rgba(0,0,0,0.35);
+			border: 1px solid darken(@evaluator_hl, 47%);
+			border-radius: 3px;
+			text-align: center;
+			display: none;
+
+			&.active {
+				
+			}
+
+			figure {
+				font-size: 26px;
+				color: @error_fg;
+				vertical-align: sub;
+			}
 		}
 		.structure {
 			position: absolute;
@@ -424,19 +461,35 @@ section.layout {
 				text-align: right;
 				border-right: 1px solid darken(@evaluator_bg, 11%);
 				min-width: 18px;
-				padding: 5px 7px;
+				padding: 5px 0px;
 
 				span {
+					position: relative;
 					display: block;
 					height: 17px;
+					padding-top: 1px;
+					padding-left: 13px;
+					padding-right: 7px;
+
+					&.ml{
+						background: lighten(@evaluator_bg, 1%);
+						color: darken(@evaluator_bg, 31%);
+
+						&:after {
+							content: '';
+							position: absolute;
+							top: 0px;
+							bottom: -1px;
+							right: -2px;
+							border-right: 3px solid #cc6;
+						}
+					}
 				}
 			}
 			.line-data {
-				padding: 5px 3px;
+				padding: 5px 3px 5px 2px;
 
 				.line {
-					//background: #eee;
-					
 					&.ml .ml {
 						-webkit-animation: 300ms wink;
 						-moz-animation: 300ms wink;
@@ -456,7 +509,7 @@ section.layout {
 					.c  { color: #0a0; }
 					.nt { color: #a00; }
 					.mal,
-					.ml { background: #ff9; border-radius: 0px 2px 2px 0px; }
+					.ml { background: @evaluator_hl; border-radius: 0px 2px 2px 0px; }
 					.mal {border-radius: 2px; }
 				}
 			}
@@ -511,15 +564,13 @@ section.layout {
 				display: block;
 				background: #fff;
 				border-radius: 2px;
-				height: 27px;
-				padding: 3px 5px 0px;
+				padding: 4px 5px 0px;
 				margin: 1px 7px 7px;
 				letter-spacing: -0.5px;
 				white-space: nowrap;
 				overflow: hidden;
 				color: darken(@evaluator_bg, 31%);
 				box-shadow: 0px 0px 2px darken(@evaluator_bg, 23%);
-				font-family: 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
 				border: #fff 1px solid;
 
 				&:hover {
@@ -570,7 +621,7 @@ section.layout {
 			float: left;
 			position: relative;
 			background: @body_bg;
-			height: 27px;
+			height: 26px;
 			min-width: 401px;
 			margin: 0px 11px 0px 2px;
 			border: 1px solid darken(@evaluator_bg, 21%);
@@ -582,10 +633,10 @@ section.layout {
 				width: 100%;
 				border: 0px;
 				background: transparent;
-				padding: 6px 5px 0px;
+				padding: 5px 5px 0px;
 				margin: 0px;
 				font-size: 13px;
-				font-family: 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+				letter-spacing: -0.25px;
 				color: #333;
 				text-shadow: 0px 2px 2px #ddd;
 
@@ -607,7 +658,7 @@ section.layout {
 		.button {
 			float: left;
 			margin: 0px 5px 0px 0px;
-			padding: 2px 11px 2px;
+			padding: 1px 11px 2px;
 			border: 1px solid darken(@evaluator_bg, 21%);
 			border-radius: 3px;
 			background: @evaluator_bg;

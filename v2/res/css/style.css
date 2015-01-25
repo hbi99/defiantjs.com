@@ -211,7 +211,7 @@ section.layout .content ul li:before {
   position: absolute;
   top: 0px;
   left: -23px;
-  color: #698cc1;
+  color: #3a3;
 }
 section.layout .content .sticky {
   position: relative;
@@ -333,11 +333,18 @@ section.layout .xpath-evaluator {
   border-radius: 5px 5px 0px 0px;
   font-size: 14px;
   line-height: 17px;
-  font-family: Tahoma, 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
   height: 643px;
   overflow: hidden;
 }
-section.layout .xpath-evaluator .paste_data {
+section.layout .xpath-evaluator .textor,
+section.layout .xpath-evaluator .gutter,
+section.layout .xpath-evaluator .examples a,
+section.layout .xpath-evaluator + .btn-row input,
+section.layout .xpath-evaluator pre {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 14px;
+}
+section.layout .xpath-evaluator .textor {
   position: absolute;
   top: 2px;
   left: 0px;
@@ -345,13 +352,40 @@ section.layout .xpath-evaluator .paste_data {
   height: 100%;
   resize: none;
   border: 0px;
-  display: none;
-  font-size: 14px;
   line-height: 17px;
-  font-family: 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
-  letter-spacing: 0.75px;
-  padding: 2px 0px 0px 3px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 4px 0px 0px 38px;
   margin: 0px;
+  transition: opacity 300ms ease-in-out;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -ms-transition: opacity 300ms ease-in-out;
+}
+section.layout .xpath-evaluator .textor.active {
+  visibility: visible;
+  opacity: 1;
+}
+section.layout .xpath-evaluator .error-json {
+  background: #ffffbd;
+  color: #9f2b2b;
+  position: absolute;
+  top: 21px;
+  left: 50%;
+  width: 250px;
+  margin-left: -125px;
+  padding: 11px 13px 13px 0px;
+  font-size: 18px;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.35);
+  border: 1px solid #a8a800;
+  border-radius: 3px;
+  text-align: center;
+  display: none;
+}
+section.layout .xpath-evaluator .error-json figure {
+  font-size: 26px;
+  color: #bb3333;
+  vertical-align: sub;
 }
 section.layout .xpath-evaluator .structure {
   position: absolute;
@@ -371,14 +405,30 @@ section.layout .xpath-evaluator .structure .gutter {
   text-align: right;
   border-right: 1px solid #d2d2d2;
   min-width: 18px;
-  padding: 5px 7px;
+  padding: 5px 0px;
 }
 section.layout .xpath-evaluator .structure .gutter span {
+  position: relative;
   display: block;
   height: 17px;
+  padding-top: 1px;
+  padding-left: 13px;
+  padding-right: 7px;
+}
+section.layout .xpath-evaluator .structure .gutter span.ml {
+  background: #f1f1f1;
+  color: #9f9f9f;
+}
+section.layout .xpath-evaluator .structure .gutter span.ml:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: -1px;
+  right: -2px;
+  border-right: 3px solid #cc6;
 }
 section.layout .xpath-evaluator .structure .line-data {
-  padding: 5px 3px;
+  padding: 5px 3px 5px 2px;
 }
 section.layout .xpath-evaluator .structure .line-data .line.ml .ml {
   -webkit-animation: 300ms wink;
@@ -415,7 +465,7 @@ section.layout .xpath-evaluator .structure .line-data .line .nt {
 }
 section.layout .xpath-evaluator .structure .line-data .line .mal,
 section.layout .xpath-evaluator .structure .line-data .line .ml {
-  background: #ff9;
+  background: #ffff99;
   border-radius: 0px 2px 2px 0px;
 }
 section.layout .xpath-evaluator .structure .line-data .line .mal {
@@ -490,15 +540,13 @@ section.layout .xpath-evaluator .examples a {
   display: block;
   background: #fff;
   border-radius: 2px;
-  height: 27px;
-  padding: 3px 5px 0px;
+  padding: 4px 5px 0px;
   margin: 1px 7px 7px;
   letter-spacing: -0.5px;
   white-space: nowrap;
   overflow: hidden;
   color: #9f9f9f;
   box-shadow: 0px 0px 2px #b3b3b3;
-  font-family: 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
   border: #fff 1px solid;
 }
 section.layout .xpath-evaluator .examples a:hover {
@@ -541,7 +589,7 @@ section.layout .btn-row .input-btn {
   float: left;
   position: relative;
   background: #ffffff;
-  height: 27px;
+  height: 26px;
   min-width: 401px;
   margin: 0px 11px 0px 2px;
   border: 1px solid #b8b8b8;
@@ -553,10 +601,10 @@ section.layout .btn-row .input-btn input {
   width: 100%;
   border: 0px;
   background: transparent;
-  padding: 6px 5px 0px;
+  padding: 5px 5px 0px;
   margin: 0px;
   font-size: 13px;
-  font-family: 'Source Code Pro', Menlo, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+  letter-spacing: -0.25px;
   color: #333;
   text-shadow: 0px 2px 2px #ddd;
 }
@@ -574,7 +622,7 @@ section.layout .btn-row .input-btn .button {
 section.layout .btn-row .button {
   float: left;
   margin: 0px 5px 0px 0px;
-  padding: 2px 11px 2px;
+  padding: 1px 11px 2px;
   border: 1px solid #b8b8b8;
   border-radius: 3px;
   background: #eeeeee;
