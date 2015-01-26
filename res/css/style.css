@@ -273,8 +273,9 @@ section.layout .content .intro h1 {
   margin-bottom: 7px;
 }
 section.layout .content .intro p {
-  background: #a1aed7;
+  background: #b6c1e0;
   color: #294063;
+  text-shadow: 0px 1px 0px #f0f2f8;
   border: 1px solid #6f84c1;
   border-radius: 5px;
   padding: 5px 10px 6px;
