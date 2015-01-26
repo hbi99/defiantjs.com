@@ -79,7 +79,7 @@ hr {
 }
 nav {
   background: #294063;
-  color: #c2d9ff;
+  color: #8899cc;
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -100,6 +100,17 @@ nav.hover + .layout .cover {
 }
 nav > ul {
   padding: 10px 0px;
+}
+nav > ul.ghost {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+}
+nav > ul.ghost a {
+  color: #ffffff;
 }
 nav > ul > li {
   display: block;
@@ -130,9 +141,6 @@ nav .submenu li a {
   -moz-transition: all 120ms ease-in-out;
   -ms-transition: all 120ms ease-in-out;
 }
-nav .submenu li a:hover {
-  background: #304c75;
-}
 nav figure {
   width: 32px;
   height: 32px;
@@ -162,7 +170,7 @@ nav a span {
 section.layout {
   background: #ffffff;
   position: relative;
-  height: 100%;
+  min-height: 1000px;
   margin-left: 48px;
   padding: 35px 0px 30px 50px;
   z-index: 2;
@@ -265,9 +273,9 @@ section.layout .content .intro h1 {
   margin-bottom: 7px;
 }
 section.layout .content .intro p {
-  background: #e6efff;
+  background: #a1aed7;
   color: #294063;
-  border: 1px solid #9ec3ff;
+  border: 1px solid #6f84c1;
   border-radius: 5px;
   padding: 5px 10px 6px;
   position: absolute;
@@ -293,12 +301,12 @@ section.layout .content table.xpath-expressions {
   width: 100%;
   border-collapse: inherit;
   border-spacing: 0px;
-  border: 1px solid #8ab6ff;
+  border: 1px solid #6177bb;
   margin: 5px 0px 31px 0px;
   border-radius: 5px;
 }
 section.layout .content table.xpath-expressions tr:nth-child(2n+1) {
-  background: #f0f6ff;
+  background: #a8b5da;
 }
 section.layout .content table.xpath-expressions tr:last-child td {
   border-bottom: 0px;
@@ -307,7 +315,7 @@ section.layout .content table.xpath-expressions th,
 section.layout .content table.xpath-expressions td {
   padding: 2px 5px;
   text-align: left;
-  border-bottom: 1px solid #d1e3ff;
+  border-bottom: 1px solid #93a2d1;
   font-size: 15px;
 }
 section.layout .content table.xpath-expressions th:first-child,
@@ -316,10 +324,10 @@ section.layout .content table.xpath-expressions td:first-child {
   width: 90px;
 }
 section.layout .content table.xpath-expressions th {
-  background: #9ec3ff;
+  background: #6f84c1;
   color: #ffffff;
   text-shadow: 0px 1px 1px #3c5e92;
-  border-bottom: 1px solid #8ab6ff;
+  border-bottom: 1px solid #6177bb;
 }
 section.layout .content table.xpath-expressions td:first-child {
   font-size: 17px;

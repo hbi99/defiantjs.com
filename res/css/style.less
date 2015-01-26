@@ -9,7 +9,7 @@
 @body_bg:      #fff;
 @body_fg:      #222;
 @nav_bg:       #294063;
-@nav_fg:       #c2d9ff;
+@nav_fg:       #89c;
 @nav_hover:    #fff;
 @link:         #e80;
 @evaluator_bg: #eee;
@@ -135,6 +135,20 @@ nav {
 	> ul {
 		padding: 10px 0px;
 
+		&.ghost {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 45px;
+			overflow: hidden;
+		//	background: rgba(255,255,255,0.1);
+			
+			a {
+				color: @nav_hover;
+			}
+		}
+
 		> li {
 			display: block;
 			min-height: 37px;
@@ -163,7 +177,7 @@ nav {
 			.transition(120ms);
 
 			&:hover {
-				background: lighten(@nav_bg, 5%);
+				//background: lighten(@nav_bg, 5%);
 			}
 		}
 	}
@@ -202,7 +216,7 @@ nav {
 section.layout {
 	background: @body_bg;
 	position: relative;
-	height: 100%;
+	min-height: 1000px;
 	margin-left: 48px;
 	//margin-left: 230px;
 	padding: 35px 0px 30px 50px;

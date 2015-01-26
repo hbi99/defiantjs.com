@@ -19,15 +19,14 @@ $(function() {
 				}
 			}
 			// bind handlers
-			this.win.on('mouseout', this.doEvent);
 			this.body.on('click', '.nolink, [data-cmd]', this.doEvent);
+			this.win.on('mouseout', this.doEvent);
 			this.nav.on('mouseover', '> ul > li', this.doEvent);
 			this.nav.on('mouseover', this.doEvent);
 			this.cover.on('mouseover', this.doEvent);
 			
-			// auto login user
+			// post parse gists
 			this.doEvent('/post-parse-xslt-gist/');
-
 		},
 		doEvent: function(event, el) {
 			var self = app,
