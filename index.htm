@@ -475,7 +475,7 @@
 			The function <code><span class="obj">JSON</span>.<span class="fn">search</span></code> returns an array with aggregate functions,
 			populated with matching elements. Besides the ability to find elements with
 			<abbr title="XML Path Language">XPath</abbr>, this
-			function returns <u>references</u> to the matching elements in the <abbr title="JavaScript Object Notation">JSON</abbr>
+			function returns mutable objects <i>(assuming that the matches are mutable)</i> of the matching elements in the <abbr title="JavaScript Object Notation">JSON</abbr>
 			structure. Put differently; the matched elements can be altered with a loop, thus altering the original
 			<abbr title="JavaScript Object Notation">JSON</abbr> object. See the code below as example.
 			
