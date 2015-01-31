@@ -2,6 +2,7 @@
 // imports
 @import 'reset.css';
 @import 'fonts.css';
+@import 'responsive.css';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
 
 
@@ -271,42 +272,9 @@ section.layout {
 			}
 		}
 
-		.sticky {
-			position: relative;
-			width: 720px;
-			height: 27px;
-			padding-top: 4px;
-			padding-right: 64px;
-			margin-bottom: 17px;
-			background: @body_bg;
-			//background: rgba(255,255,255,0.95);
-
-			a {
-				color: #bbb;
-				margin-left: 11px;
-				.transition(120ms);
-
-				&:hover {
-					color: @link;
-				}
-				&.fleft  { float: left; }
-				&.fright { float: right; }
-
-				figure {
-					font-size: 24px;
-					top: -2px;
-				}
-			}
-			hr {
-				position: absolute;
-				top: 36px;
-				left: 0px;
-				width: 100%;
-				margin: 0px;
-			}
-		}
 		.intro {
 			position: relative;
+			margin-bottom: 60px;
 
 			h1 {
 				background: url(../img/logo.png) 0% 50% no-repeat;
@@ -330,6 +298,28 @@ section.layout {
 				top: -5px;
 				left: 210px;
 				right: 0px;
+			}
+			a {
+				position: absolute;
+				bottom: -40px;
+				color: #bbb;
+				margin-left: 11px;
+				.transition(120ms);
+
+				&:hover {
+					color: @link;
+				}
+				&.link-left {
+					left: 220px;
+				}
+				&.link-right {
+					right: 20px;
+				}
+
+				figure {
+					font-size: 24px;
+					top: -2px;
+				}
 			}
 			hr {
 				margin-top: 29px;
@@ -807,9 +797,10 @@ footer {
 	text-align: center;
 	padding-bottom: 51px;
 
-	.hb-logo {
-		margin-top: 10px;
-		opacity: 0.15;
+	.icon-hb {
+		font-size: 160px;
+		margin-top: 60px;
+		opacity: 0.2;
 	}
 }
 

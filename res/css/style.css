@@ -2,6 +2,8 @@
 
 @import 'fonts.css';
 
+@import 'responsive.css';
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
 * {
   -webkit-box-sizing: border-box;
@@ -221,45 +223,9 @@ section.layout .content ul li:before {
   left: -23px;
   color: #3a3;
 }
-section.layout .content .sticky {
-  position: relative;
-  width: 720px;
-  height: 27px;
-  padding-top: 4px;
-  padding-right: 64px;
-  margin-bottom: 17px;
-  background: #ffffff;
-}
-section.layout .content .sticky a {
-  color: #bbb;
-  margin-left: 11px;
-  transition: all 120ms ease-in-out;
-  -webkit-transition: all 120ms ease-in-out;
-  -moz-transition: all 120ms ease-in-out;
-  -ms-transition: all 120ms ease-in-out;
-}
-section.layout .content .sticky a:hover {
-  color: #ee8800;
-}
-section.layout .content .sticky a.fleft {
-  float: left;
-}
-section.layout .content .sticky a.fright {
-  float: right;
-}
-section.layout .content .sticky a figure {
-  font-size: 24px;
-  top: -2px;
-}
-section.layout .content .sticky hr {
-  position: absolute;
-  top: 36px;
-  left: 0px;
-  width: 100%;
-  margin: 0px;
-}
 section.layout .content .intro {
   position: relative;
+  margin-bottom: 60px;
 }
 section.layout .content .intro h1 {
   background: url(../img/logo.png) 0% 50% no-repeat;
@@ -283,6 +249,29 @@ section.layout .content .intro p {
   top: -5px;
   left: 210px;
   right: 0px;
+}
+section.layout .content .intro a {
+  position: absolute;
+  bottom: -40px;
+  color: #bbb;
+  margin-left: 11px;
+  transition: all 120ms ease-in-out;
+  -webkit-transition: all 120ms ease-in-out;
+  -moz-transition: all 120ms ease-in-out;
+  -ms-transition: all 120ms ease-in-out;
+}
+section.layout .content .intro a:hover {
+  color: #ee8800;
+}
+section.layout .content .intro a.link-left {
+  left: 220px;
+}
+section.layout .content .intro a.link-right {
+  right: 20px;
+}
+section.layout .content .intro a figure {
+  font-size: 24px;
+  top: -2px;
 }
 section.layout .content .intro hr {
   margin-top: 29px;
@@ -770,9 +759,10 @@ footer {
   text-align: center;
   padding-bottom: 51px;
 }
-footer .hb-logo {
-  margin-top: 10px;
-  opacity: 0.15;
+footer .icon-hb {
+  font-size: 160px;
+  margin-top: 60px;
+  opacity: 0.2;
 }
 @-webkit-keyframes absolut_loading {
   0% {
