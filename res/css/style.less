@@ -9,13 +9,15 @@
 // variables
 @body_bg:      #fff;
 @body_fg:      #222;
-@nav_bg:       #294063;
-@nav_fg:       #89c;
+@nav_bg:       #296340;
+@nav_fg:       lighten(@nav_bg, 43%);
 @nav_hover:    #fff;
+@list_table:   #f90;
 @link:         #e80;
 @evaluator_bg: #eee;
 @evaluator_hl: #ff9;
 @error_fg:     #b33;
+
 
 // defaults
 * {
@@ -344,13 +346,13 @@ section.layout {
 			width: 100%;
 			border-collapse: inherit;
 			border-spacing: 0px;
-			border: 1px solid darken(@nav_fg, 11%);
+			border: 1px solid darken(@list_table, 11%);
 			margin: 5px 0px 31px 0px;
 			border-radius: 5px;
 
 			tr {
 				&:nth-child(2n+1) {
-					background: lighten(@nav_fg, 9%);
+					background: lighten(@list_table, 43%);
 				}
 				&:last-child td {
 					border-bottom: 0px;
@@ -360,7 +362,7 @@ section.layout {
 			td {
 				padding: 2px 5px;
 				text-align: left;
-				border-bottom: 1px solid lighten(@nav_fg, 3%);
+				border-bottom: 1px solid lighten(@list_table, 33%);
 				font-size: 15px;
 
 				&:first-child {
@@ -369,10 +371,10 @@ section.layout {
 				}
 			}
 			th {
-				background: darken(@nav_fg, 7%);
+				background: darken(@list_table, 3%);
 				color: @body_bg;
-				text-shadow: 0px 1px 1px lighten(@nav_bg, 13%);
-				border-bottom: 1px solid darken(@nav_fg, 11%);
+				text-shadow: 0px 1px 1px darken(@list_table, 23%);
+				border-bottom: 1px solid darken(@list_table, 11%);
 			}
 			td:first-child {
 				font-size: 17px;

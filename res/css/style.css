@@ -80,8 +80,8 @@ hr {
   margin: 13px 0px 21px;
 }
 nav {
-  background: #294063;
-  color: #8899cc;
+  background: #296340;
+  color: #94d3ad;
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -117,8 +117,8 @@ nav > ul.ghost a {
 nav > ul > li {
   display: block;
   min-height: 37px;
-  border-top: 1px solid #304c75;
-  border-bottom: 1px solid #223451;
+  border-top: 1px solid #30754c;
+  border-bottom: 1px solid #225134;
 }
 nav > ul > li:first-child {
   border-top: 0px;
@@ -161,7 +161,7 @@ nav a {
   display: block;
   color: inherit;
   padding: 3px 0px 0px 13px;
-  text-shadow: 0px 1px 0px #0a0f17;
+  text-shadow: 0px 1px 0px #0a170f;
 }
 nav a:hover {
   color: #ffffff;
@@ -239,10 +239,10 @@ section.layout .content .intro h1 {
   margin-bottom: 7px;
 }
 section.layout .content .intro p {
-  background: #b6c1e0;
-  color: #294063;
-  text-shadow: 0px 1px 0px #f0f2f8;
-  border: 1px solid #6f84c1;
+  background: #c3e6d1;
+  color: #296340;
+  text-shadow: 0px 1px 0px #fdfefd;
+  border: 1px solid #7bc89a;
   border-radius: 5px;
   padding: 5px 10px 6px;
   position: absolute;
@@ -291,12 +291,12 @@ section.layout .content table.xpath-expressions {
   width: 100%;
   border-collapse: inherit;
   border-spacing: 0px;
-  border: 1px solid #6177bb;
+  border: 1px solid #c77700;
   margin: 5px 0px 31px 0px;
   border-radius: 5px;
 }
 section.layout .content table.xpath-expressions tr:nth-child(2n+1) {
-  background: #a8b5da;
+  background: #fff1db;
 }
 section.layout .content table.xpath-expressions tr:last-child td {
   border-bottom: 0px;
@@ -305,7 +305,7 @@ section.layout .content table.xpath-expressions th,
 section.layout .content table.xpath-expressions td {
   padding: 2px 5px;
   text-align: left;
-  border-bottom: 1px solid #93a2d1;
+  border-bottom: 1px solid #ffdca8;
   font-size: 15px;
 }
 section.layout .content table.xpath-expressions th:first-child,
@@ -314,10 +314,10 @@ section.layout .content table.xpath-expressions td:first-child {
   width: 90px;
 }
 section.layout .content table.xpath-expressions th {
-  background: #6f84c1;
+  background: #f09000;
   color: #ffffff;
-  text-shadow: 0px 1px 1px #3c5e92;
-  border-bottom: 1px solid #6177bb;
+  text-shadow: 0px 1px 1px #8a5300;
+  border-bottom: 1px solid #c77700;
 }
 section.layout .content table.xpath-expressions td:first-child {
   font-size: 17px;
@@ -628,7 +628,7 @@ section.layout .btn-row .button {
   white-space: nowrap;
   text-decoration: none;
   font-size: 13px;
-  color: #294063;
+  color: #296340;
   outline: none;
   overflow: hidden;
 }

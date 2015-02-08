@@ -36,6 +36,7 @@
 			</a>
 			<ul class="submenu">
 				<li><a class="nolink" href="/goto/spanshot-search/">Snapshot search</a></li>
+				<li><a class="nolink" href="/goto/web-workers/">Web workers</a></li>
 				<li><a class="nolink" href="/goto/templating/">Templating</a></li>
 			</ul>
 		</li>
@@ -146,6 +147,20 @@
 		</p>
 		<div class="gist-code type-javascript">
 			<script src="https://gist.github.com/hbi99/48dce9b9e55f9e466f9f.js"></script>
+		</div>
+
+		<h3 data-section="web-workers">Web workers</h3>
+		<p>
+			With really large <abbr title="JavaScript Object Notation">JSON</abbr> structures, avoiding to do the 
+			time-consuming preparation on each search has proven to be the right path. Though it turned out that
+			this preparation have a blocking effect on the <abbr title="User Interface">UI</abbr>-thread. Consequently
+			in <strong>version 1.2.6</strong> a snapshot can be created utilizing
+			<a href="http://www.html5rocks.com/en/tutorials/workers/basics/" target="_new">web workers</a>. This
+			approach brings a smoother experience and applies especially when dealing with <u>large data</u> - for
+			instance larger than 1 <abbr title="Megabyte">MB</abbr> of <abbr title="JavaScript Object Notation">JSON</abbr> data.
+		</p>
+		<div class="gist-code type-javascript">
+			<script src="https://gist.github.com/hbi99/e445aef3ef2f986572ca.js"></script>
 		</div>
 
 		<!-- Templating -->
