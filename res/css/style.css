@@ -80,8 +80,8 @@ hr {
   margin: 13px 0px 21px;
 }
 nav {
-  background: #296340;
-  color: #94d3ad;
+  background: #cc5500;
+  color: #ffcca8;
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -117,8 +117,8 @@ nav > ul.ghost a {
 nav > ul > li {
   display: block;
   min-height: 37px;
-  border-top: 1px solid #30754c;
-  border-bottom: 1px solid #225134;
+  border-top: 1px solid #e66000;
+  border-bottom: 1px solid #b34a00;
 }
 nav > ul > li:first-child {
   border-top: 0px;
@@ -161,7 +161,7 @@ nav a {
   display: block;
   color: inherit;
   padding: 3px 0px 0px 13px;
-  text-shadow: 0px 1px 0px #0a170f;
+  text-shadow: 0px 1px 0px #612800;
 }
 nav a:hover {
   color: #ffffff;
@@ -239,10 +239,10 @@ section.layout .content .intro h1 {
   margin-bottom: 7px;
 }
 section.layout .content .intro p {
-  background: #c3e6d1;
-  color: #296340;
-  text-shadow: 0px 1px 0px #fdfefd;
-  border: 1px solid #7bc89a;
+  background: #fff3eb;
+  color: #cc5500;
+  text-shadow: 0px 1px 0px #ffffff;
+  border: 1px solid #ffb885;
   border-radius: 5px;
   padding: 5px 10px 6px;
   position: absolute;
@@ -628,7 +628,7 @@ section.layout .btn-row .button {
   white-space: nowrap;
   text-decoration: none;
   font-size: 13px;
-  color: #296340;
+  color: #cc5500;
   outline: none;
   overflow: hidden;
 }
