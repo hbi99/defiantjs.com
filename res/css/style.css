@@ -80,8 +80,8 @@ hr {
   margin: 13px 0px 21px;
 }
 nav {
-  background: #cc5500;
-  color: #ffcca8;
+  background: #336699;
+  color: #bed4e9;
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -117,8 +117,8 @@ nav > ul.ghost a {
 nav > ul > li {
   display: block;
   min-height: 37px;
-  border-top: 1px solid #e66000;
-  border-bottom: 1px solid #b34a00;
+  border-top: 1px solid #3973ac;
+  border-bottom: 1px solid #2d5986;
 }
 nav > ul > li:first-child {
   border-top: 0px;
@@ -161,7 +161,7 @@ nav a {
   display: block;
   color: inherit;
   padding: 3px 0px 0px 13px;
-  text-shadow: 0px 1px 0px #612800;
+  text-shadow: 0px 1px 0px #183049;
 }
 nav a:hover {
   color: #ffffff;
@@ -239,10 +239,10 @@ section.layout .content .intro h1 {
   margin-bottom: 7px;
 }
 section.layout .content .intro p {
-  background: #fff3eb;
-  color: #cc5500;
+  background: #f0f5fa;
+  color: #336699;
   text-shadow: 0px 1px 0px #ffffff;
-  border: 1px solid #ffb885;
+  border: 1px solid #a3c2e0;
   border-radius: 5px;
   padding: 5px 10px 6px;
   position: absolute;
@@ -291,12 +291,12 @@ section.layout .content table.xpath-expressions {
   width: 100%;
   border-collapse: inherit;
   border-spacing: 0px;
-  border: 1px solid #c77700;
+  border: 1px solid #348234;
   margin: 5px 0px 31px 0px;
   border-radius: 5px;
 }
 section.layout .content table.xpath-expressions tr:nth-child(2n+1) {
-  background: #fff1db;
+  background: #d9f0d9;
 }
 section.layout .content table.xpath-expressions tr:last-child td {
   border-bottom: 0px;
@@ -305,7 +305,7 @@ section.layout .content table.xpath-expressions th,
 section.layout .content table.xpath-expressions td {
   padding: 2px 5px;
   text-align: left;
-  border-bottom: 1px solid #ffdca8;
+  border-bottom: 1px solid #b5e1b5;
   font-size: 15px;
 }
 section.layout .content table.xpath-expressions th:first-child,
@@ -314,10 +314,10 @@ section.layout .content table.xpath-expressions td:first-child {
   width: 90px;
 }
 section.layout .content table.xpath-expressions th {
-  background: #f09000;
+  background: #409f40;
   color: #ffffff;
-  text-shadow: 0px 1px 1px #8a5300;
-  border-bottom: 1px solid #c77700;
+  text-shadow: 0px 1px 1px #225622;
+  border-bottom: 1px solid #348234;
 }
 section.layout .content table.xpath-expressions td:first-child {
   font-size: 17px;
@@ -628,7 +628,7 @@ section.layout .btn-row .button {
   white-space: nowrap;
   text-decoration: none;
   font-size: 13px;
-  color: #cc5500;
+  color: #336699;
   outline: none;
   overflow: hidden;
 }

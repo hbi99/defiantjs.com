@@ -211,7 +211,12 @@ $(function() {
 						}
 						break;
 					case '/evaluator/eval-xpath/':
-						xpath = el.text();
+						if (el.hasClass('nolink')) {
+							xpath = el.text();
+						}
+						if (el.hasClass('button')) {
+							xpath = self.input.val();
+						}
 						self.input.val(xpath);
 						self.search(xpath);
 						break;
