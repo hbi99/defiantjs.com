@@ -1,6 +1,18 @@
 
 // Javascript by Hakan Bilgin (c) 2013-2015
 
+//	get hash params
+window.HASH = {};
+var hash = window.location.hash.split('#');
+if (hash.length > 1) {
+	var r = hash[1].split('&');
+	for (var i=0, il=r.length; i<il; i++) {
+		var pair = r[i].split('=');
+		if (pair.length == 1) continue;
+		window.HASH[pair[0]] = pair[1].split('#')[0];
+	}
+}
+
 $(function() {
 	'use strict';
 
@@ -132,6 +144,34 @@ $(function() {
 				this.btn_edit    = this.btn_row.find('a.button[href="/evaluator/toggle-edit/"]');
 				this.btn_samples = this.btn_row.find('a.button[href="/evaluator/xpath-samples/"]');
 				this.tab_str     = '   ';
+
+				if (HASH.xe_src) {
+					$.getJSON(HASH.xe_src, function(data) {
+						var evaluator = app.evaluator;
+						// replace json_data
+						json_data = data;
+
+						// recreate snapshot
+						evaluator.btn_edit.addClass('active');
+						evaluator.textor.val(JSON.stringify(json_data));
+						evaluator.doEvent('/evaluator/toggle-edit/');
+
+						// if xpath expression is passed as argument
+						if (HASH.xe_xpath) {
+							evaluator.xpath = decodeURI(HASH.xe_xpath);
+							evaluator.input.val(evaluator.xpath);
+							evaluator.snapshot = Defiant.getSnapshot(json_data);
+							evaluator.search(evaluator.xpath);
+						}
+						setTimeout(function() {
+							// hide evaluator
+							evaluator.doEvent('/evaluator/xpath-samples/');
+						}, 10);
+						// scroll to XPath Evaluator
+						var section = $('[data-section="xpath-evaluator"]');
+						$('html, body').animate({'scrollTop': section.offset().top - 20}, 1500);
+					});
+				}
 
 				// some defaults
 				this.mode     = 'json';
