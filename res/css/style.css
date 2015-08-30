@@ -754,6 +754,11 @@ section.layout code .arg {
   line-height: 19px !important;
   background: #fafafa;
 }
+.gist-code .gist .gist-file .blob-num,
+.gist-code .gist .gist-file .blob-code-inner {
+  font-size: 14px;
+  line-height: 17px;
+}
 footer {
   color: #888;
   text-align: center;
