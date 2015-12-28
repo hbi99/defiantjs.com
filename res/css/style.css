@@ -80,8 +80,8 @@ hr {
   margin: 13px 0px 21px;
 }
 nav {
-  background: #336699;
-  color: #bed4e9;
+  background: #cc6600;
+  color: #ffd4a8;
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -117,8 +117,8 @@ nav > ul.ghost a {
 nav > ul > li {
   display: block;
   min-height: 37px;
-  border-top: 1px solid #3973ac;
-  border-bottom: 1px solid #2d5986;
+  border-top: 1px solid #e67300;
+  border-bottom: 1px solid #b35900;
 }
 nav > ul > li:first-child {
   border-top: 0px;
@@ -161,7 +161,7 @@ nav a {
   display: block;
   color: inherit;
   padding: 3px 0px 0px 13px;
-  text-shadow: 0px 1px 0px #183049;
+  text-shadow: 0px 1px 0px #613000;
 }
 nav a:hover {
   color: #ffffff;
@@ -239,10 +239,10 @@ section.layout .content .intro h1 {
   margin-bottom: 7px;
 }
 section.layout .content .intro p {
-  background: #f0f5fa;
-  color: #336699;
+  background: #fff5eb;
+  color: #cc6600;
   text-shadow: 0px 1px 0px #ffffff;
-  border: 1px solid #a3c2e0;
+  border: 1px solid #ffc285;
   border-radius: 5px;
   padding: 5px 10px 6px;
   position: absolute;
@@ -628,7 +628,7 @@ section.layout .btn-row .button {
   white-space: nowrap;
   text-decoration: none;
   font-size: 13px;
-  color: #336699;
+  color: #cc6600;
   outline: none;
   overflow: hidden;
 }
@@ -676,31 +676,31 @@ section.layout code .arg {
 .gist-code {
   margin: 17px 0px 67px;
 }
-.gist-code.type-xslt .line-pre .k,
-.gist-code.type-xslt .line-pre .na {
+.gist-code.type-xslt .blob-code-inner .k,
+.gist-code.type-xslt .blob-code-inner .na {
   color: #f00 !important;
 }
-.gist-code.type-xslt .line-pre .s {
+.gist-code.type-xslt .blob-code-inner .s {
   color: #30f !important;
 }
-.gist-code.type-xslt .line-pre .c {
+.gist-code.type-xslt .blob-code-inner .c {
   color: #0a0 !important;
 }
-.gist-code.type-xslt .line-pre .nt {
+.gist-code.type-xslt .blob-code-inner .nt {
   color: #a00 !important;
 }
-.gist-code.type-xslt .line-pre .kd {
+.gist-code.type-xslt .blob-code-inner .kd {
   color: #369 !important;
   text-shadow: 0px 0px 1px #9cf;
 }
-.gist-code.type-xslt .line-pre .mn {
+.gist-code.type-xslt .blob-code-inner .mn {
   color: #669 !important;
 }
-.gist-code.type-xslt .line-pre .xnt {
+.gist-code.type-xslt .blob-code-inner .xnt {
   color: #088 !important;
   text-shadow: 0px 0px 1px #0ee;
 }
-.gist-code.type-xslt .line-pre .jc {
+.gist-code.type-xslt .blob-code-inner .jc {
   color: #999;
   font-style: italic;
 }

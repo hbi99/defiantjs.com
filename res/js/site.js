@@ -99,7 +99,7 @@ $(function() {
 						ll;
 					// iterate gists
 					while (len--) {
-						lines  = jq('div.line', gists[len]);
+						lines  = jq('tr td', gists[len]);
 						ll     = lines.length;
 						// iterate lines
 						while (ll--) {
