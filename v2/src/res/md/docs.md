@@ -14,11 +14,11 @@ Notice that installation requires "defiant.js" and not "defiant". This is due to
 var a = 5;
 
 function test() {
-  console.log(a);
+    console.log(a);
 
-  if (a--) {
-    setTimeout(test, 1000);
-  }
+    if (a--) {
+        setTimeout(test, 1000);
+    }
 }
 
 test();
@@ -28,10 +28,10 @@ test();
 
 ```js
 var data = [
-       { "x": 2, "y": 0 },
-       { "x": 3, "y": 1 },
-       { "x": 4, "y": 1 },
-       { "x": 2, "y": 1 }
+        { "x": 2, "y": 0 },
+        { "x": 3, "y": 1 },
+        { "x": 4, "y": 1 },
+        { "x": 2, "y": 1 }
     ],
     res = JSON.search( data, '//*[ y > 0 ]' );
 

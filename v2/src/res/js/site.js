@@ -10,10 +10,13 @@
 			// fast references
 			this.body = $('body');
 
+			var el = $('pre textarea');
 			var gutterOptions = ['CodeMirror-linenumbers'];
-
-			var editor = CodeMirror.fromTextArea($('pre textarea')[0], {
-			        mode: 'text/javascript',
+			var types = {
+				js: 'text/javascript'
+			};
+			var editor = CodeMirror.fromTextArea(el[0], {
+			        mode: types[el.attr('data-language')],
 					lineWrapping: false,
 					lineNumbers: true,
 			        gutters: gutterOptions

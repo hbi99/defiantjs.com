@@ -24,22 +24,22 @@ code {
 // Blocks of code
 pre {
   display: block;
-  padding: 0 9.5px;
+  padding: 0px;
   margin: 0 0 10px;
   font-size: 13px;
   line-height: 1.42857143;
   color: #333;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-radius: 4px;
 
   // Account for some code outputs that place code tags in pre tags
   code {
+    position: relative;
     display: block;
-    margin-top: 9.5px;
-    margin-bottom: 9.5px;
+    margin: 9.5px;
     padding: 0;
     font-size: inherit;
     color: inherit;
@@ -49,8 +49,20 @@ pre {
 
     &[class^="language-active:"],
     &[class*=" language-active:"] {
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin: 0px;
+    }
+
+    .CodeMirror {
+      margin-right: 400px;
+    }
+    sidebar {
+      background: #edeff5;
+      border-left: 1px solid #ddd;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 400px;
     }
   }
 }

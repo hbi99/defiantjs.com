@@ -44,7 +44,7 @@ const md = new markdownIt({
 
 		if (lang) {
 			if (isActive) {
-				outStr = '<textarea data-language="js">'+ str +'</textarea>'
+				outStr = `<textarea data-language="${lang.split(':')[1]}">${str}</textarea><sidebar></sidebar>`
 			} else if (hljs.getLanguage(lang)) {
 				try {
 					outStr = hljs.highlight(lang, str).value
