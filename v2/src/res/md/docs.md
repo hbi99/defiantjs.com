@@ -10,7 +10,7 @@ Notice that installation requires "defiant.js" and not "defiant". This is due to
 
 ## Example of active code
 
-```js
+```active:js
 var a = 5;
 
 function test() {
@@ -22,7 +22,6 @@ function test() {
 }
 
 test();
-
 ```
 
 ## Example of inactive code
@@ -39,3 +38,4 @@ var data = [
 console.log( res );
 // [{ x=3, y=1}, { x=4, y=1}, { x=2, y=1}]
 ```
+
