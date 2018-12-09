@@ -40,6 +40,7 @@
     "gulp-svg-symbols": "^3.2.3",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^2.2.20",
+    "highlight.js": "^9.13.1",
     "markdown-it": "^8.4.2",
     "run-sequence": "^2.2.1",
     "stylelint": "^9.9.0",

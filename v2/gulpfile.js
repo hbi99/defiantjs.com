@@ -1,20 +1,21 @@
 
 const colors = require("colors")
-const gulp = require('gulp')
-const $ = require('gulp-load-plugins')()
-const autoprefixer = require('autoprefixer')
-const cleanCSS = require('gulp-clean-css')
-const markdownIt = require('markdown-it')
+const gulp = require("gulp")
+const $ = require("gulp-load-plugins")()
+const autoprefixer = require("autoprefixer")
+const cleanCSS = require("gulp-clean-css")
+const markdownIt = require("markdown-it")
+const hljs = require("highlight.js")
 
 
 const srcPaths = {
 	base: "./src",
 	server : "./app.js",
-	html : ['./src/index.htm'],
+	html : ["./src/index.htm", "./src/res/md/*.md"],
 	scripts : ["./src/res/js/*.js", "!./src/res/js/*.min.js", "./src/res/js/site.js"],
 	styles : ["./src/res/css/**/*.less", "./src/res/css/index.less"],
 	images : "./src/res/img/**/*.{gif,png,jpg,ico,svg}",
-	svg : ['./src/res/svg/*.svg', '!./src/res/svg/svg-symbols.svg']
+	svg : ["./src/res/svg/*.svg", "!./src/res/svg/svg-symbols.svg"]
 }
 
 const destPaths = {
@@ -31,10 +32,21 @@ const includeOptions = {
 }
 
 const svgOptions = {
-	id : 'symbol-%f',
-	class : '.svg-symbol.symbol-%f',
-	templates : ['default-svg']
+	id : "symbol-%f",
+	class : ".svg-symbol.symbol-%f",
+	templates : ["default-svg"]
 }
+
+const md = new markdownIt({
+	highlight: function (str, lang) {
+		if (lang && hljs.getLanguage(lang)) {
+			try {return hljs.highlight(lang, str).value
+			} catch (__) {}
+		}
+		return ""
+	}
+})
+
 
 
 
@@ -53,7 +65,7 @@ function help(done) {
 
 
 function clean() {
-	return gulp.src(destPaths.base +'/**/*', { read: false })
+	return gulp.src(destPaths.base +"/**/*", { read: false })
 		.pipe($.rm())
 }
 
@@ -72,9 +84,9 @@ function styles() {
 		.on("error", (err) => {
 			$.util.beep()
 			console.log(err.toString())
-			this.emit('end')
+			this.emit("end")
 		})
-		.pipe(cleanCSS({compatibility: 'ie8'}))
+		.pipe(cleanCSS({compatibility: "ie8"}))
 		.pipe(gulp.dest(destPaths.styles))
 		.pipe($.size({title: "styles"}))
 }
@@ -90,18 +102,16 @@ function svg() {
 	return gulp.src(srcPaths.svg)
 		.pipe($.svgSymbols(svgOptions))
 		.pipe(gulp.dest(destPaths.svg))
-		.pipe($.size({title: 'svg'}))
+		.pipe($.size({title: "svg"}))
 }
 
 function html() {
-	const md = new markdownIt()
-
-	return gulp.src(srcPaths.html)
+	return gulp.src(srcPaths.html[0])
 		.pipe($.fileInclude({
 			filters: { markdown: instr => md.render(instr) }
 		}))
 		.pipe(gulp.dest(destPaths.base))
-		.pipe($.size({title: 'html'}))
+		.pipe($.size({title: "html"}))
 }
 
 function webserver(done) {
@@ -133,6 +143,6 @@ gulp.task("html", html)
 gulp.task("webserver", webserver)
 
 gulp.task("help", help)
-gulp.task('build', build)
-gulp.task('start', start)
+gulp.task("build", build)
+gulp.task("start", start)
 
