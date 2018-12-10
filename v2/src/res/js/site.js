@@ -22,11 +22,21 @@
 			        gutters: gutterOptions
 				});
 			
+			editor.on('blur', function(event) {
+				var el = $(event.display.wrapper).parents('pre');
+				el.removeClass('active');
+				site.body.removeClass('editor-focus');
+			});
+			editor.on('focus', function(event) {
+				var el = $(event.display.wrapper).parents('pre');
+				el.addClass('active');
+				site.body.addClass('editor-focus');
+			});
 		}
 	};
 
 	var $ = @@include('./junior.js')
 
-	window.onload = site.init;
+	window.onload = site.init.bind(site);
 	
 })(window, document);

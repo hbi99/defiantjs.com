@@ -26,7 +26,15 @@
 			} else if (selector.nodeType || selector === window) {
 				found = [selector];
 			} else {
-				if (this.length) context = this[0];
+				if (this.length) {
+					if (this[0] === window) context = document;
+					else {
+						this.map(function(index, el) {
+							found = found.concat(Sizzle(selector, el));
+						});
+						return jr(found);
+					}
+				}
 				found = Sizzle(selector, context);
 			}
 			if (this.length > 0) return jr(found);
@@ -35,6 +43,47 @@
 				Array.prototype.push.call(this, found[i]);
 			}
 			return this;
+		},
+		// todo
+		map: function(callback) {
+			this.toArray().map(function(el, index) {
+				callback(index, el);
+			});
+			return this;
+		},
+		filter: function(callback) {
+			var matches = this.toArray().filter(function(el, index) {
+				return callback(index, el);
+			});
+			return jr(matches);
+		},
+		each: function(callback) {
+			return this.map(callback);
+		},
+		toggleClass: function(name, state) {
+			return this[state ? 'addClass' : 'removeClass'](name);
+		},
+		is: function(qualifier) {
+			return this[0].matches(qualifier);
+		},
+		get: function(index) {
+			var match = this.toArray();
+			if (index !== undefined) {
+				match = match[ index >= 0 ? index : match.length - index - 2 ];
+			}
+			return match;
+		},
+		toArray: function() {
+			return [].slice.call( this );
+		},
+		width: function() {
+			return this[0] === window ? this[0].innerWidth : this[0].offsetWidth;
+		},
+		height: function() {
+			return this[0] === window ? this[0].innerHeight : this[0].offsetHeight;
+		},
+		eq: function(i) {
+			return jr(this[i]);
 		},
 		nth: function(i) {
 			return jr(this[i]);
@@ -54,13 +103,13 @@
 		},
 		addClass: function(names) {
 			for (var i=0, il=this.length; i<il; i++) {
-				this[i].className = this[i].className.split(/\s+/).concat(names.split(/\s+/)).removeDuplicates().join(' ');
+				this[i].className = this[i].className.split(/\s+/).concat(names.split(/\s+/)).removeDuplicates().join(' ').trim();
 			}
 			return this;
 		},
 		removeClass: function(names) {
 			for (var i=0, il=this.length; i<il; i++) {
-				this[i].className = this[i].className.split(/\s+/).difference(names.split(/\s+/)).join(' ');
+				this[i].className = this[i].className.split(/\s+/).difference(names.split(/\s+/)).join(' ').trim();
 			}
 			return this;
 		},
@@ -138,13 +187,15 @@
 			}
 			return arr;
 		},
-		props: function(name, value, el) {
-			var arr = (el) ? [el] : this,
+		prop: function(name, value, el) {
+			var fix = { 'class': 'className' },
+				arr = (el) ? [el] : this,
 				key;
 			for (var i=0, il=arr.length; i<il; i++) {
 				if (!value) {
 					switch (typeof (name)) {
 						case 'string':
+							name = fix[name] || name;
 							return arr[i][name];
 						case 'object':
 							for (key in name) {
@@ -153,6 +204,7 @@
 							break;
 					}
 				} else if (name && value) {
+					name = fix[name] || name;
 					arr[i][name] = value;
 				}
 			}
@@ -166,8 +218,12 @@
 		},
 		parents: function (selector) {
 			var found = [],
-				match, el;
+				match, el,
+				isFirst = selector.slice(-6) === ':first';
+
 			selector = selector || '*';
+			selector = isFirst ? selector.slice(0,-6) : selector;
+
 			for (var i=0, il=this.length; i<il; i++) {
 				el = this[i].parentNode;
 				match = false;
@@ -179,6 +235,7 @@
 					el = el.parentNode;
 				}
 			}
+			if (isFirst) found = found[0];
 			return jr(found);
 		},
 		clone: function (deep) {
@@ -274,6 +331,12 @@
 		prev: function(selector) {
 			return this.nextPrev(selector, 'previousSibling');
 		},
+		nextAll: function(selector) {
+			return this.nextPrev(selector, 'nextSibling');
+		},
+		prevAll: function(selector) {
+			return this.nextPrev(selector, 'previousSibling');
+		},
 		on: function (types, selector, callback) {
 			callback = (typeof selector === 'function') ? selector : callback;
 			selector = (typeof selector === 'string') ? selector : false;
@@ -295,6 +358,9 @@
 		},
 		unbind: function(types, callback) {
 			return this.off(types, false, callback);
+		},
+		scrollTop: function(y) {
+			return this.scrollTo(0, y);
 		},
 		scrollTo: function(x, y) {
 			for (var i=0, il=this.length; i<il; i++) {
@@ -348,37 +414,70 @@
 			var new_junior = new Junior();
 			return new_junior.find.apply(new_junior, arguments);
 		};
-	// publish junior to global scope
-	window.jr = jr;
 
 	// junior auxiliary
 	var auxiliary = {
 		ajax: function(opt) {
 			var xhr = new XMLHttpRequest(),
 				type = opt.type || 'GET',
-				data = (opt.data) ? JSON.stringify(opt.data) : '';
+				callback = opt.success || opt.complete,
+				data = '',
+				query = '',
+				abort = function () {
+					xhr.isAborted = true;
+					xhr.abort();
+				};
 
-			xhr.open(type, opt.url +'?'+ Date.now(), true);
+			switch (true) {
+				case (opt.dataType === 'script'):
+					return auxiliary.getScript(opt.url, callback);
+				case (type === 'POST'):
+					data = JSON.stringify(opt.data);
+					break;
+				case (type === 'GET'):
+					query = '?'+ TUI.history.serialize(opt.data);
+					break;
+			}
+
+			xhr.open(type, opt.url + query, true);
 			if (opt.withCredentials) {
-				xhr.withCredentials = 'true';
+				xhr.withCredentials = true;
 			}
 			//xhr.setRequestHeader("Cache-Control", "max-age=0");
 			//xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
 			xhr.onreadystatechange = function () {
-				if (this.readyState != 4) return;
-				var data = this.responseXML || this.responseText;
-				if (this.getResponseHeader('Content-Type') === 'application/json') {
+				if (this.isAborted || this.readyState != 4) return;
+				var data = this.responseXML || this.responseText,
+					contentType = this.getResponseHeader('Content-Type');
+				
+				if (contentType && contentType.indexOf('application/json') > -1) {
 					data = JSON.parse(data);
 				}
-				opt.complete.call(this, data);
+				callback.call(this, data);
 			};
 			xhr.send(data);
+
+			return { abort: abort };
 		},
-		xmlFromString: function(str) {
-			var parser = new DOMParser(),
-				doc;
-			doc = parser.parseFromString(str, 'text/xml');
-			return doc;
+		getScript: function(url, callback) {
+			var script = document.createElement('script'),
+				head = document.head || document.documentElement;
+			script.async = true;
+			script.src = url;
+			script.onload = script.onreadystatechange = function() {
+				if (!script.readyState || /loaded|complete/.test(script.readyState)) {
+					callback();
+				}
+			};
+			head.insertBefore(script, head.firstChild);
+		},
+		grep: function(list, callback) {
+			var matches = [];
+			list.toArray().map(function(el, index) {
+				if (callback(el, index)) matches.push(el);
+			});
+			return matches;
 		},
 		extend: function(safe, deposit) {
 			var content;
@@ -390,38 +489,13 @@
 				}
 			}
 			return safe;
-		},
-		prettyPrint: function(node) {
-			var decl   = '<?xml version="1.0" encoding="utf-8"?>',
-				ser    = new XMLSerializer(),
-				xstr   = ser.serializeToString(node),
-				str    = xstr.trim().replace(/(>)\s*(<)(\/*)/g, '$1\n$2$3'),
-				lines  = str.split('\n'),
-				indent = -1,
-				tabs   = 4,
-				i      = 0,
-				il     = lines.length,
-				start,
-				end;
-			for (; i<il; i++) {
-				if (i === 0 && lines[i].toLowerCase() === decl) continue;
-				start = lines[i].match(/<[A-Za-z_\:]+.*?>/g) !== null;
-				//start = lines[i].match(/<[^\/]+>/g) !== null;
-				end   = lines[i].match(/<\/[\w\:]+>/g) !== null;
-				if (lines[i].match(/<.*?\/>/g) !== null) start = end = true;
-				if (start) indent++;
-				lines[i] = String().fill(indent, '\t') + lines[i];
-				if (start && end) indent--;
-				if (!start && end) indent--;
-			}
-			return lines.join('\n').replace(/\t/g, String().fill(tabs, ' '));
 		}
 	};
 
 
-	// private stuff
+	// private system stuff
 	var system = {
-		id: 'absolut-'+ Date.now(),
+		id: 'tui-'+ Date.now(),
 		init: function() {
 			this.eventManager.init();
 		},
@@ -604,16 +678,6 @@
 		}
 	},
 	// auxillary functions
-	getParent = function(el, selector) {
-		selector = selector || '*';
-		var match = false;
-		while (!match && el.nodeType !== 9) {
-			if (el.matches(selector)) {
-				return el;
-			}
-			el = el.parentNode;
-		}
-	},
 	getStyle = function (el, name) {
 		name = name.replace(/([A-Z]|^ms)/g, "-$1").toLowerCase();
 		var value = document.defaultView.getComputedStyle(el, null).getPropertyValue(name);
@@ -693,7 +757,7 @@
 			return new F();
 		};
 	}
-	// extending ARRAY with useful methods
+	// extending Array
 	if (!Array.prototype.hasOwnProperty('removeDuplicates')) {
 		Array.prototype.removeDuplicates = function () {
 			for (var i=0, il=this.length, unique=[]; i<il; i++) {
@@ -709,35 +773,13 @@
 			return this.filter(function(i) {return (a.indexOf(i) === -1);});
 		};
 	}
-	// extending STRING
-	if (!String.prototype.fill) {
-		String.prototype.fill = function(i,c) {
-			var str = this;
-			c = c || ' ';
-			for (; str.length<i; str+=c){}
-			return str;
-		};
-	}
+	// extending String
 	if (!String.prototype.trim) {
 		String.prototype.trim = function () {
-			return this.replace(/^\s+|\s+$/gm, '');
+			return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
 		};
 	}
-	if (!String.prototype.sprintf) {
-		String.prototype.sprintf = function () {
-			var args = Array.prototype.slice.call(arguments);
-			return this.replace(/%s/g, function() { return args.shift();});
-		};
-	}
-	// extending DATE
-	if (!Date.stamp) {
-		Date.stamp = function (s) {
-			var fn = function(i) {return i < 10 ? '0'+ i : i;},
-				d = s ? new Date(s) : new Date();
-			return d.getFullYear() +'-'+ fn(d.getMonth() + 1) +'-'+ fn(d.getDate()) +' '+ fn(d.getHours()) +':'+ fn(d.getMinutes()) +':'+ fn(d.getSeconds());
-		};
-	}
-
+	
 	for (var fn in auxiliary) {
 		jr[fn] = auxiliary[fn];
 	}
