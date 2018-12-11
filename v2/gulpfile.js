@@ -39,19 +39,12 @@ const svgOptions = {
 
 const md = new markdownIt({
 	highlight: function (str, lang) {
-		const isActive = !lang.indexOf("active:")
-		let outStr = ""
-
-		if (lang) {
-			if (isActive) {
-				outStr = `<textarea data-language="${lang.split(':')[1]}">${str}</textarea><sidebar></sidebar>`
-			} else if (hljs.getLanguage(lang)) {
-				try {
-					outStr = hljs.highlight(lang, str).value
-				} catch (__) {}
-			}
+		if (lang && hljs.getLanguage(lang)) {
+			try {
+				return hljs.highlight(lang, str).value
+			} catch (__) {}
 		}
-		return outStr
+		return ''
 	}
 })
 

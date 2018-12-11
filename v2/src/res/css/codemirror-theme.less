@@ -8,15 +8,14 @@
 	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 	font-size: 13px;
 	line-height: 1.4em;
-    margin-right: 400px;
-	border-radius: 3px 0 0 3px;
+	border-radius: 3px;
 
 	&.CodeMirror-focused {}
 }
 
 .CodeMirror-gutters {
 	background: transparent;
-	border-right: 1px solid #ddd;
+	border-right: 1px solid transparent;
 	z-index: 11;
 
 	&:hover {
@@ -30,11 +29,11 @@
 }
 .CodeMirror-linenumber {
 	background: #fff;
-	color: #ccc;
-	padding: 0 3px 0 11px;
+	color: #bbb;
+	padding: 0 5px 0 17px;
 }
 .CodeMirror .CodeMirror-cursor {
-	border-left: 1px solid #bbb;
+	border-left: 1px solid #888;
 }
 .CodeMirror div.CodeMirror-selected {
 	background: rgba(0,0,200,0.1);

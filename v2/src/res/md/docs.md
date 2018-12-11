@@ -10,13 +10,14 @@ Notice that installation requires "defiant.js" and not "defiant". This is due to
 
 ## Example of active code
 
-```active:js
+```js
+/* qure:active */
 var a = 5;
 
 function test() {
-    console.log(a);
+    console.log(a--);
 
-    if (a--) {
+    if (a) {
         setTimeout(test, 1000);
     }
 }
@@ -24,7 +25,20 @@ function test() {
 test();
 ```
 
-## Example of inactive code
+
+## Example of fetch
+
+```js
+/* qure:active */
+
+fetch('http://defiantjs.com/defiant.js/package.json')
+    .then(resp => {
+        console.log(resp)
+    })
+```
+
+
+## Example of passive code
 
 ```js
 var data = [
