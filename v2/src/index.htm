@@ -23,13 +23,20 @@
 <body>
 
 <div class="layout">
-	<div class="top-menu">
+	<div class="page-head">
 		<div class="container">
-			<nav>Topmenu</nav>
+			<nav>
+				<span class="tab active">Documentation</span>
+				<span class="tab">XPath Evaluator</span>
+				<span class="tab">Exptressions Table</span>
+			</nav>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container article">
 		@@include(markdown('res/md/docs.md'))
+	</div>
+	<div class="container footer">
+		DefiantJS was developed by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> © 2019
 	</div>
 </div>
 

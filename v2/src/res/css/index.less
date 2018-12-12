@@ -23,38 +23,115 @@ html, body {
 }
 
 body {
-	
+	background: #fff;
+	color: #24292e;
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+	line-height: 24px;
+}
+
+h1 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+h2 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+h3 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+h4 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+h5 {
+	margin-top: 24px;
+	margin-bottom: 16px;
 }
 
 .layout {
-	.top-menu {
-		padding: 13px 0px 17px;
+	.page-head {
+		position: relative;
+		background: #fafbfc;
+		margin-bottom: 37px;
+		border-bottom: 1px solid #e1e4e8;
 
-		nav {
-			position: relative;
-			padding: 13px 7px 17px;
-			border: 1px solid #ddd;
-			border-radius: 4px;
+		.container {
+			height: 91px;
+			padding-left: 0;
+			padding-right: 0;
 
-			&:before {
-				content: '';
-				background: #69d;
+			nav {
 				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				height: 7px;
-				border-radius: 0 0 4px 4px;
+				bottom: -1px;
+				font-size: 14px;
+
+				.tab {
+					float: left;
+					color: #586069;
+					padding: 8px 15px 7px;
+
+					&.active {
+						padding: 7px 15px 8px;
+						background: #fff;
+						border: 1px solid;
+						border-top-width: 2px;
+						border-color: #e36209 #e1e4e8 transparent;
+						color: #24292e;
+						border-radius: 3px 3px 0 0;
+					}
+				}
 			}
 		}
 	}
-
-	.container > pre {
+	.container {
 		position: relative;
-		overflow: visible;
 
-		textarea {
-			opacity: 0;
+		&.article {
+			padding: 11px 37px 41px;
+			border: 1px solid #e1e4e8;
+			border-radius: 0 0 4px 4px;
+
+			&:before {
+				content: '';
+				background: #f1f8ff;
+				position: absolute;
+				top: -13px;
+				left: -1px;
+				right: -1px;
+				height: 13px;
+				border: 1px solid #c8e1ff;
+				border-radius: 4px 4px 0 0;
+			}
+
+			> pre {
+				position: relative;
+				overflow: visible;
+
+				textarea {
+					opacity: 0;
+				}
+			}
+		}
+
+		&.footer {
+			color: #888;
+			padding: 67px 0 53px;
+			font-size: 14px;
+			//text-align: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 37px;
+				left: 0;
+				right: 0;
+				border-top: 1px solid #e1e4e8;
+			}
 		}
 	}
 }
