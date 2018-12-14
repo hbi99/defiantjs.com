@@ -26,21 +26,44 @@ test();
 ```
 
 
+## Example of play / pause
+```js
+/* qure:active */
+var a = 10;
+
+function test() {
+    console.log(a--);
+
+    if (a) {
+        setTimeout(test, 1000);
+    }
+}
+
+test();
+```
+
+
 ## Example of fetch
 
 ```js
 /* qure:active */
-
-fetch('http://defiantjs.com/defiant.js/package.json')
-    .then(resp => {
-        console.log(resp)
-    })
+var tmp = [{a: 1}, {b: 1}];
+console.log(tmp);
+console.log(1);
+console.log({c: 2});
+console.log({c: 2}, tmp);
 ```
 
 
 ## Example of passive code
 
 ```js
+
+(async () => {
+    var file = await fetch('/res/json/tiny-data.json');
+    console.log(file.body);
+})();
+
 var data = [
         { "x": 2, "y": 0 },
         { "x": 3, "y": 1 },

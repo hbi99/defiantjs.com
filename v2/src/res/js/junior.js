@@ -159,16 +159,16 @@
 			}
 			return this;
 		},
-		removeAttr: function (name, value, el) {
-			var arr = (el) ? [el] : this,
+		removeAttr: function (name, value) {
+			var arr = this,
 				key;
 			for (var i=0, il=arr.length; i<il; i++) {
 				arr[i].removeAttribute(name);
 			}
 			return this;
 		},
-		attr: function (name, value, el) {
-			var arr = (el) ? [el] : this,
+		attr: function (name, value) {
+			var arr = this,
 				key;
 			for (var i=0, il=arr.length; i<il; i++) {
 				if (!value) {
@@ -185,7 +185,7 @@
 					arr[i].setAttribute(name, value);
 				}
 			}
-			return arr;
+			return this;
 		},
 		prop: function(name, value, el) {
 			var fix = { 'class': 'className' },

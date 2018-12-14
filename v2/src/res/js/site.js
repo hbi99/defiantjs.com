@@ -6,6 +6,7 @@
 	'use strict';
 
 	var cm = {
+		editors: {},
 		types: {
 			js: 'text/javascript'
 		},
@@ -22,6 +23,17 @@
 			// fast references
 			this.body = $('body');
 
+			// init sub-objects
+			for (var name in this) {
+				if (typeof(this[name].init) === 'function') {
+					this[name].init();
+				}
+			}
+
+			// bind handlers
+			this.body.on('click', '[data-cmd]', this.doEvent);
+
+			// default tasks
 			this.doEvent('init-editors');
 		},
 		doEvent: function(event, el, orgEvent) {
@@ -52,24 +64,26 @@
 					break;
       			// custom events
 				case 'init-editors':
-					self.body.find('span:contains(/* qure:active */)').map(function(i, item) {
-						var el = $(item).parents('code:first'),
+					self.body.find('span:contains(/* qure:active */)').map(function(index, item) {
+						var _cm = cm,
+							el = $(item).parents('code:first'),
 							language = el.prop('className').split('-')[1],
 							code = el.text().split('\n').slice(1).join('\n'),
 							cmOptions = {
-						        mode: cm.types[language],
-						        gutters: cm.gutterOptions,
-								extraKeys: cm.extraKeys,
+						        mode: _cm.types[language],
+						        gutters: _cm.gutterOptions,
+								extraKeys: _cm.extraKeys,
 								lineWrapping: false,
 								lineNumbers: true
 							},
-							textarea;
+							textarea,
+							editor;
 						if (el.find('span:first')[0] !== item) return;
 						
-						el.addClass('active');
+						el.attr({'data-editor_index': index}).addClass('active');
 						el.html('<textarea>'+ code +'</textarea><sidebar><div class="rows"></div></sidebar>');
 						textarea = el.find('textarea:first')[0];
-						CodeMirror.fromTextArea(textarea, cmOptions);
+						editor = CodeMirror.fromTextArea(textarea, cmOptions);
 						/*
 						editor.on('blur', function(event) {
 								var el = $(event.display.wrapper).parents('pre');
@@ -82,34 +96,74 @@
 								qure.body.addClass('editor-focus');
 							});
 						*/
+						_cm.editors[index] = editor;
+
+						if (index === 1) qure.sandbox(editor);
+						//console.log(index, editor.getValue());
 					});
+					break;
+				case 'explore-args':
+					console.log(el.attr('data-index'));
 					break;
 			}
 		},
 		sandbox: function(editor) {
 			var code = editor.getValue(),
 				wrapper = $(editor.display.wrapper.parentNode).addClass('sandbox-on'),
+				editor_index = wrapper.attr('data-editor_index'),
 				sidebar = wrapper.find('sidebar .rows'),
 				labs = {
-					log : function(line, str) {
-						var el = sidebar.find('> div.stdOut.line-'+ line).removeClass('ping'),
+					log : function(line) {
+						var args = [].slice.call(arguments).slice(1),
+							el = sidebar.find('> div.stdOut.line-'+ line).removeClass('ping'),
 							htm,
 							style = [],
 							height = editor.defaultTextHeight();
 						if (!el.length) {
-							style.push('height: '+ height +'px');
+							style.push('height: '+ (height + 1) +'px');
 							style.push('top: '+ (((line - 1) * height) + 4) +'px');
 							htm = '<div class="stdOut line-'+ line +'" style="'+ style.join('; ') +';"></div>';
 							el = sidebar.append(htm);
 						}
 						setTimeout(function() {
+							var content = args.map(function(item, index) {
+									switch (item.constructor) {
+										case Array:    return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
+										case Object:   return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
+										case Function: return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">Function</span>';
+									}
+									return item;
+								});
 							// update log line
-							el.addClass('ping').html(str.toString());
+							el.addClass('ping').html(content.join(','));
 						}, 1);
+					},
+					_timeouts: [],
+					_intervals: [],
+					setTimeout: function(func, time) {
+						this._timeouts.push(setTimeout(func, time));
+					},
+					setInterval: function(func, time) {
+						this._intervals.push(setInterval(func, time));
+					},
+					stop: function() {
+						this._stopped = true;
+						this._intervals.map(function(item) {
+							clearInterval(item);
+						});
+						this._timeouts.map(function(item) {
+							console.log(item);
+							clearTimeout(item);
+						});
 					}
 				},
 				sandboxed = function(lines) {
-					var code = 'var console={log: labs.log};'+ lines.join('\n');
+					var code = `var console={log:labs.log},
+							setTimeout=labs.setTimeout.bind(labs),
+							setInterval=labs.setInterval.bind(labs);
+						(function() {
+							if (labs._stopped) return;
+							${lines.join('\n')}})();`;
 					(new Function('labs', code).call({}, labs));
 				},
 				lines = code.split('\n'),
