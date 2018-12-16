@@ -1,12 +1,14 @@
 
 @@include('./codemirror/codemirror.js')
 @@include('./codemirror/javascript.js')
+@@include('./raf.js')
 
 (function(window, document) {
 	'use strict';
 
 	var cm = {
 		editors: {},
+		labs: {},
 		types: {
 			js: 'text/javascript'
 		},
@@ -39,6 +41,7 @@
 		doEvent: function(event, el, orgEvent) {
 			var self = qure,
 				cmd  = (typeof(event) === 'string') ? event : event.type,
+				index,
 				code,
 				srcEl;
 			//console.log(cmd);
@@ -81,7 +84,9 @@
 						if (el.find('span:first')[0] !== item) return;
 						
 						el.attr({'data-editor_index': index}).addClass('active');
-						el.html('<textarea>'+ code +'</textarea><sidebar><div class="rows"></div></sidebar>');
+						el.html('<textarea>'+ code +'</textarea>'+
+								'<div data-index="'+ index +'" data-cmd="active-play-toggle"></div>'+
+								'<sidebar><div class="rows"></div></sidebar>');
 						textarea = el.find('textarea:first')[0];
 						editor = CodeMirror.fromTextArea(textarea, cmOptions);
 						/*
@@ -98,12 +103,20 @@
 						*/
 						_cm.editors[index] = editor;
 
-						if (index === 1) qure.sandbox(editor);
+						//if (index === 1) qure.sandbox(editor);
 						//console.log(index, editor.getValue());
 					});
 					break;
 				case 'explore-args':
 					console.log(el.attr('data-index'));
+					break;
+				case 'active-play-toggle':
+					index = el.attr('data-index');
+					if (cm.labs[index]) {
+						cm.labs[index].stop(index);
+					} else {
+						qure.sandbox(cm.editors[index]);
+					}
 					break;
 			}
 		},
@@ -113,19 +126,43 @@
 				editor_index = wrapper.attr('data-editor_index'),
 				sidebar = wrapper.find('sidebar .rows'),
 				labs = {
-					log : function(line) {
+					view: function(line, options) {
+						var el = sidebar.find('div.view.stdOut.line-'+ line),
+							height = editor.defaultTextHeight(),
+							style = [],
+							key, htm;
+						if (!el.length) {
+							style.push('top: '+ (((line - 1) * height) + 4) +'px');
+							if (typeof options === 'object') {
+								for (key in options) {
+									switch (key) {
+										case 'width': continue;
+										case 'height': style.push(key +': '+ options[key] +'px'); break;
+									}
+								}
+							}
+							htm = '<div class="stdOut view line-'+ line +'" style="'+ style.join('; ') +';"></div>';
+							el = sidebar.append(htm);
+						}
+						return {
+							el: el,
+							width: el.prop('offsetWidth') - 2,
+							height: el.prop('offsetHeight') - 2
+						};
+					},
+					log: function(line) {
 						var args = [].slice.call(arguments).slice(1),
 							el = sidebar.find('> div.stdOut.line-'+ line).removeClass('ping'),
-							htm,
+							height = editor.defaultTextHeight(),
 							style = [],
-							height = editor.defaultTextHeight();
+							htm;
 						if (!el.length) {
 							style.push('height: '+ (height + 1) +'px');
 							style.push('top: '+ (((line - 1) * height) + 4) +'px');
 							htm = '<div class="stdOut line-'+ line +'" style="'+ style.join('; ') +';"></div>';
 							el = sidebar.append(htm);
 						}
-						setTimeout(function() {
+						requestAnimationFrame(function() {
 							var content = args.map(function(item, index) {
 									switch (item.constructor) {
 										case Array:    return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
@@ -136,42 +173,54 @@
 								});
 							// update log line
 							el.addClass('ping').html(content.join(','));
-						}, 1);
+						});
 					},
+					_rafs: [],
 					_timeouts: [],
 					_intervals: [],
+					requestAnimationFrame: function(func) {
+						this._rafs.push(requestAnimationFrame(func));
+					},
 					setTimeout: function(func, time) {
 						this._timeouts.push(setTimeout(func, time));
 					},
 					setInterval: function(func, time) {
 						this._intervals.push(setInterval(func, time));
 					},
-					stop: function() {
+					stop: function(index) {
 						this._stopped = true;
-						this._intervals.map(function(item) {
-							clearInterval(item);
+						this._rafs.map(function(func) {
+							cancelAnimationFrame(func);
 						});
-						this._timeouts.map(function(item) {
-							console.log(item);
-							clearTimeout(item);
+						this._intervals.map(function(func) {
+							clearInterval(func);
 						});
+						this._timeouts.map(function(func) {
+							clearTimeout(func);
+						});
+						delete cm.labs[index];
 					}
 				},
 				sandboxed = function(lines) {
-					var code = `var console={log:labs.log},
+					var code = `var console={log:labs.log, view:labs.view},
+							requestAnimationFrame=labs.requestAnimationFrame.bind(labs),
 							setTimeout=labs.setTimeout.bind(labs),
 							setInterval=labs.setInterval.bind(labs);
 						(function() {
 							if (labs._stopped) return;
 							${lines.join('\n')}})();`;
 					(new Function('labs', code).call({}, labs));
+
+					cm.labs[editor_index] = labs;
 				},
 				lines = code.split('\n'),
 				len = lines.length;
 
 			while (len--) {
 				// adjust 'console.log'
-				lines[len] = lines[len].replace(/console.log\(/g, 'console.log('+ (len+1) +',');
+				lines[len] = lines[len]
+								.replace(/console.log\(/g, 'console.log('+ (len+1) +',')
+								.replace(/console.view\(/g, 'console.view('+ (len+1) +',');
 			}
 			// eval code in sandbox mode
 			sandboxed(lines);

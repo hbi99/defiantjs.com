@@ -25,21 +25,34 @@ function test() {
 test();
 ```
 
-
-## Example of play / pause
 ```js
 /* qure:active */
-var a = 10;
 
-function test() {
-    console.log(a--);
+var view = console.view({ height: 180 }),
+    cvs = view.el.html('<canvas></canvas>').find('canvas')[0],
+    ctx = cvs.getContext('2d'),
+    line = 2,
+    frequency = 1;
 
-    if (a) {
-        setTimeout(test, 1000);
-    }
+cvs.width = view.width;
+cvs.height = view.height;
+
+ctx.fillStyle = 'green';
+
+function draw() {
+    var y = Math.sin(frequency++ * 0.035) * (cvs.height / 4),
+        img = ctx.getImageData(0, 0, cvs.width, cvs.height);
+
+    ctx.clearRect(0, 0, cvs.width, cvs.height);
+    ctx.putImageData(img, -1, 0);
+    ctx.fillRect(cvs.width - line, y + (cvs.height / 2), line, line);
+
+    requestAnimationFrame(draw);
+    //setTimeout(draw, 20);
 }
 
-test();
+draw();
+
 ```
 
 
@@ -47,11 +60,26 @@ test();
 
 ```js
 /* qure:active */
-var tmp = [{a: 1}, {b: 1}];
+var tmp = document.getElementsByTagName('code');
+
 console.log(tmp);
-console.log(1);
-console.log({c: 2});
-console.log({c: 2}, tmp);
+```
+
+
+## Example of play / pause
+```js
+/* qure:active */
+var a = 10;
+
+function test() {
+    console.log({a: 2}, a--);
+
+    if (a) {
+        setTimeout(test, 1000);
+    }
+}
+
+test();
 ```
 
 
