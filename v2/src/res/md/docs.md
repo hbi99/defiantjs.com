@@ -14,6 +14,8 @@ Notice that installation requires "defiant.js" and not "defiant". This is due to
 /* qure:active */
 var a = 5;
 
+console.log( Object.keys(window) );
+
 function test() {
     console.log(a--);
 
@@ -25,6 +27,21 @@ function test() {
 test();
 ```
 
+## Example of import
+```js
+/* qure:active */
+
+(async function() {
+    var data = await fetch('/res/json/tiny-data.json');
+    var math = await import('/res/js/modules/math.js');
+
+    console.log(data);
+    console.log(math.add(5, 4));
+})();
+```
+
+
+## Example of console.view
 ```js
 /* qure:active */
 
@@ -36,10 +53,9 @@ var view = console.view({ height: 180 }),
 
 cvs.width = view.width;
 cvs.height = view.height;
-
 ctx.fillStyle = 'green';
 
-function draw() {
+(function draw() {
     var y = Math.sin(frequency++ * 0.035) * (cvs.height / 4),
         img = ctx.getImageData(0, 0, cvs.width, cvs.height);
 
@@ -48,38 +64,7 @@ function draw() {
     ctx.fillRect(cvs.width - line, y + (cvs.height / 2), line, line);
 
     requestAnimationFrame(draw);
-    //setTimeout(draw, 20);
-}
-
-draw();
-
-```
-
-
-## Example of fetch
-
-```js
-/* qure:active */
-var tmp = document.getElementsByTagName('code');
-
-console.log(tmp);
-```
-
-
-## Example of play / pause
-```js
-/* qure:active */
-var a = 10;
-
-function test() {
-    console.log({a: 2}, a--);
-
-    if (a) {
-        setTimeout(test, 1000);
-    }
-}
-
-test();
+})();
 ```
 
 

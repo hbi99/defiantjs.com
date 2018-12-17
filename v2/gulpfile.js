@@ -13,6 +13,7 @@ const srcPaths = {
 	server : "./app.js",
 	html : ["./src/index.htm", "./src/res/md/*.md"],
 	scripts : ["./src/res/js/*.js", "!./src/res/js/*.min.js", "./src/res/js/site.js"],
+	modules : "./src/res/js/modules/*.js",
 	styles : ["./src/res/css/**/*.less", "./src/res/css/index.less"],
 	images : "./src/res/img/**/*.{gif,png,jpg,ico,svg}",
 	json : "./src/res/json/**/*.{json,csv,tsv}",
@@ -22,6 +23,7 @@ const srcPaths = {
 const destPaths = {
 	base: "./public",
 	script: "./public/res/js/",
+	modules: "./public/res/js/modules/",
 	styles: "./public/res/css/",
 	images: "./public/res/img/",
 	json: "./public/res/json/",
@@ -81,6 +83,12 @@ function scripts() {
 		.pipe($.size({title: "scripts"}))
 }
 
+function modules() {
+	return gulp.src(srcPaths.modules)
+		.pipe(gulp.dest(destPaths.modules))
+		.pipe($.size({title: "modules"}))
+}
+
 function styles() {
 	return gulp.src(srcPaths.styles[1])
 		.pipe($.less())
@@ -133,6 +141,7 @@ function webserver(done) {
 
 function watch() {
 	gulp.watch(srcPaths.scripts.slice(0,2), scripts)
+	gulp.watch(srcPaths.modules, modules)
 	gulp.watch(srcPaths.styles[0], styles)
 	gulp.watch(srcPaths.images, images)
 	gulp.watch(srcPaths.json, json)
@@ -140,12 +149,13 @@ function watch() {
 	gulp.watch(srcPaths.html, html)
 }
 
-var build = gulp.series(clean, gulp.parallel(scripts, styles, images, svg, json, html))
-var start = gulp.series(clean, gulp.parallel(scripts, styles, images, svg, json, html), webserver, watch)
+var build = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, svg, json, html))
+var start = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, svg, json, html), webserver, watch)
 
 gulp.task("clean", clean)
 gulp.task("watch", watch)
 gulp.task("scripts", scripts)
+gulp.task("modules", modules)
 gulp.task("styles", styles)
 gulp.task("images", images)
 gulp.task("svg", svg)

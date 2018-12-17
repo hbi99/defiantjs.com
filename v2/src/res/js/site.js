@@ -41,6 +41,7 @@
 		doEvent: function(event, el, orgEvent) {
 			var self = qure,
 				cmd  = (typeof(event) === 'string') ? event : event.type,
+				wrapper,
 				index,
 				code,
 				srcEl;
@@ -85,7 +86,7 @@
 						
 						el.attr({'data-editor_index': index}).addClass('active');
 						el.html('<textarea>'+ code +'</textarea>'+
-								'<div data-index="'+ index +'" data-cmd="active-play-toggle"></div>'+
+								'<div data-cmd="active-play-toggle"></div>'+
 								'<sidebar><div class="rows"></div></sidebar>');
 						textarea = el.find('textarea:first')[0];
 						editor = CodeMirror.fromTextArea(textarea, cmOptions);
@@ -108,12 +109,14 @@
 					});
 					break;
 				case 'explore-args':
-					console.log(el.attr('data-index'));
+					console.log(el.attr('data-editor_index'));
 					break;
 				case 'active-play-toggle':
-					index = el.attr('data-index');
+					wrapper = el.parent();
+					index = wrapper.attr('data-editor_index');
 					if (cm.labs[index]) {
 						cm.labs[index].stop(index);
+						wrapper.removeClass('sandbox-on');
 					} else {
 						qure.sandbox(cm.editors[index]);
 					}
@@ -165,11 +168,13 @@
 						requestAnimationFrame(function() {
 							var content = args.map(function(item, index) {
 									switch (item.constructor) {
+										case Number:
+										case String:   return item;
 										case Array:    return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
 										case Object:   return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
 										case Function: return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">Function</span>';
 									}
-									return item;
+									return '<span data-cmd="explore-args" data-index="'+ editor_index +','+ index +'">'+ (typeof item) +'</span>';
 								});
 							// update log line
 							el.addClass('ping').html(content.join(','));
@@ -215,6 +220,8 @@
 				},
 				lines = code.split('\n'),
 				len = lines.length;
+
+			sidebar.html('');
 
 			while (len--) {
 				// adjust 'console.log'

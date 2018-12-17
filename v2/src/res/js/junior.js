@@ -61,7 +61,7 @@
 			return this.map(callback);
 		},
 		toggleClass: function(name, state) {
-			return this[state ? 'addClass' : 'removeClass'](name);
+			return this[state ? 'removeClass' : 'addClass'](name);
 		},
 		is: function(qualifier) {
 			return this[0].matches(qualifier);
@@ -219,7 +219,7 @@
 		parents: function (selector) {
 			var found = [],
 				match, el,
-				isFirst = selector.slice(-6) === ':first';
+				isFirst = selector && selector.slice(-6) === ':first';
 
 			selector = selector || '*';
 			selector = isFirst ? selector.slice(0,-6) : selector;
