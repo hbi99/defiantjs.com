@@ -24,21 +24,57 @@
 
 <div class="layout">
 	<div class="page-head">
+		<div class="container details-container">
+			<div class="left">
+				<a href="/" class="library-name">defiant.js</a>
+				<span class="library-version">v2.1.3</span>
+			</div>
+			<div class="right">
+				<div class="btn-group">
+					<a class="button" target="_new" href="https://github.com/hbi99/defiant.js">Source code</a>
+					<a class="button" target="_new" href="https://github.com/hbi99/defiant.js/archive/master.zip">Download</a>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<nav>
-				<span class="tab active">Documentation</span>
-				<span class="tab">XPath Evaluator</span>
-				<span class="tab">Exptressions Table</span>
-				<span class="tab">junior.js</span>
+				<span data-cmd="switch-tab" class="tab active">Documentation</span>
+				<span data-cmd="switch-tab" class="tab">Expressions Table</span>
+				<span data-cmd="switch-tab" class="tab">XPath Evaluator</span>
+				<span data-cmd="switch-tab" class="tab">junior.js</span>
 			</nav>
 		</div>
 	</div>
 	<div class="container article">
-		@@include(markdown('res/md/docs.md'))
+		<div class="tab-body active">
+			<div class="container preamble">
+				<b>Defiant</b> enables you to perform lightning-fast searches on <abbr title="JavaScript Object Notation">JSON</abbr>
+				using <abbr title="XML Path Language">XPath</abbr> expressions, and transform <abbr title="JavaScript Object Notation">JSON</abbr>
+				using <abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr>.
+			</div>
+			<div class="markdown-body">
+				@@include(markdown('res/md/defiantjs.md'))
+			</div>
+		</div>
+		<div class="tab-body">
+			<div class="markdown-body">
+				@@include(markdown('res/md/expressions-table.md'))
+			</div>
+		</div>
+		<div class="tab-body">
+			<div class="markdown-body">
+				XPath Evaluator
+			</div>
+		</div>
+		<div class="tab-body">
+			<div class="markdown-body">
+				junior.js
+			</div>
+		</div>
 	</div>
 	<div class="container footer">
 		<div class="left">
-			DefiantJS by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> © 2019
+			Defiant by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> © 2019
 		</div>
 		<div class="right">
 			Created with &hearts; in Sweden

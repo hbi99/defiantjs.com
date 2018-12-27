@@ -1,0 +1,12 @@
+{
+    "car": [
+        {"id": 10, "color": "silver", "name": "Volvo"},
+        {"id": 11, "color": "red",    "name": "Saab"},
+        {"id": 12, "color": "red",    "name": "Peugeot"},
+        {"id": 13, "color": "yellow", "name": "Porsche"}
+    ],
+    "bike": [
+        {"id": 20, "color": "black", "name": "Cannondale"},
+        {"id": 21, "color": "red",   "name": "Shimano"}
+    ]
+}
