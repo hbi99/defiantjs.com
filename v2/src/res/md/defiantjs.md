@@ -6,16 +6,14 @@ Do you need to query large JSON structures? Do you end up coding loops to parse 
 /* qure:active */
 
 (async () => {
-  // import 'defiant.js'
-  var defiant = await import('/res/js/modules/defiant.js');
+  // import 'defiant' and fetch 'data'
+  var [defiant, data] = await Promise.all([
+      import('/res/js/modules/defiant.js'),
+      fetchJSON('/res/json/tiny.json')
+    ]);
   
-  // fetch JSON data
-  fetch('/res/json/store.json')
-      .then(resp => resp.json())
-      .then(data => {
-        var search = JSON.search(data, '//car[color="yellow"]/name');
-        console.log(search);
-      });
+  var search = JSON.search(data, '//car[color="yellow"]/name');
+  console.log(search);
 
 })();
 

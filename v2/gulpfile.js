@@ -16,6 +16,7 @@ const srcPaths = {
 	modules : "./src/res/js/modules/*.js",
 	styles : ["./src/res/css/**/*.less", "./src/res/css/index.less"],
 	images : "./src/res/img/**/*.{gif,png,jpg,ico,svg}",
+	fonts : "./src/res/fonts/*.*",
 	json : "./src/res/json/**/*.{json,csv,tsv}",
 	svg : ["./src/res/svg/*.svg", "!./src/res/svg/svg-symbols.svg"]
 }
@@ -26,6 +27,7 @@ const destPaths = {
 	modules: "./public/res/js/modules/",
 	styles: "./public/res/css/",
 	images: "./public/res/img/",
+	fonts: "./public/res/fonts/",
 	json: "./public/res/json/",
 	svg: "./public/res/svg/",
 }
@@ -109,6 +111,13 @@ function images() {
 		.pipe($.size({title: "images"}))
 }
 
+function fonts() {
+	return gulp.src(srcPaths.fonts)
+		.pipe($.imagemin())
+		.pipe(gulp.dest(destPaths.fonts))
+		.pipe($.size({title: "fonts"}))
+}
+
 function json() {
 	return gulp.src(srcPaths.json)
 		.pipe(gulp.dest(destPaths.json))
@@ -144,13 +153,14 @@ function watch() {
 	gulp.watch(srcPaths.modules, modules)
 	gulp.watch(srcPaths.styles[0], styles)
 	gulp.watch(srcPaths.images, images)
+	gulp.watch(srcPaths.fonts, fonts)
 	gulp.watch(srcPaths.json, json)
 	gulp.watch(srcPaths.svg, svg)
 	gulp.watch(srcPaths.html, html)
 }
 
-var build = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, svg, json, html))
-var start = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, svg, json, html), webserver, watch)
+var build = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, html))
+var start = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, html), webserver, watch)
 
 gulp.task("clean", clean)
 gulp.task("watch", watch)
@@ -158,6 +168,7 @@ gulp.task("scripts", scripts)
 gulp.task("modules", modules)
 gulp.task("styles", styles)
 gulp.task("images", images)
+gulp.task("fonts", fonts)
 gulp.task("svg", svg)
 gulp.task("json", json)
 gulp.task("html", html)

@@ -190,6 +190,14 @@
 							el.innerHTML = content.join(',');
 						});
 					},
+					fetchJSON: async function(url) {
+						return new Promise(function(resolve, reject) {
+							fetch(url)
+						      .then(resp => resp.json())
+						      .then(data => resolve(data))
+						      .catch(error => reject(error));
+						});
+					},
 					_rafs: [],
 					_timeouts: [],
 					_intervals: [],
@@ -221,6 +229,7 @@
 							requestAnimationFrame=labs.requestAnimationFrame.bind(labs),
 							setTimeout=labs.setTimeout.bind(labs),
 							setInterval=labs.setInterval.bind(labs);
+							fetchJSON=labs.fetchJSON.bind(labs);
 						(function() {
 							if (labs._stopped) return;
 							${lines.join('\n')}})();`;

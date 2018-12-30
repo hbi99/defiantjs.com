@@ -31,17 +31,17 @@
 			</div>
 			<div class="right">
 				<div class="btn-group">
-					<a class="button" target="_new" href="https://github.com/hbi99/defiant.js">Source code</a>
-					<a class="button" target="_new" href="https://github.com/hbi99/defiant.js/archive/master.zip">Download</a>
+					<a class="button" target="_new" href="https://github.com/hbi99/defiant.js"><i class="icon-github"></i> Source code</a>
+					<a class="button" target="_new" href="https://github.com/hbi99/defiant.js/archive/master.zip"><i class="icon-download"></i> Download</a>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<nav>
-				<span data-cmd="switch-tab" class="tab active">Documentation</span>
-				<span data-cmd="switch-tab" class="tab">Expressions Table</span>
-				<span data-cmd="switch-tab" class="tab">XPath Evaluator</span>
-				<span data-cmd="switch-tab" class="tab">junior.js</span>
+				<span data-cmd="switch-tab" class="tab active"><i class="icon-defiant"></i> Documentation</span>
+				<span data-cmd="switch-tab" class="tab"><i class="icon-list-alt"></i> Expressions Table</span>
+				<span data-cmd="switch-tab" class="tab"><i class="icon-code"></i> XPath Evaluator</span>
+				<span data-cmd="switch-tab" class="tab hidden"><i class="icon-book"></i> Other Libraries</span>
 			</nav>
 		</div>
 	</div>
@@ -62,13 +62,54 @@
 			</div>
 		</div>
 		<div class="tab-body">
-			<div class="markdown-body">
-				XPath Evaluator
+			<div class="container xpath-input error1">
+				<div class="xpath-matches"></div>
+				<input type="text" placeholder="Enter your XPath here"/>
+			</div>
+			<div class="xpath-evaluator">
+				<div class="box-header">
+					<div class="file-actions">
+						<span class="btn-group">
+							<span class="button active" data-cmd="load-file" data-arg="/res/json/store.json">store.json</span>
+							<span class="button" data-cmd="load-file" data-arg="/res/json/medium.json">medium.json</span>
+							<span class="button" data-cmd="custom-file">Custom</span>
+						</span>
+						<span class="button" data-cmd="toggle-samples">Samples</span>
+					</div>
+					<div class="file-info"></div>
+				</div>
+				<div class="box-body">
+					<textarea>@@include('res/json/store.json')</textarea>
+					<sidebar>
+						<div class="active" data-xpaths="store.json">
+							<span data-cmd="evaluate-xpath">//*</span>
+							<span data-cmd="evaluate-xpath">//book</span>
+							<span data-cmd="evaluate-xpath">//category</span>
+							<span data-cmd="evaluate-xpath">//@price</span>
+							<span data-cmd="evaluate-xpath">//title</span>
+							<span data-cmd="evaluate-xpath">//title/text()</span>
+							<span data-cmd="evaluate-xpath">//bicycle</span>
+							<span data-cmd="evaluate-xpath">//book[3]</span>
+							<span data-cmd="evaluate-xpath">//book[position() &lt;= 2]</span>
+							<span data-cmd="evaluate-xpath">//book[last()]</span>
+							<span data-cmd="evaluate-xpath">//*[@price &gt; 10]</span>
+							<span data-cmd="evaluate-xpath">//*[category="reference"]/author</span>
+							<span data-cmd="evaluate-xpath">//*[contains(title, "the")]</span>
+							<span data-cmd="evaluate-xpath">//book[isbn]</span>
+						</div>
+						<div data-xpaths="medium.json">
+							<span data-cmd="evaluate-xpath">//*</span>
+							<span data-cmd="evaluate-xpath">//*[age &gt;= 30]</span>
+						</div>
+					</sidebar>
+				</div>
 			</div>
 		</div>
 		<div class="tab-body">
 			<div class="markdown-body">
-				junior.js
+				qure.js<br/>
+				junior.js<br/>
+				rebellious.js
 			</div>
 		</div>
 	</div>
@@ -76,8 +117,11 @@
 		<div class="left">
 			Defiant by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> © 2019
 		</div>
+		<div class="center">
+			<i class="icon-hb" title="Hakan Bilgin"></i>
+		</div>
 		<div class="right">
-			Created with &hearts; in Sweden
+			Created with <i class="icon-heart" title="Hakan Bilgin"></i> in Sweden
 		</div>
 	</div>
 </div>
