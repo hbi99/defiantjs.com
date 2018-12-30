@@ -64,7 +64,7 @@
 		<div class="tab-body">
 			<div class="container xpath-input error1">
 				<div class="xpath-matches"></div>
-				<input type="text" placeholder="Enter your XPath here"/>
+				<input type="text" placeholder="Enter your XPath expression here" autocomplete="off" spellcheck="false"/>
 			</div>
 			<div class="xpath-evaluator">
 				<div class="box-header">
@@ -75,6 +75,9 @@
 							<span class="button" data-cmd="custom-file">Custom</span>
 						</span>
 						<span class="button" data-cmd="toggle-samples">Samples</span>
+						<span class="ghost-btn" data-cmd="edit-json">
+							<i class="icon-pencil"></i>
+						</span>
 					</div>
 					<div class="file-info"></div>
 				</div>
@@ -98,8 +101,11 @@
 							<span data-cmd="evaluate-xpath">//book[isbn]</span>
 						</div>
 						<div data-xpaths="medium.json">
-							<span data-cmd="evaluate-xpath">//*</span>
 							<span data-cmd="evaluate-xpath">//*[age &gt;= 30]</span>
+							<span data-cmd="evaluate-xpath">//name[last="Mathews"]/..</span>
+							<span data-cmd="evaluate-xpath">//*[eyeColor="blue"]</span>
+							<span data-cmd="evaluate-xpath">//*[tags="Lorem"]/age</span>
+							<span data-cmd="evaluate-xpath">//*[favoriteFruit="melon"]/email</span>
 						</div>
 					</sidebar>
 				</div>

@@ -25,11 +25,15 @@
 
 			// bind handlers
 			this.body.on('click', '[data-cmd]', this.doEvent);
+			this.xpathInput.on('keyup', this.doEvent);
 
 			// temp
 			setTimeout(function() {
 				site.body.find('nav .tab:nth(2)').trigger('click');
 				site.body.find('[data-cmd="toggle-samples"]').trigger('click');
+				site.body.find('[data-arg="/res/json/medium.json"]').trigger('click');
+
+				site.xpathInput.focus();
 			}, 1);
 		},
 		doEvent: function(event, el, orgEvent) {
@@ -64,6 +68,11 @@
 
 					cmd = srcEl.attr('href') || srcEl.attr('data-cmd');
 					return self.doEvent(cmd, srcEl, event);
+      			case 'keyup':
+					xpath = self.xpathInput.val();
+					if (self.evaluator.xpath === xpath || !self.evaluator.snapshot) return;
+					self.doEvent('evaluate-xpath', xpath);
+      				break;
       			// custom events
 				case 'switch-tab':
 					value = el.index();
@@ -154,8 +163,25 @@
 					el.toggleClass('active', value);
 					self.body.find('.xpath-evaluator').toggleClass('show-sidebar', value);
 					break;
+				case 'edit-json':
+					value = el.hasClass('active');
+					el.toggleClass('active', value);
+					el.parent().find('.button').toggleClass('disabled', value);
+
+					if (value) {
+						editor.setOption('readOnly', 'nocursor');
+						// refresh snapshot
+						data = JSON.parse(editor.doc.getValue());
+						self.evaluator.snapshot = Defiant.getSnapshot(data);
+					} else {
+	  					self.doEvent('clear-markers');
+	  					self.body.find('sidebar span.active').removeClass('active');
+						editor.setOption('readOnly', '');
+						editor.focus();
+					}
+					break;
 				case 'evaluate-xpath':
-	  				xpath = el.text();
+	  				xpath = (typeof el === 'string') ? el : el.text();
 
 	  				// clear
 	  				self.doEvent('clear-markers');
@@ -166,6 +192,7 @@
 						trace = JSON.trace;
 					} catch (err) {
 						console.log(err);
+						return self.xpathInput.parent().addClass('error');
 					}
 
 					// matches count
@@ -182,10 +209,12 @@
 						));
 					});
 
-					el.parent().find('.active').removeClass('active');
-					el.addClass('active');
+					if (typeof el !== 'string') {
+						el.parent().find('.active').removeClass('active');
+						el.addClass('active');
 
-					self.xpathInput.val(xpath);
+						self.xpathInput.val(xpath);
+					}
 					break;
 				case 'clear-markers':
 					self.evaluator.markers.map(m => m.clear());
