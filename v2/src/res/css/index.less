@@ -45,12 +45,12 @@ body {
 	color: #aaa;
 	font-weight: 200;
 	font-style: italic;
-};
+}
 -moz-placeholder {
 	color: #aaa;
 	font-weight: 200;
 	font-style: italic;
-};
+}
 
 .hidden {
 	display: none;
@@ -364,9 +364,21 @@ body {
 
 				.box-header {
 					background: #fafbfc;
+					position: relative;
+					height: 45px;
 					padding: 5px 10px;
 					border-bottom: 1px solid #e1e4e8;
 					border-radius: 4px 4px 0 0;
+
+					&.custom-json-url {
+						.file-info,
+						.file-actions {
+							display: none;
+						}
+						.file-input {
+							display: block;
+						}
+					}
 
 					.file-info {
 						font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
@@ -393,6 +405,62 @@ body {
 							margin-right: 3px;
 							vertical-align: middle;
 							width: 1px;
+						}
+					}
+					.file-input {
+						display: none;
+						position: absolute;
+						top: 3px;
+						bottom: 3px;
+						left: 7px;
+						right: 7px;
+						font-size: 14px;
+						background: inherit;
+
+						.file-protocol {
+							float: left;
+							width: 41px;
+							padding: 7px 0px;
+							margin-right: 1px;
+							text-align: center;
+							color: #999;
+						}
+						input {
+							float: left;
+							background: transparent;
+							border: 0;
+							width: calc(100% - 115px);
+							height: 90%;
+							margin-top: 2px;
+							border-radius: 3px;
+							outline: none;
+
+							&.error {
+								box-shadow: 0 0 0 .2rem rgba(255,0,0,.25);
+							}
+						}
+						.button {
+							float: right;
+							width: 67px;
+							margin: 4px 0 0;
+						}
+						::-webkit-input-placeholder {
+							color: #aaa;
+							font-style: normal;
+						}
+
+						::-moz-placeholder {
+							color: #aaa;
+							font-style: normal;
+						}
+
+						-ms-input-placeholder {
+							color: #aaa;
+							font-style: normal;
+						}
+						-moz-placeholder {
+							color: #aaa;
+							font-style: normal;
 						}
 					}
 					.file-actions {

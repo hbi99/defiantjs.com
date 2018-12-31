@@ -1,0 +1,6097 @@
+{
+   "numberOfProducts": 71,
+   "products": [
+      {
+         "apId": "P-000008362",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "TUI Sensimar Pioneer Beach Hotel TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Barnfri romantik vid stranden",
+         "href": "https://www.tui.se/resa/cypern/pafos/tui-sensimar-pioneer-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.738712,
+            "longitude": 32.436039
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.4,
+            "answers": 180,
+            "width": 84,
+            "fixedScore": "8,4"
+         },
+         "classification": 4.5,
+         "concept": {
+            "id": "CONCEPT-000000006",
+            "name": "TUI Sensimar",
+            "tag": "tuisensimar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_16/db02e102-6d60-4227-9e87-a7d501157ea7/i_0220242WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 2218,
+            "purchases": 10
+         }
+      },
+      {
+         "apId": "P-000000457",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Blue Star Atlantica Sungarden TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Boende med strandläge – All Inclusive ingår!",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/blue-star-atlantica-sungarden/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "150 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            }
+         ],
+         "metresToBeach": 150,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.984291,
+            "longitude": 34.014477
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.1,
+            "answers": 1045,
+            "width": 81,
+            "fixedScore": "8,1"
+         },
+         "classification": 4,
+         "concept": {
+            "id": "LIBO-000022",
+            "name": "Blue Star",
+            "tag": "bluestar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_11/bb098f11-7f66-4fdb-83f1-a7d700bfaa20/i_0283499WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1686,
+            "purchases": 16
+         }
+      },
+      {
+         "apId": "P-000184131",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Tofinis TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Nybyggd vattenpark och All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/tofinis/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "300 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            }
+         ],
+         "metresToBeach": 300,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.985425,
+            "longitude": 34.014852
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.5,
+            "answers": 93,
+            "width": 75,
+            "fixedScore": "7,5"
+         },
+         "classification": 4,
+         "concept": {
+            "id": "LIBO-000028",
+            "name": "SplashWorld",
+            "tag": "splashworld"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_11/33392f48-7a77-492a-b18b-a7d800b942b0/i_0309899WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 773,
+            "purchases": 7
+         }
+      },
+      {
+         "apId": "P-000177968",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Blue Star Atlantica Mare Village TTTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Lugnt och skönt vid stranden – All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/blue-star-atlantica-mare-village/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "20 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            }
+         ],
+         "metresToBeach": 20,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.973324,
+            "longitude": 34.040049
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 9,
+            "answers": 1117,
+            "width": 90,
+            "fixedScore": "9,0"
+         },
+         "classification": 5,
+         "concept": {
+            "id": "LIBO-000022",
+            "name": "Blue Star",
+            "tag": "bluestar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_11/28_17/185d5751-bf6a-4754-89aa-a839011c9484/i_0322998WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 2542,
+            "purchases": 28
+         }
+      },
+      {
+         "apId": "P-000138279",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Blue Star St. Elias Resort TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Rolig vattenpark och All Inclusive ingår!",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/blue-star-st-elias-resort/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "1.5 km"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            }
+         ],
+         "metresToBeach": 1500,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.018416,
+            "longitude": 34.038445
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.8,
+            "answers": 204,
+            "width": 88,
+            "fixedScore": "8,8"
+         },
+         "classification": 4.5,
+         "concept": {
+            "id": "LIBO-000022",
+            "name": "Blue Star",
+            "tag": "bluestar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_4/c7887a76-5ea7-4db4-9920-a7d5004901bb/i_0309888WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 711,
+            "purchases": 3
+         }
+      },
+      {
+         "apId": "P-000112707",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "SuneoClub Atlantica Sancta Napa TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Modernt nära Limanaki-stranden med All Inclusive",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/suneoclub-atlantica-sancta-napa/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "150 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 150,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.985302,
+            "longitude": 34.003548
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.6,
+            "answers": 523,
+            "width": 86,
+            "fixedScore": "8,6"
+         },
+         "classification": 3.5,
+         "concept": {
+            "id": "CONCEPT-000000004",
+            "name": "Suneo Club",
+            "tag": "suneoclub"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_11/6_13/e90e87bd-7df4-4bf0-9fa6-a99000e1122a/Pool_Area_(1)WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1372,
+            "purchases": 17
+         }
+      },
+      {
+         "apId": "P-000084142",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "TUI Sensatori Resort Aphrodite Hills by Atlantica TTTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000602",
+               "name": "Aphrodite Hills"
+            }
+         },
+         "breadcrumb": "Cypern, Aphrodite Hills",
+         "usp": "Förstaklassigt spa och golfbana",
+         "href": "https://www.tui.se/resa/cypern/aphrodite-hills/tui-sensatori-resort-aphrodite-hills-by-atlantica/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "20 km"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 20000,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.681133,
+            "longitude": 32.608076
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 9.1,
+            "answers": 20,
+            "width": 91,
+            "fixedScore": "9,1"
+         },
+         "classification": 5,
+         "concept": {
+            "id": "LIBO-000027",
+            "name": "TUI Sensatori",
+            "tag": "tuisensatori"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_7/946f86a5-6f5b-490c-9fb5-a7d6007c46c5/i_0274115WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 286,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000012757",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "TUI Sensimar Sea Breeze by Atlantica TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Modernt hotell vid havet – Prisvärd All Inclusive",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/tui-sensimar-sea-breeze-by-atlantica/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "200 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 200,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.044403,
+            "longitude": 34.03013
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.5,
+            "answers": 517,
+            "width": 85,
+            "fixedScore": "8,5"
+         },
+         "classification": 4,
+         "concept": {
+            "id": "CONCEPT-000000006",
+            "name": "TUI Sensimar",
+            "tag": "tuisensimar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_1/bffe03bb-411f-4b51-829f-a7d60011607d/i_0283613WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1795,
+            "purchases": 20
+         }
+      },
+      {
+         "apId": "P-000008315",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "TUI Family Life Aeneas Resort & Spa by Atlantica TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Nära Nissi Beach – All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/tui-family-life-aeneas-resort-spa-by-atlantica/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "200 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_club",
+               "header": "Bamseklubben",
+               "text": "Ingår",
+               "desc": "Bamseklubben - kostnadsfri barnklubb"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            }
+         ],
+         "metresToBeach": 200,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.989381,
+            "longitude": 33.967624
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.6,
+            "answers": 883,
+            "width": 86,
+            "fixedScore": "8,6"
+         },
+         "classification": 4.5,
+         "concept": {
+            "id": "LIBO-000002964",
+            "name": "TUI Family Life",
+            "tag": "tuifamilylife"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/19_22/f34baf5e-e0f0-4c61-8b7f-a7d401767e76/i_0309962WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1671,
+            "purchases": 14
+         }
+      },
+      {
+         "apId": "P-000008352",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Blue Star Atlantica Oasis TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000063",
+               "name": "Limassol"
+            }
+         },
+         "breadcrumb": "Cypern, Limassol",
+         "usp": "Zoning för vuxna och barn – All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/limassol/blue-star-atlantica-oasis/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "2 km"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            }
+         ],
+         "metresToBeach": 2000,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.701101,
+            "longitude": 33.098062
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.6,
+            "answers": 521,
+            "width": 76,
+            "fixedScore": "7,6"
+         },
+         "classification": 4,
+         "concept": {
+            "id": "LIBO-000022",
+            "name": "Blue Star",
+            "tag": "bluestar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_7/c10b5f07-220e-4ca8-b479-a7d6007eaabf/i_0281778WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1515,
+            "purchases": 7
+         }
+      },
+      {
+         "apId": "P-000008351",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "TUI Sensimar Bay by Atlantica TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000063",
+               "name": "Limassol"
+            }
+         },
+         "breadcrumb": "Cypern, Limassol",
+         "usp": "Vuxenhotell nära havet – All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/limassol/tui-sensimar-bay-by-atlantica/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "200 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 200,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.714542,
+            "longitude": 33.152533
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.9,
+            "answers": 188,
+            "width": 89,
+            "fixedScore": "8,9"
+         },
+         "classification": 4.5,
+         "concept": {
+            "id": "CONCEPT-000000006",
+            "name": "TUI Sensimar",
+            "tag": "tuisensimar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_0/e57660d8-18d0-43de-a06d-a7d800032962/i_0291232WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 283,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008346",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Blue Star Althea Beach & Villas TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Populärt familjehotell med stort poolområde",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/blue-star-althea-beach-villas/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.033958,
+            "longitude": 34.038852
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.7,
+            "answers": 990,
+            "width": 87,
+            "fixedScore": "8,7"
+         },
+         "classification": 4,
+         "concept": {
+            "id": "LIBO-000022",
+            "name": "Blue Star",
+            "tag": "bluestar"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_19/5ac1c32b-731f-483c-9dd6-a7d6013d4811/i_0309800WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 3308,
+            "purchases": 13
+         }
+      },
+      {
+         "apId": "P-000008344",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "TUI Family Life Nausicaa Beach TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Centralt läge och All Inclusive",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/tui-family-life-nausicaa-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "100 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_club",
+               "header": "Bamseklubben",
+               "text": "Ingår",
+               "desc": "Bamseklubben - kostnadsfri barnklubb"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            },
+            {
+               "tag": "family_hotel",
+               "header": "Familjehotell",
+               "text": "Ja",
+               "desc": "Familjehotell"
+            },
+            {
+               "tag": "accessible_hotel",
+               "header": "Handikappanpassade hotell",
+               "text": "Ja",
+               "desc": "Handikappanpassade hotell"
+            }
+         ],
+         "metresToBeach": 100,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.011457,
+            "longitude": 34.060943
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.9,
+            "answers": 1430,
+            "width": 89,
+            "fixedScore": "8,9"
+         },
+         "classification": 4,
+         "concept": {
+            "id": "LIBO-000002964",
+            "name": "TUI Family Life",
+            "tag": "tuifamilylife"
+         },
+         "conceptCsp": 20,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/18_20/3c28862c-f763-411c-9e74-a7d3014e8fe9/i_0300873WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 3215,
+            "purchases": 27
+         }
+      },
+      {
+         "apId": "P-000008364",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Asimina Suites TTTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Lyx vid havet – sviter för par",
+         "href": "https://www.tui.se/resa/cypern/pafos/asimina-suites/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.738932,
+            "longitude": 32.435074
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 9.8,
+            "answers": 10,
+            "width": 98,
+            "fixedScore": "9,8"
+         },
+         "classification": 5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000042",
+            "name": "De Luxe"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_16/43acd19d-3cef-4564-aa43-a7d7010e6e0d/i_0273055WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 97,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000316447",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Sunrise Jade TTTTT",
+         "season": "Sommar 19",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Vuxenhotell med två pooler & strandläge",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/sunrise-jade/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": null,
+         "classification": 5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000001249",
+            "name": "Vuxna & vänner"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2018_8/28_9/7745b8dd-2985-486b-84a4-a94a00960e45/Sunrise_Jade_SeaWebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 0,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008325",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Simos Magic Beach TTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Familjär stämning – nära centrum och havet",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/simos-magic-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "400 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 400,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.98561,
+            "longitude": 33.985702
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.1,
+            "answers": 198,
+            "width": 71,
+            "fixedScore": "7,1"
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000047",
+            "name": "Litet & familjärt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_2/d9fa9bf3-bfe0-46ca-a81b-a7d7002ab648/i_0219322WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 787,
+            "purchases": 11
+         }
+      },
+      {
+         "apId": "P-000008333",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Vrissaki Beach Hotel & Spa TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Modernt strandhotell i Fig Tree Bay",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/vrissaki-beach-hotel-spa/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.019038,
+            "longitude": 34.051475
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.1,
+            "answers": 695,
+            "width": 81,
+            "fixedScore": "8,1"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000041",
+            "name": "Nära till allt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_17/dfc68bbd-1860-46e0-8774-a7d6012388fb/i_0251694WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1857,
+            "purchases": 29
+         }
+      },
+      {
+         "apId": "P-000008334",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Anais Bay Hotel & Louma Apartments TTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Nära stranden – med personlig atmosfär och känsla",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/anais-bay-hotel-louma-apartments/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "200 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 200,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.034415,
+            "longitude": 34.037898
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.1,
+            "answers": 95,
+            "width": 81,
+            "fixedScore": "8,1"
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000047",
+            "name": "Litet & familjärt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_6/2681768f-785e-48bc-b150-a7d70068190a/i_0232694WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 278,
+            "purchases": 2
+         }
+      },
+      {
+         "apId": "P-000008337",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Vrissaki Apartments TTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "300 meter från stranden i Fig Tree Bay",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/vrissaki-apartments/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "300 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Nej"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 300,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.016958,
+            "longitude": 34.050493
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.6,
+            "answers": 208,
+            "width": 76,
+            "fixedScore": "7,6"
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000041",
+            "name": "Nära till allt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_7/3cf1e363-a5a2-4b4a-97e2-a7d5007ec745/i_0251864WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1303,
+            "purchases": 9
+         }
+      },
+      {
+         "apId": "P-000008342",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Pernera Beach Hotel TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Direkt vid stranden – All Inclusive ingår!",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/pernera-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "120 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 120,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.032816,
+            "longitude": 34.041052
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.4,
+            "answers": 138,
+            "width": 84,
+            "fixedScore": "8,4"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000039",
+            "name": "All Inclusive Beach"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_7/cb013973-f917-4e92-a455-a7d800821ed5/i_0283605WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 345,
+            "purchases": 2
+         }
+      },
+      {
+         "apId": "P-000008343",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Sunrise Beach TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "En klassiker vid stranden med nyrenoverade rum",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/sunrise-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "25 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 25,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.015675,
+            "longitude": 34.053401
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 9.2,
+            "answers": 166,
+            "width": 92,
+            "fixedScore": "9,2"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000041",
+            "name": "Nära till allt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_10/dec8909a-68de-4cbe-89b6-a7d500b085c8/i_0303677WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 175,
+            "purchases": 2
+         }
+      },
+      {
+         "apId": "P-000008317",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Petrosana TTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Nära till butiker, nattliv och restauranger",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/petrosana/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "1.4 km"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Nej"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1400,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.99145,
+            "longitude": 33.992702
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.4,
+            "answers": 23,
+            "width": 74,
+            "fixedScore": "7,4"
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000047",
+            "name": "Litet & familjärt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/19_16/2ae98b04-5615-45f1-88db-a7d40110c339/i_0219208WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 234,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008355",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Atlantica Miramare Beach Hotel TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000063",
+               "name": "Limassol"
+            }
+         },
+         "breadcrumb": "Cypern, Limassol",
+         "usp": "Läge direkt vid strand – Poolområde för vuxna",
+         "href": "https://www.tui.se/resa/cypern/limassol/atlantica-miramare-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "20 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 20,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.693859,
+            "longitude": 33.088304
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.8,
+            "answers": 190,
+            "width": 78,
+            "fixedScore": "7,8"
+         },
+         "classification": 4.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000041",
+            "name": "Nära till allt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_17/ddccee28-1434-4dbc-ad65-a7d8011f73a7/i_0291105WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 549,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000008361",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Anemi Hotel Apartments TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Familjärt lägenhetshotell – nära till allt",
+         "href": "https://www.tui.se/resa/cypern/pafos/anemi-hotel-apartments/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "300 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 300,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.755788,
+            "longitude": 32.420053
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.7,
+            "answers": 26,
+            "width": 87,
+            "fixedScore": "8,7"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000047",
+            "name": "Litet & familjärt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_7/ce521725-f14d-49b9-b038-a7d800764510/i_0272945WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 85,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008363",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Kefalos Beach Village TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Utmärkt för familjen – All Inclusive som tillval",
+         "href": "https://www.tui.se/resa/cypern/pafos/kefalos-beach-village/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "80 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 80,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.76959,
+            "longitude": 32.40631
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.2,
+            "answers": 66,
+            "width": 82,
+            "fixedScore": "8,2"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000043",
+            "name": "Familjefynd"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_6/6bca3767-f223-4c6a-a8d4-a7d8006a5d31/i_0273164WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 50,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008324",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Green Bungalows TT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Populärt partyhotell med nöjesliv runt hörnet",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/green-bungalows/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "1.3 km"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1300,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988466,
+            "longitude": 33.996098
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 5.9,
+            "answers": 30,
+            "width": 59,
+            "fixedScore": "5,9"
+         },
+         "classification": 2.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000040",
+            "name": "Billigt & bra"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_7/c09e08e6-436b-45f5-aada-a7d60077bf83/i_0219353WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 305,
+            "purchases": 2
+         }
+      },
+      {
+         "apId": "P-000012092",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Atlantica Golden Beach TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Barnfri oas direkt vid havet – All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/pafos/atlantica-golden-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.821519,
+            "longitude": 32.392818
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.8,
+            "answers": 60,
+            "width": 88,
+            "fixedScore": "8,8"
+         },
+         "classification": 4.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000001249",
+            "name": "Vuxna & vänner"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_12/cf0dd358-d138-41b9-9946-a7d800c781b8/i_0251325WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 466,
+            "purchases": 6
+         }
+      },
+      {
+         "apId": "P-000008314",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Loutsiana TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Lugn atmosfär och trevlig poolområde",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/loutsiana/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "500 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 500,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.986726,
+            "longitude": 33.947647
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.4,
+            "answers": 114,
+            "width": 74,
+            "fixedScore": "7,4"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000047",
+            "name": "Litet & familjärt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_20/02358561-28e7-4df2-ad0d-a7d50153947d/i_0273253WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 429,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000003618",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Melpo-Antia TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Chict poolområde och moderna lägenheter",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/melpo-antia/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "650 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 650,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.986691,
+            "longitude": 33.999156
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7,
+            "answers": 208,
+            "width": 70,
+            "fixedScore": "7,0"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000041",
+            "name": "Nära till allt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_22/29f5c2ae-d301-4f7d-93a4-a7d6017aada0/i_0309843WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 1617,
+            "purchases": 27
+         }
+      },
+      {
+         "apId": "P-000000462",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Atrium Zenon Hotel Apartments TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000062",
+               "name": "Larnaca"
+            }
+         },
+         "breadcrumb": "Cypern, Larnaca",
+         "usp": "Centralt läge nära strand och shopping",
+         "href": "https://www.tui.se/resa/cypern/larnaca/atrium-zenon-hotel-apartments/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "200 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Nej"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 200,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.915479,
+            "longitude": 33.636189
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 6.6,
+            "answers": 204,
+            "width": 66,
+            "fixedScore": "6,6"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000041",
+            "name": "Nära till allt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_17/532809b1-574e-45ad-a9c5-a7d80118e9ee/i_0219973WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 822,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000118960",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Tasia Maris Beach TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Strandnära hotell i Nissi Beach med vuxen atmosfär",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/tasia-maris-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988335,
+            "longitude": 33.980252
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.3,
+            "answers": 80,
+            "width": 83,
+            "fixedScore": "8,3"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000001249",
+            "name": "Vuxna & vänner"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_19/a880bfcb-fe97-4065-82bc-a7d701396ad2/i_0291266WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 201,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000131495",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Tasia Maris Sands TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Mysigt hotell direkt på stranden",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/tasia-maris-sands/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "25 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 25,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.986715,
+            "longitude": 33.980928
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.2,
+            "answers": 40,
+            "width": 82,
+            "fixedScore": "8,2"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000001249",
+            "name": "Vuxna & vänner"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_22/0b7d05c8-dc99-4c0f-bf4d-a7d70178cdd5/i_0291327WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 209,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000131496",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Tasia Maris Gardens TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Strandnära med trevligt poolområde",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/tasia-maris-gardens/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "270 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 270,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988790207079,
+            "longitude": 33.9816284096146
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.5,
+            "answers": 28,
+            "width": 75,
+            "fixedScore": "7,5"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000043",
+            "name": "Familjefynd"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_9/a02e6d1c-4942-4a52-abc0-a7d7009bf9b9/i_0291297WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 208,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000000460",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Panthea TTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Vattenland, massor av aktiviteter & All Inclusive!",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/panthea/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "350 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 350,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.985865,
+            "longitude": 33.995068
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 6.4,
+            "answers": 119,
+            "width": 64,
+            "fixedScore": "6,4"
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000043",
+            "name": "Familjefynd"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2018_9/5_15/fd24b492-410b-47a0-aec2-a95200fe288b/ACC_059601_CYP_17WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 317,
+            "purchases": 4
+         }
+      },
+      {
+         "apId": "P-000000459",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Limanaki Beach Hotel TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Ett stenkast från Ayia Napas marina och strand",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/limanaki-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "80 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 80,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.982709,
+            "longitude": 34.002213
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.8,
+            "answers": 143,
+            "width": 78,
+            "fixedScore": "7,8"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000041",
+            "name": "Nära till allt"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_9/6732c557-4258-4571-afa6-a7d700a2667d/i_0232768WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 101,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000316429",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "NissiBlu Beach Resort TTTTT",
+         "season": "Sommar 19",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Nybyggt strandhotell",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/nissiblu-beach-resort/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1000,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.9876623870472,
+            "longitude": 33.9723790076197
+         },
+         "classification": 5,
+         "conceptCsp": 0,
+         "label": {
+            "id": "LIBO-000042",
+            "name": "De Luxe"
+         },
+         "labelCsp": 10,
+         "mainImage": "https://www.tui.se/tuin-img/2018_9/3_12/6c08de17-826b-40da-aabd-a95000c83d3f/Final_Swimming_Pool_RevisedWebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 0,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000019974",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Alexander the Great Beach TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Hög klass direkt vid havet",
+         "href": "https://www.tui.se/resa/cypern/pafos/alexander-the-great-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.752403,
+            "longitude": 32.420585
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.8,
+            "answers": 12,
+            "width": 88,
+            "fixedScore": "8,8"
+         },
+         "classification": 4.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_0/3be1b8e3-ad1a-4bee-98d9-a7d5000dc83f/i_0252915WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 39,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008323",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Evabelle TT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Med ungdomligt natt- och nöjesliv runt hörnet",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/evabelle/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "400 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 400,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988097,
+            "longitude": 33.990583
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 5.1,
+            "answers": 33,
+            "width": 51,
+            "fixedScore": "5,1"
+         },
+         "classification": 2.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_11/28_17/a1af2064-5f65-4219-a98d-a839011fdc80/i_0321204WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 40,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008320",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Tasia Maris Oasis Hotel TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Med modern stil och svårslaget läge",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/tasia-maris-oasis-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "700 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 700,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988625,
+            "longitude": 34.003501
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.9,
+            "answers": 28,
+            "width": 79,
+            "fixedScore": "7,9"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/19_2/27c58e25-41e7-443c-9de6-a7d4002ff447/i_0251774WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 49,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008319",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Barbara TT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Ungdomlig stämning runt poolområdet",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/barbara/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "1.4 km"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1400,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.992791,
+            "longitude": 33.998566
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 3.5,
+            "answers": 26,
+            "width": 35,
+            "fixedScore": "3,5"
+         },
+         "classification": 2.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_2/1df46475-b565-4fbc-bb2a-a7d70026de90/i_0283518WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 422,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000012759",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "The Royal Apollonia Beach TTTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000063",
+               "name": "Limassol"
+            }
+         },
+         "breadcrumb": "Cypern, Limassol",
+         "usp": "Nyrenoverat med strandläge",
+         "href": "https://www.tui.se/resa/cypern/limassol/the-royal-apollonia-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "25 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 25,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.697767,
+            "longitude": 33.095648
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 9.4,
+            "answers": 21,
+            "width": 94,
+            "fixedScore": "9,4"
+         },
+         "classification": 5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_11/739cf38d-3f76-404a-8bb8-a7d500b5a0c5/i_0256193WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 258,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000008322",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Kkaras TT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Enkelt hotell med ungdomlig atmosfär",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/kkaras/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "900 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Nej"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 900,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.982036,
+            "longitude": 34.000003
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 4,
+            "answers": 27,
+            "width": 40,
+            "fixedScore": "4,0"
+         },
+         "classification": 2,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_11/2eba47dc-8850-4766-8c7d-a7d800b70564/i_0185810WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 792,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008335",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Sunrise Pearl Resort & Spa TTTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Bekväm lyx – vid stranden i centrala Fig Tree Bay",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/sunrise-pearl-resort-spa/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "25 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 25,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.016536,
+            "longitude": 34.052424
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 9.3,
+            "answers": 50,
+            "width": 93,
+            "fixedScore": "9,3"
+         },
+         "classification": 5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/19_11/795e94c6-6ce1-4db3-9344-a7d400be309b/i_0231650WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 154,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000008316",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Anthea TT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Populärt bland ungdomar",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/anthea/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "750 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 750,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.986779,
+            "longitude": 33.998362
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 4,
+            "answers": 20,
+            "width": 40,
+            "fixedScore": "4,0"
+         },
+         "classification": 2.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_23/7e92ed9a-3c33-40f0-aa76-a7d6017b4d6d/i_0251517WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 99,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008326",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Anesis Hotel TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Till stranden och centrum på ett par minuter",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/anesis-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "550 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Nej"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 550,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.986462,
+            "longitude": 34.003007
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.7,
+            "answers": 86,
+            "width": 77,
+            "fixedScore": "7,7"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/21_14/1a9bba97-78db-4d8d-b2dc-a7d600ef4b77/i_0309847WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 77,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000119851",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Anonymous Beach Hotel TTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Vid den hästskoformade stranden Sandy Beach",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/anonymous-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "40 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 40,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988093,
+            "longitude": 33.979688
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.1,
+            "answers": 85,
+            "width": 81,
+            "fixedScore": "8,1"
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/19_14/d948f624-a628-42a9-b8ba-a7d400f6c883/i_0309811WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 286,
+            "purchases": 2
+         }
+      },
+      {
+         "apId": "P-000008357",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Holiday Village Aliathon TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Stor pool, aktiviteter och All Inclusive som tillval",
+         "href": "https://www.tui.se/resa/cypern/pafos/holiday-village-aliathon/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "300 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 300,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.742106,
+            "longitude": 32.432327
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.2,
+            "answers": 17,
+            "width": 82,
+            "fixedScore": "8,2"
+         },
+         "classification": 4.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_18/2c3d35fa-9ad6-4d40-9208-a7d70135bc02/i_0232346WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 38,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008358",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Louis Phaethon Beach Hotel TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Vattenland och All Inclusive ingår!",
+         "href": "https://www.tui.se/resa/cypern/pafos/louis-phaethon-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.737125,
+            "longitude": 32.43826
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.7,
+            "answers": 62,
+            "width": 77,
+            "fixedScore": "7,7"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_19/1866a3ae-e51a-45bd-aded-a7d501421912/i_0291155WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 231,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000131497",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Hotel River Rock TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Modernt hotell med nära till allt",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/hotel-river-rock/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "600 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 600,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988128,
+            "longitude": 34.003807
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8,
+            "answers": 26,
+            "width": 80,
+            "fixedScore": "8,0"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_7/cdb0c072-99b8-430d-abd2-a7d8007ab593/i_0291170WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 83,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000131523",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Olympic Lagoon Resort TTTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Läge vid stranden och All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/pafos/olympic-lagoon-resort/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.746256,
+            "longitude": 32.424951
+         },
+         "classification": 5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/22_11/3dff5dda-3fb7-46eb-b8dc-a7d700bb7d9f/i_0290012WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 48,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000000461",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Thalassines Villas TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Villa med egen pool – direkt vid stranden",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/thalassines-villas/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Nej"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Nej"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.974164,
+            "longitude": 33.906265
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/23_4/849f4075-0eee-4c09-aa0b-a7d8004d6f7a/i_0274120WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 114,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000141901",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Nausicaa Villas TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Privat pool nära havet",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/nausicaa-villas/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "100 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 100,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.011229,
+            "longitude": 34.062717
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 9.2,
+            "answers": 19,
+            "width": 92,
+            "fixedScore": "9,2"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/18_9/54cf520f-4820-4b62-aeba-a7d300978293/i_0286754WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 66,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008338",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Mandali TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Bra läge nära strand och restauranger",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/mandali/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "200 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 200,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.019471,
+            "longitude": 34.048787
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.1,
+            "answers": 114,
+            "width": 81,
+            "fixedScore": "8,1"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_11/28_19/1c9e0639-972d-44c9-8c27-a83901470da2/i_0321635WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 137,
+            "purchases": 1
+         }
+      },
+      {
+         "apId": "P-000000458",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Callisto TTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Strandliv för familjen i Ayia Napa",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/callisto/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "25 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 25,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.985917,
+            "longitude": 33.982505
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 6.9,
+            "answers": 285,
+            "width": 69,
+            "fixedScore": "6,9"
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/20_3/49ad9cac-f78f-482c-b2b0-a7d50040a137/i_0205159WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 645,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000220635",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Mon Repos TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Nära Makronissos-stranden i utkanten av Ayia Napa",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/mon-repos/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1000,
+         "dynamicAccommodationProduct": true,
+         "coordinates": {
+            "latitude": 34.98613,
+            "longitude": 33.95282
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-hotelbeds/08/088840/088840a_hb_a_004.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 35,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000220636",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Nissi Beach TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Bästa strandläge vid Nissi Beach",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/nissi-beach/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "100 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 100,
+         "dynamicAccommodationProduct": true,
+         "coordinates": {
+            "latitude": 34.988945,
+            "longitude": 33.971905
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-hotelbeds/00/008563/008563a_hb_a_003.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 84,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000220637",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Grecian Bay TTTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Strandnära med stort poolområde och hög standard",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/grecian-bay/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1000,
+         "dynamicAccommodationProduct": true,
+         "coordinates": {
+            "latitude": 34.98494,
+            "longitude": 34.007576
+         },
+         "classification": 5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-hotelbeds/08/089323/089323a_hb_a_026.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 76,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000220638",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Melissi Beach Hotel TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Strandnära med pool och aktiviteter",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/melissi-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": true,
+         "coordinates": {
+            "latitude": 34.985421,
+            "longitude": 34.0093
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-hotelbeds/13/134762/134762a_hb_a_007.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 15,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000220639",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Grecian Sands TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Vid stranden Grecian Bay",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/grecian-sands/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1000,
+         "dynamicAccommodationProduct": true,
+         "coordinates": {
+            "latitude": 34.984627,
+            "longitude": 34.013136
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-hotelbeds/08/089324/089324a_hb_a_001.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 21,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000220640",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Bella Napa TTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Populärt hotell på gångavstånd till nöjen",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/bella-napa/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "250 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 250,
+         "dynamicAccommodationProduct": true,
+         "coordinates": {
+            "latitude": 34.98571,
+            "longitude": 34.01381
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.3,
+            "answers": 10,
+            "width": 73,
+            "fixedScore": "7,3"
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-hotelbeds/00/008555/008555a_hb_a_006.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 52,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000243494",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Tasia Maris Seasons Hotel TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000060",
+               "name": "Ayia Napa"
+            }
+         },
+         "breadcrumb": "Cypern, Ayia Napa",
+         "usp": "Strandnära & centralt – frukost ingår",
+         "href": "https://www.tui.se/resa/cypern/ayia-napa/tasia-maris-seasons-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "600 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 600,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.9862641533851,
+            "longitude": 33.9993703458231
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_11/28_21/3f5f658f-f580-4179-a44a-a8390165dcad/i_0322829WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 108,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000243495",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Amethyst Napa Hotel & Spa TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Strandnära och med eget spa – All Inclusive ingår!",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/amethyst-napa-hotel-spa/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "400 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 400,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.98739,
+            "longitude": 33.948665
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.4,
+            "answers": 118,
+            "width": 84,
+            "fixedScore": "8,4"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_5/15_8/d4d109fd-671f-4ad0-bba2-a8e100927c4a/Amethyst_overviewWebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 280,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000245999",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Atlantica So White TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Strandläge & stor poolområde",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/atlantica-so-white/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "30 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 30,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.988124,
+            "longitude": 33.956245
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 6.2,
+            "answers": 73,
+            "width": 62,
+            "fixedScore": "6,2"
+         },
+         "classification": 4.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_11/28_21/eded1535-2d14-4756-8e50-a839015f6d7c/i_0323067WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 210,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000251637",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Louis Paphos Breeze TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000064",
+               "name": "Pafos"
+            }
+         },
+         "breadcrumb": "Cypern, Pafos",
+         "usp": "Stort poolområde & All Inclusive ingår",
+         "href": "https://www.tui.se/resa/cypern/pafos/louis-paphos-breeze/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "1.9 km"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 1900,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.797189,
+            "longitude": 32.396524
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_7/13_13/80a22cc8-b856-4646-af03-a91c00e3bb4c/2161WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 189,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000257064",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Protaras Plaza TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Modernt hotell nära stranden",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/protaras-plaza/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "150 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Nej"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 150,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.0113715549169,
+            "longitude": 34.0570539236069
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.1,
+            "answers": 216,
+            "width": 81,
+            "fixedScore": "8,1"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_8/21_8/fc4df5c5-9206-47d9-b0e1-a943009163ab/poolWebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 2401,
+            "purchases": 37
+         }
+      },
+      {
+         "apId": "P-000316004",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Vangelis Hotel & Suites TTTT",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Modernt hotell med All Inclusive",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/vangelis-hotel-suites/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "150 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 150,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.0143591913475,
+            "longitude": 34.0535536408424
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.7,
+            "answers": 44,
+            "width": 87,
+            "fixedScore": "8,7"
+         },
+         "classification": 4,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_7/11_12/a22fd002-2533-4820-81ca-a91a00cc4033/3576WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 0,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008340",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Hotel Capo Bay TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Barnfri pool och spa direkt vid stranden",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/hotel-capo-bay/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Nej"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.013109,
+            "longitude": 34.056716
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 8.4,
+            "answers": 29,
+            "width": 84,
+            "fixedScore": "8,4"
+         },
+         "classification": 4.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_4/23_7/3a7391ee-f397-45f3-8867-a8cb0076a112/beach_long_shot_croppedWebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 213,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000316434",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Christofinia TTT+",
+         "season": "Sommar 19",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Omtyckt läge nära Nissi Beach",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/christofinia/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "350 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 350,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.989884255429,
+            "longitude": 33.9654248297358
+         },
+         "classification": 3.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_9/4_9/a0e98dcd-5d90-4dfb-b785-a95100999016/CHRISTOFINIA_DAY_2-23WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 0,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000008321",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Adams Beach Hotel TTTT+",
+         "season": "Sommar 18",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000000610",
+               "name": "Nissi Beach"
+            }
+         },
+         "breadcrumb": "Cypern, Nissi Beach",
+         "usp": "Direkt vid stranden – Boka rum i vuxendel",
+         "href": "https://www.tui.se/resa/cypern/nissi-beach/adams-beach-hotel/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "50 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Ja"
+            },
+            {
+               "tag": "lift",
+               "header": "Hiss",
+               "text": "Ja"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 50,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 34.987965,
+            "longitude": 33.966293
+         },
+         "customerRating": {
+            "name": "Kundbetyg",
+            "score": 7.9,
+            "answers": 40,
+            "width": 79,
+            "fixedScore": "7,9"
+         },
+         "classification": 4.5,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2017_8/19_16/7e0c5a32-ab1f-43af-a316-a7d4011329b0/i_0185732WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 282,
+            "purchases": 0
+         }
+      },
+      {
+         "apId": "P-000318268",
+         "csp": 0,
+         "outboundFlight": {},
+         "isBargain": false,
+         "discount": null,
+         "name": "Melini Hotel Apartments TTT",
+         "season": "Sommar 19",
+         "geoStructure": {
+            "country": {
+               "id": "G-000058",
+               "name": "Cypern"
+            },
+            "resort": {
+               "id": "G-000061",
+               "name": "Fig Tree Bay"
+            }
+         },
+         "breadcrumb": "Cypern, Fig Tree Bay",
+         "usp": "Moderna lägenheter nära stranden",
+         "href": "https://www.tui.se/resa/cypern/fig-tree-bay/melini-hotel-apartments/?partysizes=2;&departureCode=undefined&departureDate=undefined&duration=undefined&referer=searchresult",
+         "topFacts": [
+            {
+               "tag": "beach",
+               "header": "Bad/strand",
+               "text": "150 m"
+            },
+            {
+               "tag": "wifi",
+               "header": "Wifi",
+               "text": "Ja"
+            },
+            {
+               "tag": "childrens_pool",
+               "header": "Barnpool",
+               "text": "Ja"
+            },
+            {
+               "tag": "air_condition",
+               "header": "AC",
+               "text": "Ja"
+            },
+            {
+               "tag": "restaurant",
+               "header": "Restaurang",
+               "text": "Ja"
+            },
+            {
+               "tag": "bar",
+               "header": "Bar",
+               "text": "Nej"
+            },
+            {
+               "tag": "outdoor_pool",
+               "header": "Utomhuspool",
+               "text": "Ja"
+            }
+         ],
+         "metresToBeach": 150,
+         "dynamicAccommodationProduct": false,
+         "coordinates": {
+            "latitude": 35.014034562182,
+            "longitude": 34.0541340335089
+         },
+         "classification": 3,
+         "conceptCsp": 0,
+         "label": null,
+         "labelCsp": 0,
+         "mainImage": "https://www.tui.se/tuin-img/2018_10/2_13/4c3f656a-730b-4cbb-b559-a96d00da7302/DSC_0196WebOriginalCompressed.jpg?w=480&h=320&q=50&fm=pjpg&crop=edges&fit=crop",
+         "statistics": {
+            "visitors": 0,
+            "purchases": 0
+         }
+      }
+   ],
+   "isInvalidPriceExample": "false"
+}

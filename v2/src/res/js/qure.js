@@ -105,7 +105,7 @@
 						*/
 						_cm.editors[index] = editor;
 
-						//if (index === 0) qure.sandbox(editor);
+						if (index === 1) qure.sandbox(editor);
 						//console.log(index, editor.getValue());
 					});
 					break;
@@ -176,11 +176,12 @@
 						window.console.log.apply({}, args);
 						requestAnimationFrame(function() {
 							var content = args.map(function(item, index) {
+									if (!item) return 'undefined';
 									switch (item.constructor) {
 										case Number:
 										case String:   return item;
 										case Array:    return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
-										case Object:   return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
+										case Object:   return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">'+ item.toString() +'</span>';
 										case Function: return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">Function</span>';
 									}
 									return '<span data-cmd="explore-arguments" data-index="'+ editor_index +','+ index +'">'+ (typeof item) +'</span>';
@@ -190,12 +191,24 @@
 							el.innerHTML = content.join(',');
 						});
 					},
+					fetchScript: async function(url) {
+						return new Promise(function(resolve, reject) {
+							fetch(url +'?'+ Math.random())
+								.then(resp => resp.text())
+						    	.then(code => {
+						    		var str = 'return (function() {var module={};'+ code +'; return module.exports;})();';
+					    			return new Function(str).call();
+						    	})
+						    	.then(data => resolve(data))
+						    	.catch(error => reject(error));
+						});
+					},
 					fetchJSON: async function(url) {
 						return new Promise(function(resolve, reject) {
 							fetch(url)
-						      .then(resp => resp.json())
-						      .then(data => resolve(data))
-						      .catch(error => reject(error));
+						    	.then(resp => resp.json())
+						    	.then(data => resolve(data))
+						    	.catch(error => reject(error));
 						});
 					},
 					_rafs: [],
@@ -229,6 +242,7 @@
 							requestAnimationFrame=labs.requestAnimationFrame.bind(labs),
 							setTimeout=labs.setTimeout.bind(labs),
 							setInterval=labs.setInterval.bind(labs);
+							fetchScript=labs.fetchScript.bind(labs);
 							fetchJSON=labs.fetchJSON.bind(labs);
 						(function() {
 							if (labs._stopped) return;

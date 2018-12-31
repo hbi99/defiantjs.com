@@ -6,9 +6,10 @@
 	'use strict';
 
 	// enable search trace, for visual highlighting
-	Defiant.env = 'development';
+	defiant.env = 'development';
 	
 	var site = {
+		origin: self.origin,
 		evaluator: { markers: [] },
 		init: function() {
 			// fast references
@@ -27,24 +28,27 @@
 			this.body.on('click', '[data-cmd]', this.doEvent);
 			this.xpathInput.on('keyup', this.doEvent);
 
-			// temp
-			setTimeout(function() {
-				site.body.find('nav .tab:nth(2)').trigger('click');
-				site.body.find('[data-cmd="toggle-samples"]').trigger('click');
-				site.body.find('[data-arg="/res/json/medium.json"]').trigger('click');
+			//this.doEvent('check-url-query');
 
-				site.xpathInput.focus();
-			}, 1);
+			if (document.location.hostname === 'localhost') {
+				// temp
+				setTimeout(function() {
+					//site.body.find('.file-actions .button[data-cmd="custom-file"]').trigger('click');
+					//site.body.find('[data-cmd="toggle-samples"]').trigger('click');
+					//site.body.find('[data-arg="/res/json/medium.json"]').trigger('click');
+				}, 1);
+			}
 		},
 		doEvent: function(event, el, orgEvent) {
 			var self = site,
 				cmd  = (typeof(event) === 'string') ? event : event.type,
 				editor = self.evaluator.editor,
+				callback,
 				value,
+				state,
 				data,
 				xpath,
 				markers,
-				trace,
 				matches,
 				tabEl,
 				srcEl,
@@ -74,6 +78,28 @@
 					self.doEvent('evaluate-xpath', xpath);
       				break;
       			// custom events
+				case 'check-url-query':
+					state = $.history.unserialize(document.location.search);
+					if (state.url) {
+						self.body.find('.xpath-evaluator .file-input input').val(state.url);
+						$.wait_for('window.site.evaluator.editor', function() {
+							self.doEvent('load-custom-file', function() {
+								self.doEvent('query-eval-xpath');
+							});
+						});
+					}
+					if (state.xpath || state.url) {
+						self.body.find('nav .tab:nth(2)').trigger('click');
+						self.doEvent('query-eval-xpath');
+					}
+      				break;
+      			case 'query-eval-xpath':
+					state = $.history.unserialize(document.location.search);
+      				self.xpathInput.val(state.xpath);
+					self.xpathInput.focus();
+					
+					self.doEvent('evaluate-xpath', state.xpath);
+      				break;
 				case 'switch-tab':
 					value = el.index();
 					tabEl = self.body.find('.article .tab-body:nth('+ value +')');
@@ -109,7 +135,7 @@
 
 					self.doEvent('set-file-info', {
 						name: 'store.json',
-						path: document.location.origin + '/res/json/store.json',
+						path: self.origin + '/res/json/store.json',
 						text: self.evaluator.editor.doc.getValue()
 					});
 					break;
@@ -142,21 +168,64 @@
 							.then(text => {
 								data = {
 									name: str,
-									path: document.location.origin + value,
+									path: self.origin + value,
 									text: text
 								};
 								self.doEvent('set-file-info', data);
 								editor.getDoc().setValue(text);
+
 								self.doEvent('load-file');
 							});
 					}
 
 					data = JSON.parse(editor.doc.getValue());
-					self.evaluator.snapshot = Defiant.getSnapshot(data);
+					self.evaluator.snapshot = defiant.getSnapshot(data);
 					break;
 				case 'custom-file':
-					el.parent().find('.active').removeClass('active');
-					el.addClass('active');
+					el.parents('.box-header').addClass('custom-json-url');
+	  				self.doEvent('clear-markers');
+					break;
+				case 'load-custom-file':
+					callback = arguments[1];
+					el = self.body.find('.xpath-evaluator .file-input input').removeClass('error');
+					value = el.val();
+
+					if (!value) {
+						el.addClass('error');
+						return;
+					}
+
+					$.getJSON(value, function(res) {
+						var data = JSON.stringify(res, false, '   '),
+							str = value.split('/');
+
+						// update file info
+						self.doEvent('set-file-info', {
+							name: str[str.length-1],
+							path: value,
+							text: data
+						});
+
+						editor.getDoc().setValue(data);
+						// refresh snapshot
+						data = JSON.parse(editor.doc.getValue());
+						self.evaluator.snapshot = defiant.getSnapshot(data);
+
+						// indicate custom button
+						el = self.body.find('.box-header .button[data-cmd="custom-file"]');
+						el.parent().find('.active').removeClass('active');
+						el.addClass('active');
+
+						self.doEvent('close-custom-url');
+
+						if (typeof callback === 'function') {
+							callback();
+						}
+					});
+					break;
+				case 'close-custom-url':
+					self.body.find('.xpath-evaluator .file-input input').val('');
+					self.body.find('.xpath-evaluator .box-header').removeClass('custom-json-url');
 					break;
 				case 'toggle-samples':
 					value = el.hasClass('active');
@@ -172,7 +241,7 @@
 						editor.setOption('readOnly', 'nocursor');
 						// refresh snapshot
 						data = JSON.parse(editor.doc.getValue());
-						self.evaluator.snapshot = Defiant.getSnapshot(data);
+						self.evaluator.snapshot = defiant.getSnapshot(data);
 					} else {
 	  					self.doEvent('clear-markers');
 	  					self.body.find('sidebar span.active').removeClass('active');
@@ -182,14 +251,14 @@
 					break;
 				case 'evaluate-xpath':
 	  				xpath = (typeof el === 'string') ? el : el.text();
+	  				self.evaluator.xpath = xpath;
 
 	  				// clear
 	  				self.doEvent('clear-markers');
 	  				self.xpathMatches.html('');
 		  			
 					try {
-						matches = JSON.search(self.evaluator.snapshot, xpath);
-						trace = JSON.trace;
+						matches = defiant.search(self.evaluator.snapshot, xpath);
 					} catch (err) {
 						console.log(err);
 						return self.xpathInput.parent().addClass('error');
@@ -198,7 +267,7 @@
 					// matches count
 	  				self.xpathMatches.html(matches.length +' matches');
 
-					trace.map(item => {
+					matches.trace.map(item => {
 						const lineStart = item[0] - 1;
 						const lineEnd = lineStart + item[1];
 						const lstr = editor.doc.getLine(lineEnd);
@@ -223,6 +292,8 @@
 			}
 		}
 	};
+
+	window.site = site;
 
 	var $ = @@include('./junior.js')
 	window.jr = $;

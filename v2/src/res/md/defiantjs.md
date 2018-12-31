@@ -8,12 +8,43 @@ Do you need to query large JSON structures? Do you end up coding loops to parse 
 (async () => {
   // import 'defiant' and fetch 'data'
   var [defiant, data] = await Promise.all([
-      import('/res/js/modules/defiant.js'),
+      fetchScript('/res/js/modules/defiant.js'),
       fetchJSON('/res/json/tiny.json')
     ]);
   
-  var search = JSON.search(data, '//car[color="yellow"]/name');
+  var search = defiant.search(data, '//car[color="yellow"]/name');
   console.log(search);
+
+})();
+
+```
+
+## Defiant in Node environment
+
+## Facet search
+
+```js
+/* qure:active */
+
+(async () => {
+  // import 'defiant' and fetch 'data'
+  var [defiant, data] = await Promise.all([
+      fetchScript('/res/js/modules/defiant.js'),
+      fetchJSON('/res/json/hotels.json')
+    ]);
+  
+  defiant.createSnapshot(data, function(snapshot) {
+    console.log(snapshot);
+    var now = Date.now(),
+      facets = defiant.getFacets(snapshot, {
+        'countries': {group: 'country',  key: 'id'},
+        'resorts':   {group: 'resort',   key: 'id'},
+        'facts':     {group: 'topFacts', key: 'tag'},
+        'concepts':  {group: 'concept',  key: 'id'}
+      });
+
+    console.log(1, ((Date.now() - now)/1000) +'ms', facets );
+  });
 
 })();
 
