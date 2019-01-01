@@ -36,6 +36,7 @@
 			var self = qure,
 				cmd  = (typeof(event) === 'string') ? event : event.type,
 				wrapper,
+				sidebar,
 				index,
 				code,
 				srcEl;
@@ -105,7 +106,7 @@
 						*/
 						_cm.editors[index] = editor;
 
-						if (index === 1) qure.sandbox(editor);
+						//if (index === 1) qure.sandbox(editor);
 						//console.log(index, editor.getValue());
 					});
 					break;
@@ -122,6 +123,9 @@
 					} else {
 						qure.sandbox(cm.editors[index]);
 					}
+					sidebar = wrapper.querySelector('sidebar');
+					cm.editors[index].setSize(wrapper.offsetWidth - (sidebar.offsetWidth ? sidebar.offsetWidth - 1 : 2));
+					cm.editors[index].refresh();
 					break;
 			}
 		},
@@ -138,7 +142,7 @@
 							style = [],
 							key, htm;
 						if (!el) {
-							style.push('top: '+ (((line - 1) * height) + 4) +'px');
+							style.push('top: '+ (((line - 1) * height) + 3) +'px');
 							if (typeof options === 'object') {
 								for (key in options) {
 									switch (key) {
@@ -157,6 +161,34 @@
 							height: el.offsetHeight - 2
 						};
 					},
+					table: function(line) {
+						var span = document.createElement('span'),
+							args = [].slice.call(arguments).slice(1),
+							el = sidebar.querySelector('div.stdOut.line-'+ line),
+							height = editor.defaultTextHeight(),
+							style = [],
+							content = [],
+							key,
+							htm;
+						if (!el) {
+							style.push('top: '+ (((line - 1) * height) + 3) +'px');
+							htm = '<div class="stdOut table line-'+ line +'" style="'+ style.join('; ') +';"></div>';
+							span.innerHTML = htm;
+							el = sidebar.appendChild(span.firstChild);
+						}
+						content.push('<table>');
+						content.push('<tr><th>(index)</th><th>Value</th></tr>');
+						
+						Object.keys(args[0]).map(function(item, index) {
+							content.push('<tr><td>'+ item +'</td><td>'+ args[0][item] +'</td></tr>');
+						});
+
+						content.push('</table>');
+						el.innerHTML = content.join('');
+
+						// forward to real console
+						window.console.table.apply({}, args);
+					},
 					log: function(line) {
 						var span = document.createElement('span'),
 							args = [].slice.call(arguments).slice(1),
@@ -166,7 +198,7 @@
 							htm;
 						if (!el) {
 							style.push('height: '+ (height + 1) +'px');
-							style.push('top: '+ (((line - 1) * height) + 4) +'px');
+							style.push('top: '+ (((line - 1) * height) + 3) +'px');
 							htm = '<div class="stdOut line-'+ line +'" style="'+ style.join('; ') +';"></div>';
 							span.innerHTML = htm;
 							el = sidebar.appendChild(span.firstChild);
@@ -181,7 +213,7 @@
 										case Number:
 										case String:   return item;
 										case Array:    return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
-										case Object:   return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">'+ item.toString() +'</span>';
+										case Object:   return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">'+ JSON.stringify(item) +'</span>';
 										case Function: return '<span data-cmd="explore-arguments" data-editor_index="'+ editor_index +','+ index +'">Function</span>';
 									}
 									return '<span data-cmd="explore-arguments" data-index="'+ editor_index +','+ index +'">'+ (typeof item) +'</span>';
@@ -238,7 +270,7 @@
 					}
 				},
 				sandboxed = function(lines) {
-					var code = `var console={log:labs.log, view:labs.view},
+					var code = `var console={log:labs.log, view:labs.view, table:labs.table},
 							requestAnimationFrame=labs.requestAnimationFrame.bind(labs),
 							setTimeout=labs.setTimeout.bind(labs),
 							setInterval=labs.setInterval.bind(labs);
@@ -260,8 +292,9 @@
 			while (len--) {
 				// adjust 'console.log'
 				lines[len] = lines[len]
-								.replace(/console.log\(/g, 'console.log('+ (len+1) +',')
-								.replace(/console.view\(/g, 'console.view('+ (len+1) +',');
+								.replace(/console.view\(/g, 'console.view('+ (len+1) +',')
+								.replace(/console.table\(/g, 'console.table('+ (len+1) +',')
+								.replace(/console.log\(/g, 'console.log('+ (len+1) +',');
 			}
 			// eval code in sandbox mode
 			sandboxed(lines);

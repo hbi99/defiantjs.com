@@ -21,6 +21,8 @@ Do you need to query large JSON structures? Do you end up coding loops to parse 
 
 ## Defiant in Node environment
 
+As of `v2.0.0`, Defiant can be utilized in [Node.js](https://nodejs.org/) environment. Since there is no default support for XML technologies in Node, the library [puppeteer](https://github.com/GoogleChrome/puppeteer) is initiated to mimic browser environment, with Defiant running. All methods called from Node is piped via __puppeteer__. Even though, Defiant now can be used in Node environment - utilizing Defiant in the browser is recommended. It all boils down to whether you want your servers to run thousands of searches for your clients __or__ to let thousands of client computers to share the work load.
+
 ## Facet search
 
 ```js
@@ -30,20 +32,19 @@ Do you need to query large JSON structures? Do you end up coding loops to parse 
   // import 'defiant' and fetch 'data'
   var [defiant, data] = await Promise.all([
       fetchScript('/res/js/modules/defiant.js'),
-      fetchJSON('/res/json/hotels.json')
+      fetchJSON('/res/json/medium.json')
     ]);
-  
+
   defiant.createSnapshot(data, function(snapshot) {
-    console.log(snapshot);
-    var now = Date.now(),
-      facets = defiant.getFacets(snapshot, {
-        'countries': {group: 'country',  key: 'id'},
-        'resorts':   {group: 'resort',   key: 'id'},
-        'facts':     {group: 'topFacts', key: 'tag'},
-        'concepts':  {group: 'concept',  key: 'id'}
+    var facets = defiant.getFacets(snapshot, {
+        'eyeColors':      {group: '*', key: 'eyeColor'},
+        'favoriteFruits': {group: '*', key: 'favoriteFruit'}
       });
 
-    console.log(1, ((Date.now() - now)/1000) +'ms', facets );
+    console.table(facets.favoriteFruits);
+    // facets will now contain grouped values from facet-search
+    // the values of favoriteFruits is listed as table    
+
   });
 
 })();

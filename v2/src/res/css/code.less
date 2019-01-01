@@ -80,7 +80,7 @@
           }
         }
         .CodeMirror {
-          margin-right: 37%;
+          //margin-right: 37%;
           border-radius: 3px 0 0 3px;
         }
       }
@@ -121,7 +121,8 @@
 
       sidebar {
         display: none;
-        overflow: hidden;
+        overflow-x: auto;
+        overflow-y: hidden;
         background: #f2f2f8;
         border-left: 1px solid #ddd;
         position: absolute;
@@ -142,25 +143,24 @@
             left: 0;
             right: 0;
             padding-top: 1px;
-            padding-left: 3px;
+            padding-left: 15px;
             font-size: 12px;
             color: rgba(0,0,0,0.5);
+            white-space: nowrap;
 
             &:before {
               content: '›';
-              background: #f5f5f5;
+              background: #fff;
               color: #f90;
               position: absolute;
               top: 0;
-              right: 100%;
-              font-size: 15px;
-              line-height: 15px;
+              left: 0;
+              font-size: 17px;
+              line-height: 17px;
               padding: 0 2px;
-              border: 1px solid rgba(0,0,0,0.07);
-              border-right: 0;
-              border-radius: 20px 0 0 20px;
               z-index: 2;
               white-space: nowrap;
+              border-radius: 50%;
             }
 
             &.ping:before {
@@ -176,6 +176,44 @@
 
               &:before {
                 margin-right: 6px;
+              }
+            }
+            
+            &.table {
+              background: #fff;
+              border: 1px solid rgba(0,0,0,0.1);
+              left: 5px;
+              right: 4px;
+              padding: 0;
+
+              table {
+                display: table;
+              }
+              tr {
+                border: 0;
+
+                &:first-child {
+                  th:first-child {
+                    padding-left: 13px;
+                  }
+                }
+              }
+              th {
+                padding: 1px 5px 0px;
+                border-width: 0;
+                border-bottom-width: 1px;
+
+                &:not(:first-child) {
+                  border-left-width: 1px;
+                }
+              }
+              td {
+                padding: 1px 5px 0px;
+                border-width: 0;
+
+                &:not(:first-child) {
+                  border-left-width: 1px;
+                }
               }
             }
 

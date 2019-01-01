@@ -152,10 +152,13 @@
 			heaviest_children.map(function(node, index) {
 				heaviest_copy.appendChild(node.cloneNode(true));
 				if (index % batch === batch-1 || index === len) {
-					var pOutput = defiant.render('facets', xml_copy).replace(/\n|\t/g, ''),
+					var pOutput = defiant.render('facets', xml_copy)
+											.replace(/\n|\t/g, '')
+											.replace(/"": 0,?/g, '')
+											.replace(/,\}/g, '}'),
 						partial = JSON.parse(pOutput);
+					
 					out = defiant.concatFacet(partial, out);
-
 					defiant.node.selectNodes(xml_copy, '//*[@d:mi="'+ heaviest.getAttribute('d:mi') +'"]/'+ common)
 							.map(node => node.parentNode.removeChild(node));
 				}
@@ -671,7 +674,6 @@
 				}
 
 				// if environment = development, add search tracing
-				console.log(defiant.env);
 				if (defiant.env === 'development') {
 					ret.trace = self.matchTrace(src, ret, xres);
 				}
