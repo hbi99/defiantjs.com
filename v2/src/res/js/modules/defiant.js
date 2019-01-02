@@ -924,6 +924,15 @@
 	defiant.search = defiant.json.search;
 	defiant.x10 = x10;
 
+	JSON.search = function(data, xpath, first) {
+		console.warn('[Deprication] Defiant will stop extending the JSON object. Please use this method instead; "defiant.json.search".')
+		return defiant.json.search(data, xpath, first);
+	};
+	JSON.toXML = function(data) {
+		console.warn('[Deprication] Defiant will stop extending the JSON object. Please use this method instead; "defiant.json.toXML".')
+		return defiant.json.toXML(data);
+	};
+
 	NodeList.prototype.map = Array.prototype.map;
 
 	window.defiant = window.defiant || defiant;

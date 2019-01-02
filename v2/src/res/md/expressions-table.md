@@ -1,3 +1,6 @@
+## XPath
+A powerful tool when dealing with XML is the advantage of using XPath. XPath is a standardized language for addressing parts of an XML document and enables features such as analysis, transformation & refined data selection out of an XML structure. The lack of a similar feature for working with JSON has prompted initiatives such as JSONPath, which has not been standardized or widely accepted by the community. With Defiant, you can unleash the power of XPath on JSON objects, with no retooling or reschooling!
+
 ## Expressions Table
 The syntax table below offers a glimpse of the power that XPath brings. XPath has a lot more to offer. An important advantage of implementing XPath, as contrasted with JSONPath, is that this language has been documented a great deal on the web and information and how-to's can easily be found and digested.
 
