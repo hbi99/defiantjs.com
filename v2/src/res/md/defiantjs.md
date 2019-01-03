@@ -6,15 +6,23 @@ Do you need to query large JSON structures? Do you end up coding loops to parse 
 /* qure:active */
 
 (async () => {
-  // import 'defiant' and fetch 'data'
-  var [defiant, data] = await Promise.all([
-      fetchScript('/res/js/modules/defiant.js'),
-      fetchJSON('/res/json/tiny.json')
-    ]);
+  // import 'defiant'
+  var defiant = await fetchScript('/res/js/modules/defiant.js');
+  var data = {
+      "car": [
+          {"id": 10, "color": "silver", "name": "Volvo"},
+          {"id": 11, "color": "red",    "name": "Saab"},
+          {"id": 12, "color": "red",    "name": "Peugeot"},
+          {"id": 13, "color": "yellow", "name": "Porsche"}
+      ],
+      "bike": [
+          {"id": 20, "color": "black", "name": "Cannondale"},
+          {"id": 21, "color": "red",   "name": "Shimano"}
+      ]
+  };
   
   var search = defiant.search(data, '//car[color="yellow"]/name');
   console.log(search);
-
 })();
 
 ```
@@ -32,10 +40,8 @@ Facet search was introduced in `v2.1.3`. With this feature, Defiant can group an
 
 (async () => {
   // import 'defiant' and fetch 'data'
-  var [defiant, data] = await Promise.all([
-      fetchScript('/res/js/modules/defiant.js'),
-      fetchJSON('/res/json/medium.json')
-    ]);
+  var defiant = await fetchScript('/res/js/modules/defiant.js');
+  var data = await fetchJSON('/res/json/medium.json');
 
   var facets = defiant.getFacets(data, {
         'eyeColors':      {group: '*', key: 'eyeColor'},

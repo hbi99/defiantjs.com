@@ -241,6 +241,9 @@
 						editor.setOption('readOnly', 'nocursor');
 						// refresh snapshot
 						data = JSON.parse(editor.doc.getValue());
+						data = JSON.stringify(data, false, '   ');
+						editor.getDoc().setValue(data);
+						data = JSON.parse(editor.doc.getValue());
 						self.evaluator.snapshot = defiant.getSnapshot(data);
 					} else {
 	  					self.doEvent('clear-markers');

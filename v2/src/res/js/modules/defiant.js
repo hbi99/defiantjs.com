@@ -156,9 +156,7 @@
 											.replace(/\n|\t/g, '')
 											.replace(/"": 0,?/g, '')
 											.replace(/,\}/g, '}'),
-						partial;
-					console.log(pOutput);
-					partial = JSON.parse(pOutput);
+						partial = JSON.parse(pOutput);
 					out = defiant.concatFacet(partial, out);
 					defiant.node.selectNodes(xml_copy, '//*[@d:mi="'+ heaviest.getAttribute('d:mi') +'"]/'+ common)
 							.map(function(node) {return node.parentNode.removeChild(node)});
