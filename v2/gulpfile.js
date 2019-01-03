@@ -8,6 +8,10 @@ const markdownIt = require("markdown-it")
 const hljs = require("highlight.js")
 
 
+const html_data = {
+	version: "v2.1.4"
+};
+
 const srcPaths = {
 	base: "./src",
 	server : "./app.js",
@@ -79,7 +83,7 @@ function clean() {
 function scripts() {
 	return gulp.src(srcPaths.scripts[2])
 		.pipe($.fileInclude(includeOptions))
-	//	.pipe($.uglify())
+		.pipe($.uglify())
 		.pipe($.rename({suffix: ".min"}))
 		.pipe(gulp.dest(destPaths.script))
 		.pipe($.size({title: "scripts"}))
@@ -131,8 +135,10 @@ function svg() {
 		.pipe($.size({title: "svg"}))
 }
 
-function html() {
+function html() {	
 	return gulp.src(srcPaths.html[0])
+		.pipe($.data(() => html_data))
+        .pipe($.template())
 		.pipe($.fileInclude({
 			filters: { markdown: instr => md.render(instr) }
 		}))

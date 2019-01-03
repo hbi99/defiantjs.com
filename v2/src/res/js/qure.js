@@ -1,7 +1,9 @@
 
+/* jshint ignore:start */
 @@include('./codemirror/codemirror.js')
 @@include('./codemirror/javascript.js')
 @@include('./raf.js')
+/* jshint ignore:end */
 
 (function(window, document) {
 	'use strict';
@@ -223,24 +225,24 @@
 							el.innerHTML = content.join(',');
 						});
 					},
-					fetchScript: async function(url) {
+					fetchScript: function(url) {
 						return new Promise(function(resolve, reject) {
 							fetch(url +'?'+ Math.random())
-								.then(resp => resp.text())
-						    	.then(code => {
+								.then(function(resp) {return resp.text();})
+						    	.then(function(code) {
 						    		var str = 'return (function() {var module={};'+ code +'; return module.exports;})();';
 					    			return new Function(str).call();
 						    	})
-						    	.then(data => resolve(data))
-						    	.catch(error => reject(error));
+						    	.then(function(data) {return resolve(data)})
+						    	.catch(function(error) {return reject(error)});
 						});
 					},
-					fetchJSON: async function(url) {
+					fetchJSON: function(url) {
 						return new Promise(function(resolve, reject) {
 							fetch(url)
-						    	.then(resp => resp.json())
-						    	.then(data => resolve(data))
-						    	.catch(error => reject(error));
+						    	.then(function(resp) {return resp.json();})
+						    	.then(function(data) {return resolve(data)})
+						    	.catch(function(error) {return reject(error)});
 						});
 					},
 					_rafs: [],
@@ -270,15 +272,13 @@
 					}
 				},
 				sandboxed = function(lines) {
-					var code = `var console={log:labs.log, view:labs.view, table:labs.table},
-							requestAnimationFrame=labs.requestAnimationFrame.bind(labs),
-							setTimeout=labs.setTimeout.bind(labs),
-							setInterval=labs.setInterval.bind(labs);
-							fetchScript=labs.fetchScript.bind(labs);
-							fetchJSON=labs.fetchJSON.bind(labs);
-						(function() {
-							if (labs._stopped) return;
-							${lines.join('\n')}})();`;
+					var code = 'var console={log:labs.log, view:labs.view, table:labs.table},'+
+							'requestAnimationFrame=labs.requestAnimationFrame.bind(labs),'+
+							'setTimeout=labs.setTimeout.bind(labs),'+
+							'setInterval=labs.setInterval.bind(labs);'+
+							'fetchScript=labs.fetchScript.bind(labs);'+
+							'fetchJSON=labs.fetchJSON.bind(labs);'+
+					'	(function() {if (labs._stopped) return;'+ lines.join('\n') +'})();';
 					(new Function('labs', code).call({}, labs));
 
 					cm.labs[editor_index] = labs;

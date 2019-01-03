@@ -28,7 +28,7 @@
 			this.body.on('click', '[data-cmd]', this.doEvent);
 			this.xpathInput.on('keyup', this.doEvent);
 
-			//this.doEvent('check-url-query');
+			this.doEvent('check-url-query');
 
 			if (document.location.hostname === 'localhost') {
 				// temp
@@ -164,8 +164,8 @@
 						srcEl.addClass('active');
 
 						return fetch(value)
-							.then(resp => resp.text())
-							.then(text => {
+							.then(function(resp) {return resp.text()})
+							.then(function(text) {
 								data = {
 									name: str,
 									path: self.origin + value,
@@ -267,10 +267,10 @@
 					// matches count
 	  				self.xpathMatches.html(matches.length +' matches');
 
-					matches.trace.map(item => {
-						const lineStart = item[0] - 1;
-						const lineEnd = lineStart + item[1];
-						const lstr = editor.doc.getLine(lineEnd);
+					matches.trace.map(function(item) {
+						var lineStart = item[0] - 1;
+						var lineEnd = lineStart + item[1];
+						var lstr = editor.doc.getLine(lineEnd);
 						self.evaluator.markers.push(editor.markText(
 							{line: lineStart, ch: 0},
 							{line: lineEnd, ch: lstr.length},
@@ -286,7 +286,7 @@
 					}
 					break;
 				case 'clear-markers':
-					self.evaluator.markers.map(m => m.clear());
+					self.evaluator.markers.map(function(m) {return m.clear()});
 					self.evaluator.markers = [];
 					break;
 			}

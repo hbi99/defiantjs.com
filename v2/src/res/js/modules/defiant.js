@@ -118,7 +118,7 @@
 								heaviest = leaf;
 							}
 						case 9:
-							leaf.childNodes.map(item => getHeaviest(item));
+							leaf.childNodes.map(function(item) {return getHeaviest(item)});
 							break;
 					}
 				};
@@ -144,7 +144,7 @@
 			// empty clone heaviest children
 			heaviest_copy = defiant.node.selectSingleNode(xml_copy, '//*[@d:mi="'+ heaviest.getAttribute('d:mi') +'"]');
 			defiant.node.selectNodes(xml_copy, '//*[@d:mi="'+ heaviest.getAttribute('d:mi') +'"]/'+ common)
-					.map(node => node.parentNode.removeChild(node));
+					.map(function(node) {return node.parentNode.removeChild(node)});
 
 			heaviest_children = defiant.node.selectNodes(xml_org, '//*[@d:mi="'+ heaviest.getAttribute('d:mi') +'"]/'+ common);
 			len = heaviest_children.length-1;
@@ -156,11 +156,12 @@
 											.replace(/\n|\t/g, '')
 											.replace(/"": 0,?/g, '')
 											.replace(/,\}/g, '}'),
-						partial = JSON.parse(pOutput);
-					
+						partial;
+					console.log(pOutput);
+					partial = JSON.parse(pOutput);
 					out = defiant.concatFacet(partial, out);
 					defiant.node.selectNodes(xml_copy, '//*[@d:mi="'+ heaviest.getAttribute('d:mi') +'"]/'+ common)
-							.map(node => node.parentNode.removeChild(node));
+							.map(function(node) {return node.parentNode.removeChild(node)});
 				}
 			});
 
@@ -172,13 +173,12 @@
 				xsl_facets = [],
 				key;
 			for (key in facets) {
-				xsl_keys.push(`<xsl:key name="${key}Key" match="${facets[key].group}" use="${facets[key].key}" />`);
-				xsl_facets.push(`"${key}": {<xsl:for-each select="//${facets[key].group}[@d:mi][count(. | key('${key}Key', ${facets[key].key})[1]) = 1]">
-					"<xsl:value-of select="${facets[key].key}" />": <xsl:value-of select="count(//${facets[key].group}[${facets[key].key} = current()/${facets[key].key}])" />
-					<xsl:if test="position() != last()">,</xsl:if>
-					</xsl:for-each>}`.replace(/\n|\t/g, ''));
+				xsl_keys.push('<xsl:key name="'+ key +'Key" match="'+ facets[key].group +'" use="'+ facets[key].key +'" />');
+				xsl_facets.push('"'+ key +'": {<xsl:for-each select="//'+ facets[key].group +'[@d:mi][count(. | key(\''+ key +'Key\', '+ facets[key].key +')[1]) = 1]">'+
+					'"<xsl:value-of select="'+ facets[key].key +'" />": <xsl:value-of select="count(//'+ facets[key].group +'['+ facets[key].key +' = current()/'+ facets[key].key +'])" />'+
+					'<xsl:if test="position() != last()">,</xsl:if></xsl:for-each>}'.replace(/\n|\t/g, ''));
 			}
-			xsl_template = `${xsl_keys.join('')}<xsl:template name="facets">{${xsl_facets.join(',')}}</xsl:template>`;
+			xsl_template = xsl_keys.join('') +'<xsl:template name="facets">{'+ xsl_facets.join(',') +'}</xsl:template>';
 
 			this.registerTemplate(xsl_template);
 		},
@@ -685,9 +685,9 @@
 					fIndex = 0,
 					win = window,
 					toJson = defiant.node.toJSON,
-					stringify = (data) => JSON.stringify(data, null, '\t').replace(/\t/g, ''),
+					stringify = function(data) {return JSON.stringify(data, null, '\t').replace(/\t/g, '')},
 					jsonStr = stringify(root);
-				xres.map((item, index) => {
+				xres.map(function(item, index) {
 					var constr,
 						pJson,
 						pStr,

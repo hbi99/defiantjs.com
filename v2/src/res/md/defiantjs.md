@@ -107,7 +107,7 @@ Using Defiant is pretty easy. Check out the examples below to get a hint of how 
 (async () => {
   var defiant = await fetchScript('/res/js/modules/defiant.js');
   
-  var template_string = `<xsl:template name="books_template">
+  var template_string = `<xsl:template name="movie_template">
         <xsl:for-each select="//movie">
             <xsl:value-of select="title"/>,<br/>
         </xsl:for-each>
@@ -123,7 +123,7 @@ Using Defiant is pretty easy. Check out the examples below to get a hint of how 
           ]
       };
 
-  var htm = defiant.render('books_template', data);
+  var htm = defiant.render('movie_template', data);
   console.log(htm);
 
 })();
