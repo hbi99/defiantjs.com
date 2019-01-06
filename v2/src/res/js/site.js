@@ -1,5 +1,5 @@
 
-@@include('./qure.js')
+@@include('./jupyter.min.js')
 @@include('./modules/defiant.js')
 
 (function(window, document) {

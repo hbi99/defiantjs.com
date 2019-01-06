@@ -2,20 +2,24 @@
 const colors = require("colors")
 const gulp = require("gulp")
 const $ = require("gulp-load-plugins")()
-const autoprefixer = require("autoprefixer")
 const cleanCSS = require("gulp-clean-css")
 const markdownIt = require("markdown-it")
 const hljs = require("highlight.js")
 
 
 const html_data = {
-	version: "v2.1.4"
+	version: {
+		defiant: "v2.1.4",
+		junior: "v1.1.4",
+		jupyter: "v1.0.1",
+		rebellious: "1.0.1",
+	}
 };
 
 const srcPaths = {
 	base: "./src",
 	server : "./app.js",
-	html : ["./src/index.htm", "./src/res/md/*.md"],
+	html : ["./src/**/*.htm", "./src/res/md/*.md"],
 	scripts : ["./src/res/js/*.js", "!./src/res/js/*.min.js", "./src/res/js/site.js"],
 	modules : "./src/res/js/modules/*.js",
 	styles : ["./src/res/css/**/*.less", "./src/res/css/index.less"],
@@ -83,7 +87,7 @@ function clean() {
 function scripts() {
 	return gulp.src(srcPaths.scripts[2])
 		.pipe($.fileInclude(includeOptions))
-		.pipe($.uglify())
+	//	.pipe($.uglify())
 		.pipe($.rename({suffix: ".min"}))
 		.pipe(gulp.dest(destPaths.script))
 		.pipe($.size({title: "scripts"}))

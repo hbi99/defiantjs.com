@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0" />
+<link rel="shortcut icon" href="/res/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/res/img/favicon.ico" type="image/x-icon">
+<title>Jupyter.js</title>
+<meta property='og:locale' content='sv_SE'/>
+<meta property='og:type' content='website'/>
+<meta property='og:title' content='DefiantJS'/>
+<meta property='og:description' content=''/>
+<meta property='og:url' content='http://www.defiantjs.com/'/>
+<meta property='og:site_name' content='DefiantJS'/>
+<meta property='fb:admins' content='661407089'/>
+<meta property='og:image' content='http://www.defiantjs.com/res/img/fb-icon.png'/>
+<link type="text/css" href="/res/css/index.css" media="all" rel="stylesheet"/>
+<script type="text/javascript" src="/res/js/site.min.js"></script>
+</head>
+<body>
+
+<div class="layout">
+	<div class="page-head">
+		<div class="container details-container">
+			<div class="left">
+				<a href="/" class="library-name">jupyter.js</a>
+				<span class="library-version"><%= version.jupyter %></span>
+			</div>
+			<div class="right">
+				<div class="btn-group">
+					<a class="button" target="_new" href="https://github.com/hbi99/jupyter.js"><i class="icon-github"></i> Source code</a>
+					<a class="button" target="_new" href="https://github.com/hbi99/jupyter.js/archive/master.zip"><i class="icon-download"></i> Download</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav>
+				<span data-cmd="switch-tab" class="tab active"><i class="icon-defiant"></i> Documentation</span>
+			</nav>
+		</div>
+	</div>
+	<div class="container article">
+		<div class="tab-body active">
+			<div class="container preamble">
+				Jupyter.js allows you to extend your markdown files with live code blocks in your narrative text.
+			</div>
+			<div class="markdown-body">
+				@@include(markdown('../res/md/jupyter.md'))
+			</div>
+		</div>
+	</div>
+	<div class="container footer">
+		<div class="left">
+			Jupyter.js by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> © 2019
+		</div>
+		<div class="center">
+			<i class="icon-hb" title="Hakan Bilgin"></i>
+		</div>
+		<div class="right">
+			Created with <i class="icon-heart" title="Hakan Bilgin"></i> in Sweden
+		</div>
+	</div>
+</div>
+
+<!-- Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46810624-1', 'defiantjs.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

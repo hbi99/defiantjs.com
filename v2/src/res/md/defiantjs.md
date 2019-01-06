@@ -3,7 +3,7 @@
 Do you need to query large JSON structures? Do you end up coding loops to parse the JSON and identify the data that matches your query? Defiant offers a better way. Defiant extends the global JSON object with a "search" method that enables lightning-fast searches using XPath expressions. Try out the XPath Evaluator to get the idea.
 
 ```js
-/* qure:active */
+/* jupyter:active */
 
 (async () => {
   // import 'defiant'
@@ -36,7 +36,7 @@ As of `v2.0.0`, Defiant can be utilized in [Node.js](https://nodejs.org/) enviro
 Facet search was introduced in `v2.1.3`. With this feature, Defiant can group and count your JSON data with a few lines of simple code. See the two example codes below - the latter one examplifies facet search using snapshots. Making facet searches on snapshots si highly recommended if you are intending to make multiple queries on the same data. You can make multiple grouped queries as shown below.
 
 ```js
-/* qure:active */
+/* jupyter:active */
 
 (async () => {
   // import 'defiant' and fetch 'data'
@@ -75,7 +75,7 @@ Defiant `v1.2.0` introduced a snapshot feature that improves search performance 
 With really large JSON structures, avoiding to do the time-consuming preparation on each search has proven to be beneficial. Though it turned out that this preparation have a blocking effect on the UI-thread. Consequently in version `v1.2.6` a snapshot can be created utilizing web workers. This approach brings a smoother experience and applies especially when dealing with large data - larger than 1 MB of JSON data.
 
 ```js
-/* qure:active */
+/* jupyter:active */
 
 (async () => {
   var defiant = await fetchScript('/res/js/modules/defiant.js');
@@ -108,7 +108,7 @@ With Defiant, you can write logical templates with powerful technologies such as
 Using Defiant is pretty easy. Check out the examples below to get a hint of how it can be used; the first one is rather simple and the latter is more advanced and demonstrates calling templates from another template. It contains recursive template calling and renders a fictitious filesystem structure. When the "tree-walker" template calls itself, indentation is passed as an argument, thus indenting child elements of a folder. 
 
 ```js
-/* qure:active */
+/* jupyter:active */
 
 (async () => {
   var defiant = await fetchScript('/res/js/modules/defiant.js');
