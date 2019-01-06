@@ -1,0 +1,93 @@
+
+/* = iPhone  */
+@media (max-width:740px) {
+	html body {
+		font-size: 14px;
+		line-height: 22px;
+
+		.layout {
+			.page-head {
+				.container {
+					padding-left: 10px;
+					padding-right: 10px;
+
+					nav {
+						font-size: 12px;
+
+						.tab {
+							padding: 9px 11px 7px;
+
+							&.active {
+								padding: 6px 11px 8px;
+							}
+							i {
+								display: none;
+							}
+						}
+					}
+					.button {
+						i {
+							display: none;
+						}
+					}
+				}
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin-top: 2px;
+				margin-bottom: 7px;
+			}
+			.container {
+				padding-left: 10px;
+				padding-right: 10px;
+
+				&.preamble {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				&.article {
+					padding-left: 10px;
+					padding-right: 10px;
+
+					.markdown-body {
+						font-size: inherit;
+						line-height: inherit;
+						padding: 13px 10px 23px;
+					}
+					h5 {
+						font-size: 13px;
+					}
+					.xpath-evaluator {
+						.btn-group {
+							display: none;
+						}
+					}
+				}
+				&.footer {
+					position: relative;
+					padding: 20px 10px;
+					height: 170px;
+
+					&:before {
+						display: none;
+					}
+
+					.left,
+					.right {
+						width: 100%;
+						text-align: center;
+					}
+					.center {
+						position: absolute;
+						top: 89px;
+					}
+				}
+			}
+		}
+	}
+}
