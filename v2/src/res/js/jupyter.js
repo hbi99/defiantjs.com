@@ -17,12 +17,12 @@
 		gutterOptions: ['CodeMirror-linenumbers'],
 		extraKeys: {
 			'Alt-Enter': function(editor) {
-				qure.sandbox(editor);
+				jupyter.sandbox(editor);
 			}
 		}
 	};
 
-	var qure = {
+	var jupyter = {
 		init: function() {
 			// fast references
 			this.body = document.querySelector('body');
@@ -35,7 +35,7 @@
 			this.doEvent('init-editors');
 		},
 		doEvent: function(event, el, orgEvent) {
-			var self = qure,
+			var self = jupyter,
 				cmd  = (typeof(event) === 'string') ? event : event.type,
 				wrapper,
 				sidebar,
@@ -73,7 +73,7 @@
       			// custom events
 				case 'init-editors':
 					document.querySelectorAll('pre > code').forEach(function(item, index) {
-						if (item.firstChild.innerHTML !== '/* qure:active */') return;
+						if (item.firstChild.innerHTML !== '/* jupyter:active */') return;
 						var _cm = cm,
 							language = item.className.split('-')[1],
 							code = item.textContent.split('\n').slice(1),
@@ -98,17 +98,17 @@
 						editor.on('blur', function(event) {
 								var el = $(event.display.wrapper).parents('pre');
 								el.removeClass('active');
-								qure.body.removeClass('editor-focus');
+								jupyter.body.removeClass('editor-focus');
 							});
 						editor.on('focus', function(event) {
 								var el = $(event.display.wrapper).parents('pre');
 								el.addClass('active');
-								qure.body.addClass('editor-focus');
+								jupyter.body.addClass('editor-focus');
 							});
 						*/
 						_cm.editors[index] = editor;
 
-						//if (index === 1) qure.sandbox(editor);
+						//if (index === 1) jupyter.sandbox(editor);
 						//console.log(index, editor.getValue());
 					});
 					break;
@@ -123,7 +123,7 @@
 						cm.labs[index].stop(index);
 						wrapper.classList.remove('sandbox-on');
 					} else {
-						qure.sandbox(cm.editors[index]);
+						jupyter.sandbox(cm.editors[index]);
 					}
 					sidebar = wrapper.querySelector('sidebar');
 					cm.editors[index].setSize(wrapper.offsetWidth - (sidebar.offsetWidth ? sidebar.offsetWidth - 1 : 2));
@@ -303,7 +303,7 @@
 
 	var fn, init = function() {
 			// init object
-			qure.init();
+			jupyter.init();
 			// call default onload handler, if any
 			if (typeof(fn) === 'function') fn();
 		};
