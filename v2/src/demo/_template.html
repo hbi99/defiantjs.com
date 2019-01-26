@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Defiant - issue <%= issue_number %></title>
+
+<link type="text/css" href="/res/css/index.css" media="all" rel="stylesheet"/>
+<script type="text/javascript" src="/res/js/jupyter.min.js"></script>
+</head>
+<body>
+
+<div class="layout">
+	<br/>
+	<br/>
+	<div class="container article">
+		<div class="container preamble">
+			<b>Defiant</b> enables you to perform lightning-fast searches on <abbr title="JavaScript Object Notation">JSON</abbr>
+			using <abbr title="XML Path Language">XPath</abbr> expressions, and transform <abbr title="JavaScript Object Notation">JSON</abbr>
+			using <abbr title="Extensible Stylesheet Language Transformations">XSLT</abbr>.
+		</div>
+		<div class="markdown-body">
+			<%= issue_markdown %>
+		</div>
+	</div>
+	<div class="container footer">
+		<div class="left">
+			Defiant by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> © 2019
+		</div>
+		<div class="center">
+			<i class="icon-hb" title="Hakan Bilgin"></i>
+		</div>
+		<div class="right">
+			Created with <i class="icon-heart" title="Hakan Bilgin"></i> in Sweden
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

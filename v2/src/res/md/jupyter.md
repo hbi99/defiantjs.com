@@ -10,11 +10,12 @@ Implementing **jupyter.js** is quite simple; just add the `jupyter.min.js` and `
 <script type="text/javascript" src="jupyter.min.js"></script>
 ```
 
-```js
-// ...and add the line below as the first row in the code block you wish to be live code block
-/* jupyter:active */
+```
+/* jupyter:active */  <-- this will activate jupyter block
 
-// ...here goes the code you want to be live and executable
+var color = 'red';
+
+console.log(red);
 
 ```
 

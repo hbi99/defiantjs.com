@@ -1,4 +1,7 @@
 
+const fs = require("fs")
+const path = require("path")
+const through = require('through2')
 const colors = require("colors")
 const gulp = require("gulp")
 const $ = require("gulp-load-plugins")()
@@ -9,7 +12,7 @@ const hljs = require("highlight.js")
 
 const html_data = {
 	version: {
-		defiant: "v2.1.4",
+		defiant: "v2.2.0",
 		junior: "v1.1.4",
 		jupyter: "v1.0.1",
 		rebellious: "1.0.1",
@@ -20,7 +23,8 @@ const srcPaths = {
 	base: "./src",
 	server : "./app.js",
 	html : ["./src/**/*.htm", "./src/res/md/*.md"],
-	scripts : ["./src/res/js/*.js", "!./src/res/js/*.min.js", "./src/res/js/site.js"],
+	demos : "./src/demo/*.md",
+	scripts : ["./src/res/js/*.js", "!./src/res/js/*.min.js", "./src/res/js/site.js", "./src/res/js/jupyter.js"],
 	modules : "./src/res/js/modules/*.js",
 	styles : ["./src/res/css/**/*.less", "./src/res/css/index.less"],
 	images : "./src/res/img/**/*.{gif,png,jpg,ico,svg}",
@@ -31,6 +35,7 @@ const srcPaths = {
 
 const destPaths = {
 	base: "./public",
+	demos: "./public/demo/",
 	script: "./public/res/js/",
 	modules: "./public/res/js/modules/",
 	styles: "./public/res/css/",
@@ -58,7 +63,7 @@ const md = new markdownIt({
 				return hljs.highlight(lang, str).value
 			} catch (__) {}
 		}
-		return ''
+		return ""
 	}
 })
 
@@ -85,7 +90,7 @@ function clean() {
 }
 
 function scripts() {
-	return gulp.src(srcPaths.scripts[2])
+	return gulp.src(srcPaths.scripts.slice(2))
 		.pipe($.fileInclude(includeOptions))
 	//	.pipe($.uglify())
 		.pipe($.rename({suffix: ".min"}))
@@ -150,6 +155,27 @@ function html() {
 		.pipe($.size({title: "html"}))
 }
 
+function demos() {
+	const _template = fs.readFileSync("./src/demo/_template.html").toString()
+
+	return gulp.src(srcPaths.demos)
+        .pipe(through.obj(function (file, enc, callback) {
+			//console.log('chunk', file.path) // this should log now
+			const fileparts = path.parse(file.path)
+			const contents = new Buffer(file.contents).toString()
+			const rendered = md.render(contents)
+			
+			let html = _template.replace(/<%= issue_markdown %>/, rendered)
+			html = html.replace(/<%= issue_number %>/, fileparts.name.split("-")[1])
+
+			file.contents = new Buffer(html);
+			callback(null, file)
+		}))
+		.pipe($.rename({extname: ".htm"}))
+		.pipe(gulp.dest(destPaths.demos))
+		.pipe($.size({title: "demos"}))
+}
+
 function webserver(done) {
 	$.nodemon({
 		script: srcPaths.server,
@@ -166,11 +192,12 @@ function watch() {
 	gulp.watch(srcPaths.fonts, fonts)
 	gulp.watch(srcPaths.json, json)
 	gulp.watch(srcPaths.svg, svg)
+	gulp.watch(srcPaths.demos, demos)
 	gulp.watch(srcPaths.html, html)
 }
 
-var build = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, html))
-var start = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, html), webserver, watch)
+var build = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, demos, html))
+var start = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, demos, html), webserver, watch)
 
 gulp.task("clean", clean)
 gulp.task("watch", watch)
@@ -182,6 +209,7 @@ gulp.task("fonts", fonts)
 gulp.task("svg", svg)
 gulp.task("json", json)
 gulp.task("html", html)
+gulp.task("demos", demos)
 gulp.task("webserver", webserver)
 
 gulp.task("help", help)
