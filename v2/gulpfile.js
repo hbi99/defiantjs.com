@@ -12,7 +12,7 @@ const hljs = require("highlight.js")
 
 const html_data = {
 	version: {
-		defiant: "v2.2.1",
+		defiant: "v2.2.3",
 		junior: "v1.1.4",
 		jupyter: "v1.0.5",
 		rebellious: "1.0.1",
