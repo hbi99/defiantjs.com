@@ -77,7 +77,10 @@
 							<span class="button" data-cmd="custom-file">Custom</span>
 						</span>
 						<span class="button" data-cmd="toggle-samples">Samples</span>
-						<span class="ghost-btn" data-cmd="edit-json">
+						<span class="ghost-btn" data-cmd="toggle-xml-view" title="XML view">
+							<i class="icon-file-code-o"></i>
+						</span>
+						<span class="ghost-btn" data-cmd="edit-json" title="Edit JSON">
 							<i class="icon-pencil"></i>
 						</span>
 					</div>
@@ -85,11 +88,19 @@
 					<div class="file-input">
 						<span class="file-protocol">URL</span>
 						<input type="text" placeholder="http://www.domain.com/path-to/json-file" autocomplete="off" spellcheck="false"/>
+						<span class="ghost-btn" data-cmd="cancel-custom-file">
+							<i class="icon-times"></i>
+						</span>
 						<span class="button" data-cmd="load-custom-file">Get file</span>
 					</div>
 				</div>
 				<div class="box-body">
-					<textarea>@@include('res/json/store.json')</textarea>
+					<div class="json-view">
+						<textarea>@@include('res/json/store.json')</textarea>
+					</div>
+					<div class="xml-view">
+						<textarea></textarea>
+					</div>
 					<sidebar>
 						<div class="active" data-xpaths="store.json">
 							<span data-cmd="evaluate-xpath">//*</span>

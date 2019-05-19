@@ -1,6 +1,7 @@
 
 @@include('./jupyter.min.js')
 @@include('./modules/defiant.js')
+@@include('./codemirror/xml.js')
 
 (function(window, document) {
 	'use strict';
@@ -33,8 +34,10 @@
 			if (document.location.hostname === 'localhost') {
 				// temp
 				setTimeout(function() {
+					site.body.find('.tab:nth-child(3)').trigger('click');
+					//site.body.find('.ghost-btn[data-cmd="toggle-xml-view"]').trigger('click');
 					//site.body.find('.file-actions .button[data-cmd="custom-file"]').trigger('click');
-					//site.body.find('[data-cmd="toggle-samples"]').trigger('click');
+					site.body.find('[data-cmd="toggle-samples"]').trigger('click');
 					//site.body.find('[data-arg="/res/json/medium.json"]').trigger('click');
 				}, 1);
 			}
@@ -130,8 +133,12 @@
 							lineWrapping: false,
 							lineNumbers: true
 						},
-						textarea = self.body.find('.xpath-evaluator textarea')[0];
+						textarea = self.body.find('.xpath-evaluator .json-view textarea')[0];
 					self.evaluator.editor = CodeMirror.fromTextArea(textarea, cmOptions);
+
+					textarea = self.body.find('.xpath-evaluator .xml-view textarea')[0];
+					cmOptions.mode = 'text/xml';
+					self.evaluator.xml_editor = CodeMirror.fromTextArea(textarea, cmOptions);
 
 					self.doEvent('set-file-info', {
 						name: 'store.json',
@@ -180,6 +187,9 @@
 
 					data = JSON.parse(editor.doc.getValue());
 					self.evaluator.snapshot = defiant.getSnapshot(data);
+					break;
+				case 'cancel-custom-file':
+					el.parents('.box-header').removeClass('custom-json-url');
 					break;
 				case 'custom-file':
 					el.parents('.box-header').addClass('custom-json-url');
@@ -232,10 +242,24 @@
 					el.toggleClass('active', value);
 					self.body.find('.xpath-evaluator').toggleClass('show-sidebar', value);
 					break;
+				case 'toggle-xml-view':
+					value = el.hasClass('active');
+					el.toggleClass('active', value);
+					el.parent().find('.button, .ghost-btn:not(.active)').toggleClass('disabled', value);
+
+					el.parents('.xpath-evaluator').toggleClass('xml-view', value);
+
+	  				self.doEvent('clear-markers');
+
+					data = JSON.parse(editor.doc.getValue());
+	  				str = defiant.node.prettyPrint(defiant.json.toXML(data));
+	  				
+	  				self.evaluator.xml_editor.getDoc().setValue(str);
+					break;
 				case 'edit-json':
 					value = el.hasClass('active');
 					el.toggleClass('active', value);
-					el.parent().find('.button').toggleClass('disabled', value);
+					el.parent().find('.button, .ghost-btn:not(.active)').toggleClass('disabled', value);
 
 					if (value) {
 						editor.setOption('readOnly', 'nocursor');

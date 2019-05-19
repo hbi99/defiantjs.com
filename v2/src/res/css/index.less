@@ -168,26 +168,28 @@ body {
 	position: relative;
 	font-size: 12px;
 	font-weight: 600;
-	line-height: 20px;
-	padding: 3px 9px;
-	margin: 0 7px;
+	line-height: 18px;
+	padding: 4px 9px 4px;
+	margin: 0 0 0 2px;
 	border: 1px solid transparent;
 	border-radius: 4px;
 	cursor: pointer;
 
-	&:last-child {
-		margin-right: 0;
-	}
+	&:hover:not(.disabled):not(.active) {
+		border-color: #ccc;
 
-	&:hover {
 		i {
 			opacity: 1;
 		}
 	}
-	&:active {
+	&:active:not(.disabled) {
 		i {
 			opacity: 1;
 		}
+	}
+	&.disabled {
+		color: rgba(36,41,46,0.4);
+		cursor: default;
 	}
 	&.active {
 		background-color: #e9ecef;
@@ -377,6 +379,17 @@ body {
 				border: 1px solid #e1e4e8;
 				border-radius: 4px;
 
+				&.xml-view {
+					.box-body {
+						.json-view {
+							display: none;
+						}
+						.xml-view {
+							display: block;
+						}
+					}
+				}
+
 				&.show-sidebar {
 					.box-body {
 						.CodeMirror {
@@ -407,6 +420,9 @@ body {
 						.file-input {
 							display: block;
 						}
+					}
+					&.xml-view {
+
 					}
 
 					.file-info {
@@ -458,7 +474,7 @@ body {
 							float: left;
 							background: transparent;
 							border: 0;
-							width: calc(100% - 115px);
+							width: calc(100% - 190px);
 							height: 90%;
 							margin-top: 2px;
 							border-radius: 3px;
@@ -472,6 +488,10 @@ body {
 							float: right;
 							width: 67px;
 							margin: 4px 0 0;
+						}
+						.ghost-btn {
+							float: right;
+							margin: 4px 0 0 2px;
 						}
 						::-webkit-input-placeholder {
 							color: #aaa;
@@ -505,6 +525,12 @@ body {
 				.box-body {
 					position: relative;
 
+					.json-view {
+						display: block;
+					}
+					.xml-view {
+						display: none;
+					}
 					.CodeMirror {
     					margin-right: 0;
     					max-height: 675px;

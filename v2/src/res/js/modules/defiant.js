@@ -1,9 +1,4 @@
-/*
- * defiant.js [v2.2.3]
- * http://www.defiantjs.com
- * Copyright (c) 2013-2019 Hakan Bilgin <hbi@longscript.com>
- * License GNU AGPLv3
- */
+
 (function(window, module) {
 	'use strict';
 
@@ -15,7 +10,6 @@
 		namespace : 'xmlns:d="defiant-namespace"',
 		tabsize   : 4,
 		snapshots : {},
-		node      : {},
 		renderXml: function(template, data) {
 			var processor = new window.XSLTProcessor(),
 				span      = document.createElement('span'),

@@ -12,9 +12,9 @@ const hljs = require("highlight.js")
 
 const html_data = {
 	version: {
-		defiant: "v2.2.3",
+		defiant: "v2.2.5",
 		junior: "v1.1.4",
-		jupyter: "v1.0.5",
+		jupyter: "v1.0.6",
 		rebellious: "1.0.1",
 	}
 };
@@ -24,7 +24,7 @@ const srcPaths = {
 	server : "./app.js",
 	html : ["./src/**/*.htm", "./src/res/md/*.md"],
 	demos : "./src/demo/*.md",
-	scripts : ["./src/res/js/*.js", "!./src/res/js/*.min.js", "./src/res/js/site.js", "./src/res/js/jupyter.js"],
+	scripts : ["./src/res/js/**/*.js", "!./src/res/js/*.min.js", "./src/res/js/site.js", "./src/res/js/jupyter.js"],
 	modules : "./src/res/js/modules/*.js",
 	styles : ["./src/res/css/**/*.less", "./src/res/css/index.less"],
 	images : "./src/res/img/**/*.{gif,png,jpg,ico,svg}",
@@ -76,6 +76,7 @@ const md = new markdownIt({
 function help(done) {
 	var str = "\n----DEVELOPMENT Mode-------------------------------------------------------------"+
 			"\n  NodeJS version 9.2.0 is required for this project\n".white+
+			"\n  gulp start".cyan      +"\t\tDevelopment mode".grey+
 			"\n  gulp build".cyan      +"\t\tCreates a build version".grey+
 			"\n  gulp watch".cyan      +"\t\tWatches source files and compiles on change".grey+
 			"\n----------------------------------------------------------------------------------\n"
