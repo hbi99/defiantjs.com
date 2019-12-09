@@ -16,6 +16,7 @@ const html_data = {
 		junior: "v1.1.4",
 		jupyter: "v1.0.6",
 		rebellious: "1.0.1",
+		midiFurAlles: "1.0.0",
 	}
 };
 
@@ -29,6 +30,7 @@ const srcPaths = {
 	styles : ["./src/res/css/**/*.less", "./src/res/css/index.less"],
 	images : "./src/res/img/**/*.{gif,png,jpg,ico,svg}",
 	fonts : "./src/res/fonts/*.*",
+	mfa : "./src/res/midi-fur-alles/**/*.*",
 	json : "./src/res/json/**/*.{json,csv,tsv}",
 	svg : ["./src/res/svg/*.svg", "!./src/res/svg/svg-symbols.svg"]
 }
@@ -41,6 +43,7 @@ const destPaths = {
 	styles: "./public/res/css/",
 	images: "./public/res/img/",
 	fonts: "./public/res/fonts/",
+	mfa: "./public/res/midi-fur-alles/",
 	json: "./public/res/json/",
 	svg: "./public/res/svg/",
 }
@@ -68,21 +71,6 @@ const md = new markdownIt({
 })
 
 
-
-
-/*-------------------------------------------------------------------------
- * Gulp HELP
- *-------------------------------------------------------------------------*/
-function help(done) {
-	var str = "\n----DEVELOPMENT Mode-------------------------------------------------------------"+
-			"\n  NodeJS version 9.2.0 is required for this project\n".white+
-			"\n  gulp start".cyan      +"\t\tDevelopment mode".grey+
-			"\n  gulp build".cyan      +"\t\tCreates a build version".grey+
-			"\n  gulp watch".cyan      +"\t\tWatches source files and compiles on change".grey+
-			"\n----------------------------------------------------------------------------------\n"
-	console.log(str)
-	done()
-}
 
 
 function clean() {
@@ -116,6 +104,12 @@ function styles() {
 		.pipe(cleanCSS({compatibility: "ie8"}))
 		.pipe(gulp.dest(destPaths.styles))
 		.pipe($.size({title: "styles"}))
+}
+
+function mfa() {
+	return gulp.src(srcPaths.mfa)
+		.pipe(gulp.dest(destPaths.mfa))
+		.pipe($.size({title: "midi-fur-alles"}))
 }
 
 function images() {
@@ -185,20 +179,23 @@ function webserver(done) {
 	done()
 }
 
-function watch() {
+function watch(done) {
 	gulp.watch(srcPaths.scripts.slice(0,2), scripts)
 	gulp.watch(srcPaths.modules, modules)
 	gulp.watch(srcPaths.styles[0], styles)
 	gulp.watch(srcPaths.images, images)
 	gulp.watch(srcPaths.fonts, fonts)
+	gulp.watch(srcPaths.mfa, mfa)
 	gulp.watch(srcPaths.json, json)
 	gulp.watch(srcPaths.svg, svg)
 	gulp.watch(srcPaths.demos, demos)
 	gulp.watch(srcPaths.html, html)
+
+	done()
 }
 
-var build = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, demos, html))
-var start = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, fonts, svg, json, demos, html), webserver, watch)
+var build = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, mfa, fonts, svg, json, demos, html))
+var start = gulp.series(clean, gulp.parallel(scripts, modules, styles, images, mfa, fonts, svg, json, demos, html), webserver, watch)
 
 gulp.task("clean", clean)
 gulp.task("watch", watch)
@@ -206,6 +203,7 @@ gulp.task("scripts", scripts)
 gulp.task("modules", modules)
 gulp.task("styles", styles)
 gulp.task("images", images)
+gulp.task("mfa", mfa)
 gulp.task("fonts", fonts)
 gulp.task("svg", svg)
 gulp.task("json", json)
@@ -213,7 +211,6 @@ gulp.task("html", html)
 gulp.task("demos", demos)
 gulp.task("webserver", webserver)
 
-gulp.task("help", help)
 gulp.task("build", build)
 gulp.task("start", start)
 
