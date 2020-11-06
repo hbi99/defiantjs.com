@@ -33,7 +33,7 @@ As of `v2.0.0`, Defiant can be utilized in [Node.js](https://nodejs.org/) enviro
 
 ## Facet search
 
-Facet search was introduced in `v2.1.3`. With this feature, Defiant can group and count your JSON data with a few lines of simple code. See the two example codes below - the latter one examplifies facet search using snapshots. Making facet searches on snapshots si highly recommended if you are intending to make multiple queries on the same data. You can make multiple grouped queries as shown below.
+Facet search was introduced in `v2.1.3`. With this feature, Defiant can group and count your JSON data with a few lines of simple code. See the two example codes below - the latter one examplifies facet search using snapshots. Making facet searches on snapshots is highly recommended if you are intending to make multiple queries on the same data. You can make multiple grouped queries as shown below.
 
 ```js
 /* jupyter:active */
