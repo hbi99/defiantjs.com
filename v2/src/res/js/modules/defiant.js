@@ -1,4 +1,9 @@
-
+/*
+ * defiant.js [v2.2.7]
+ * http://www.defiantjs.com
+ * Copyright (c) 2013-2020 Hakan Bilgin <hbi@longscript.com>
+ * License GNU AGPLv3
+ */
 (function(window, module) {
 	'use strict';
 
@@ -894,7 +899,7 @@
 			var str = this;
 			if (this.indexOf('translate(') === -1) {
 				str = this.replace(/contains\(([^,]+),([^\\)]+)\)/g, function(c,h,n) {
-					var a = 'abcdefghijklmnopqrstuvwxyz';
+					var a = 'abcdefghijklmnopqrstuvwxyzåäö';
 					return "contains(translate("+ h +", \""+ a.toUpperCase() +"\", \""+ a +"\"),"+ n.toLowerCase() +")";
 				});
 			}

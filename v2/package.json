@@ -7,7 +7,7 @@
     "start": "gulp start"
   },
   "engines": {
-    "node": "9.2.0"
+    "node": ">=9.2.0"
   },
   "author": "Hakan Bilgin <hbi@longscript.com>",
   "license": "GNU AGPLv3",

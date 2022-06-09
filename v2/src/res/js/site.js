@@ -34,6 +34,7 @@
 			if (document.location.hostname === 'localhost') {
 				// temp
 				setTimeout(function() {
+					return;
 					site.body.find('.tab:nth-child(3)').trigger('click');
 					//site.body.find('.ghost-btn[data-cmd="toggle-xml-view"]').trigger('click');
 					//site.body.find('.file-actions .button[data-cmd="custom-file"]').trigger('click');
